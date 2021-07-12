@@ -1,0 +1,3 @@
+Started by user [8mha:////4G19tTm4MAkjDeaQ50+UkJNFFeR3w/slwWJLejo+FVgoAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL93MQkAFFPtg++AAAA[0mmab
+ERROR: Unable to find /jenkins/pipelines/clean_usecase_installation.groovy from git https://github.com/PharmaLedger-IMI/governance-workspace.git
+Finished: FAILURE

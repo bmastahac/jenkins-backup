@@ -1,0 +1,59 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.41">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>JENKINS_BACKUP_REPOSITORY</name>
+          <description></description>
+          <defaultValue>https://github.com/bmastahac/jenkins-backup.git</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>BRANCH</name>
+          <description></description>
+          <defaultValue>20210712</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.92">
+    <script>podTemplate(
+    containers: [
+        containerTemplate(name: &apos;docker&apos;, image: &apos;public.ecr.aws/n4q1q0z2/pharmaledger-docker-aws-jenkins-agent:1.0&apos;,alwaysPullImage:true , ttyEnabled: true, command: &apos;cat&apos;)
+    ],
+    volumes: [hostPathVolume(hostPath: &apos;/var/run/docker.sock&apos;, mountPath: &apos;/var/run/docker.sock&apos;)],
+    envVars: [secretEnvVar(key: &apos;aws_key_id&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_key_id&apos;),
+              secretEnvVar(key: &apos;aws_access_key&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_access_key&apos;)
+             ]
+  ){
+            podTemplate(
+          containers: [
+              containerTemplate(name: &apos;node&apos;, image: &apos;node:latest&apos;, ttyEnabled: true, command: &apos;cat&apos;)
+              ]
+          ){
+              node(POD_LABEL){
+              
+                  stage (&apos;Git clone&apos;){
+                      sh &apos;git clone --single-branch --branch 20210712 https://github.com/bmastahac/jenkins-backup.git&apos;
+                      sh &apos;ls&apos;
+                      sh &apos;cd jenkins-backup/20210712/jenkins_home/ &amp;&amp; ls&apos;
+                  }
+              
+              }
+              
+          }
+   
+      
+      
+      
+  }</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
