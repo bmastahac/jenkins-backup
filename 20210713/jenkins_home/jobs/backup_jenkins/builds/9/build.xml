@@ -1,0 +1,142 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>GITHUB_USER</name>
+          <description>Backup repository : https://${GITHUB_USER}:${GITHUB_ACCESS_TOKEN}@github.com/${GITHUB_USER}/jenkins-backup.git
+Branch where the backup will be uploaded : %Y%m%d</description>
+          <value>bmastahac</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GITHUB_USER_EMAIL</name>
+          <description></description>
+          <value>mab@rms.ro</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GITHUB_ACCESS_TOKEN</name>
+          <description></description>
+          <value>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</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>GITHUB_USER</string>
+        <string>GITHUB_USER_EMAIL</string>
+        <string>GITHUB_ACCESS_TOKEN</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>mab</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>2</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.19">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.92">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>8722</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>8721</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>130942</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>320</queueId>
+  <timestamp>1626166271744</timestamp>
+  <startTime>1626166271746</startTime>
+  <result>FAILURE</result>
+  <duration>139779</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>      podTemplate(
+          containers: [
+              containerTemplate(name: &apos;node&apos;, image: &apos;node:latest&apos;, ttyEnabled: true, command: &apos;cat&apos;)
+              ]
+          ){
+
+            podTemplate(serviceAccount: &apos;jdefaultmns&apos;,namespace: &apos;jenkins&apos;,containers: [
+                  containerTemplate(name: &apos;kubectl&apos;, image: &apos;public.ecr.aws/n4q1q0z2/pharmaledger-kubectl-jenkins-agent:1.0&apos;, command: &apos;cat&apos;, ttyEnabled: true)
+                ],
+                volumes: [
+                  hostPathVolume(mountPath: &apos;/var/run/docker.sock&apos;, hostPath: &apos;/var/run/docker.sock&apos;)
+                ]){
+
+                      node(POD_LABEL){
+
+                        stage (&apos;Repository cloning&apos;){
+                            container(&apos;node&apos;){
+                                    sh &apos;git clone https://github.com/PharmaLedger-IMI/governance-workspace.git&apos;
+                                    sh &apos;cd governance-workspace/jenkins/docker/backup &amp;&amp; sed &quot;s,%GITHUB_USER%,${GITHUB_USER},g&quot; jenkins-backup.yaml.template | sed &quot;s,%GITHUB_USER_EMAIL%,${GITHUB_USER_EMAIL},g&quot; | sed &quot;s,%GITHUB_ACCESS_TOKEN%,${GITHUB_ACCESS_TOKEN},g&quot; &gt; jenkins-backup.yaml&apos;
+                                    sh &apos;cat governance-workspace/jenkins/docker/backup/jenkins-backup.yaml&apos;
+                            }
+                        }
+                        
+                        stage (&apos;Deploy jenkins backup container&apos;){
+                            container(&apos;kubectl&apos;){
+                                sh &apos;cd governance-workspace/jenkins/docker/backup &amp;&amp; kubectl apply -f . -n jenkins&apos;
+                                sh &apos;kubectl wait --for=condition=completed --timeout=120s pod -l app=jenkins-backup -n jenkins&apos;
+                            }
+                        }
+                        
+                        
+                        stage (&apos;Backup finished. Clean up&apos;){
+                            container(&apos;kubectl&apos;){
+//                                sh &apos;cd governance-workspace/jenkins/docker/backup &amp;&amp; kubectl delete -f . -n jenkins&apos;
+                            }
+                        }
+                        
+                      }
+                }
+          }</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>143131790</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>5765427</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1919853581</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>11119309</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>38641241</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>36</iota>
+    <head>1:36</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>
