@@ -1,0 +1,175 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.FileParameterValue>
+          <name>ethJoinFile</name>
+          <description></description>
+          <originalFileName>ethJoin.json</originalFileName>
+          <location>ethJoinFile</location>
+        </hudson.model.FileParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>ethJoinFile</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>2</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.19">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.92">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>16095</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>16088</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>687586</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>413</queueId>
+  <timestamp>1630925804961</timestamp>
+  <startTime>1630925804969</startTime>
+  <result>FAILURE</result>
+  <duration>704717</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>podTemplate(serviceAccount: &apos;jdefaultmns&apos;,namespace: &apos;jenkins&apos;,containers: [
+  containerTemplate(name: &apos;kubectl&apos;, image: &apos;public.ecr.aws/n4q1q0z2/pharmaledger-kubectl-jenkins-agent:1.0&apos;, command: &apos;cat&apos;, ttyEnabled: true)
+],
+volumes: [
+  hostPathVolume(mountPath: &apos;/var/run/docker.sock&apos;, hostPath: &apos;/var/run/docker.sock&apos;)
+]){
+
+podTemplate(
+    containers: [
+        containerTemplate(name: &apos;docker&apos;, image: &apos;public.ecr.aws/n4q1q0z2/pharmaledger-docker-aws-jenkins-agent:1.0&apos;,alwaysPullImage:true , ttyEnabled: true, command: &apos;cat&apos;)
+    ],
+    volumes: [hostPathVolume(hostPath: &apos;/var/run/docker.sock&apos;, mountPath: &apos;/var/run/docker.sock&apos;)],
+    envVars: [secretEnvVar(key: &apos;aws_key_id&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_key_id&apos;),
+              secretEnvVar(key: &apos;aws_access_key&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_access_key&apos;)
+             ]
+  ){
+
+
+      podTemplate(
+          containers: [
+              containerTemplate(name: &apos;node&apos;, image: &apos;node:latest&apos;, ttyEnabled: true, command: &apos;cat&apos;)
+              ]
+          ){
+
+              node(POD_LABEL){
+
+                stage (&apos;Build&apos;){
+                    container(&apos;node&apos;){
+                        sh &apos;git clone https://github.com/PharmaLedger-IMI/ethadapter.git&apos;
+                        sh &apos;cd ethadapter &amp;&amp; npm install --unsafe-perm&apos;
+                    }
+                }
+
+                stage (&apos;Build docker image&apos;){
+                container(&apos;docker&apos;){
+                    stage (&apos;Docker Login&apos;){
+
+                        sh &apos;aws --version&apos;
+                        sh &apos;aws configure set aws_access_key_id &quot;$aws_key_id&quot;&apos;
+                        sh &apos;aws configure set aws_secret_access_key &quot;$aws_access_key&quot;&apos;
+                        sh &apos;aws configure set default.region eu-east-1&apos;
+                        sh &apos;aws configure set default.output \&apos;NONE\&apos;&apos;
+                        sh &apos;aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/n4q1q0z2&apos;
+
+                    }
+
+
+                    stage (&apos;Build and push docker image&apos;){
+                        sh &apos;cd ethadapter/EthAdapter &amp;&amp; docker build --no-cache --network host -t public.ecr.aws/n4q1q0z2/pharmaledger-ethadapter:1.0 -f dockerfile-dev .&apos;
+                        sh &apos;docker push public.ecr.aws/n4q1q0z2/pharmaledger-ethadapter:1.0&apos;
+                    }
+                }
+                }
+
+                stage (&apos;Prepare environment&apos;){
+                    container(&apos;node&apos;){
+                        sh &apos;git clone https://github.com/PharmaLedger-IMI/governance-workspace.git&apos;
+                        sh &apos;cp -a ethadapter/EthAdapter/k8s/. governance-workspace/jenkins/quorum-fresh-mode/k8s/ethAdapter/&apos;
+                        unstash &apos;ethJoinFile&apos;
+                        sh &apos;cp ethJoinFile governance-workspace/jenkins/quorum-fresh-mode/k8s/ethAdapter/templates/ethAdapterJoiningJSON.json&apos;
+                    }
+                }
+
+                stage (&apos;Prepare and deploy EthAdapter&apos;){
+                    container(&apos;node&apos;){
+                        sh &apos;cd governance-workspace/jenkins/quorum-fresh-mode &amp;&amp; npm install&apos;
+                        sh &apos;cd governance-workspace/jenkins/quorum-fresh-mode &amp;&amp; node ./stages/deployEthAdapter/stage.js&apos;
+                    }
+                    container(&apos;kubectl&apos;){
+                        sh &apos;cd governance-workspace/jenkins/quorum-fresh-mode &amp;&amp; kubectl apply -n default -f ./k8s/ethAdapter &amp;&amp; sleep 60&apos;
+                    }
+                }
+
+                stage (&apos;Check connection status&apos;){
+                    container (&apos;node&apos;){
+                        sh &apos;cd governance-workspace/jenkins/quorum-fresh-mode &amp;&amp; node ./stages/checkEthAdapter/stage.js&apos;
+                    }
+                }
+
+
+              }
+          }
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>400646394</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>234166010</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>6462348193</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>172587843</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>565973623</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>64</iota>
+    <head>1:64</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

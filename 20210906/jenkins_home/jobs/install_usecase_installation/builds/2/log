@@ -1,0 +1,1776 @@
+Started by user [8mha:////4G19tTm4MAkjDeaQ50+UkJNFFeR3w/slwWJLejo+FVgoAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL93MQkAFFPtg++AAAA[0mmab
+Obtained jenkins/pipelines/install_usecase_installation.groovy from git https://github.com/PharmaLedger-IMI/governance-workspace.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4KQ4nQHzoizlWJhcMrmfP4ZtQr21g23OA67AlRm7f+BEAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4H58ktrztD9GWn8dAZ0UJOosdbMGsC5ZvC8Mk3WN3VRKAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4OjBRqdKRoTT4zVjMoXG4OSopdAe9GJYwWxo0ZDK8VDmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4PHgf4X/N+KdathW4kbJhs7rA+ErjKAJ8v/7PrS3M53UAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4HvdKFC/csV1fWuiW7xrZSsYw7LQGZgqFJoTkNKUM7WvAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4MKHNsyM9X0kb8xKioDXcyWmXNqA+kevFO5+LnLL/NKZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4ERlOeCsiuiOh4MCRDietbCHxw6pU1XZRY7fecbmkLT6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4OAqaOryhf3sMrd6c7+prPuAP2YfUbI9n13DfkGVKi/VAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] node
+Created Pod: kubernetes jenkins/install-usecase-installation-2-cqs6d-ckrb2-rnb8d
+Still waiting to schedule task
+‘[8mha:////4EArQoVEkBCbVP5kJJbyaRP9jgTAlYxl+A8cczZGDqAgAAAAwR+LCAAAAAAAAP9djb0NwjAUhB9BMAAlomEAx4giQopS0YAUaJjAcazExDwb/yBYgzWgYQjGYQcihYZcc3fSp7vnB0bOwrwOpdMYc41OKxHvdCnU5maEVRKbvfYCOg0igKuFWY//Q5Ps8cru5h1BtIWxElj5OodhsMrDJD+yC6OKYUUP3kqs0nZu2ptbd97/NW1YeEgp1ycTvLBUovNMKRKc4MwJ8uvMS41kSfjZJSXhjS2WxGKxKukXsGqiHfAAAAA=[0minstall-usecase-installation-2-cqs6d-ckrb2-rnb8d’ is offline
+Agent [8mha:////4MYmC5pL5HaXnGjNlI02rRS8Oi13GHaLqtDWnXL4jo5RAAAAwB+LCAAAAAAAAP9djbENwjAURD9BMAAlomEAx4giQqBUNCAFGiZwbCsxMd/GdhCswRrQMATjsAORQkOuuTvp6e75gYF3MC1r4Q3G3KA3WsY7I6Te3Kx0WmG1N0FCq14EcHUw6fB/aJI+XundviOItjDUEotQZtCvnQ4wyo7swqhmWNBDcAqLVTM37sytW+/+2ibMAiwpNydbB+moQh+Y1qT2kjMvya+zoAySOeFnnwjCK5fPicN8Ib7ooVxz7wAAAA==[0minstall-usecase-installation-2-cqs6d-ckrb2-rnb8d is provisioned from template install_usecase_installation_2-cqs6d-ckrb2
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  annotations:
+    buildUrl: "http://jenkins/job/install_usecase_installation/2/"
+    runUrl: "job/install_usecase_installation/2/"
+  labels:
+    jenkins: "slave"
+    jenkins/label-digest: "3170c298636d70c2f6b08422004eedabd12f2c98"
+    jenkins/label: "install_usecase_installation_2-cqs6d"
+  name: "install-usecase-installation-2-cqs6d-ckrb2-rnb8d"
+spec:
+  containers:
+  - command:
+    - "cat"
+    env:
+    - name: "aws_key_id"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_key_id"
+          name: "aws-config"
+    - name: "aws_access_key"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_access_key"
+          name: "aws-config"
+    image: "node:latest"
+    imagePullPolicy: "IfNotPresent"
+    name: "node"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - command:
+    - "cat"
+    env:
+    - name: "aws_key_id"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_key_id"
+          name: "aws-config"
+    - name: "aws_access_key"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_access_key"
+          name: "aws-config"
+    image: "public.ecr.aws/n4q1q0z2/pharmaledger-kubectl-jenkins-agent:1.0"
+    imagePullPolicy: "IfNotPresent"
+    name: "kubectl"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - command:
+    - "cat"
+    env:
+    - name: "aws_key_id"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_key_id"
+          name: "aws-config"
+    - name: "aws_access_key"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_access_key"
+          name: "aws-config"
+    image: "public.ecr.aws/n4q1q0z2/pharmaledger-docker-aws-jenkins-agent:1.0"
+    imagePullPolicy: "Always"
+    name: "docker"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - env:
+    - name: "JENKINS_SECRET"
+      value: "********"
+    - name: "JENKINS_TUNNEL"
+      value: "jenkins:50000"
+    - name: "JENKINS_AGENT_NAME"
+      value: "install-usecase-installation-2-cqs6d-ckrb2-rnb8d"
+    - name: "aws_key_id"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_key_id"
+          name: "aws-config"
+    - name: "aws_access_key"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_access_key"
+          name: "aws-config"
+    - name: "JENKINS_NAME"
+      value: "install-usecase-installation-2-cqs6d-ckrb2-rnb8d"
+    - name: "JENKINS_AGENT_WORKDIR"
+      value: "/home/jenkins/agent"
+    - name: "JENKINS_URL"
+      value: "http://jenkins/"
+    image: "jenkins/inbound-agent:4.3-4"
+    name: "jnlp"
+    resources:
+      limits: {}
+      requests:
+        memory: "256Mi"
+        cpu: "100m"
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  nodeSelector:
+    kubernetes.io/os: "linux"
+  restartPolicy: "Never"
+  serviceAccountName: "jdefaultmns"
+  volumes:
+  - hostPath:
+      path: "/var/run/docker.sock"
+    name: "volume-0"
+  - emptyDir:
+      medium: ""
+    name: "workspace-volume"
+
+Running on [8mha:////4EArQoVEkBCbVP5kJJbyaRP9jgTAlYxl+A8cczZGDqAgAAAAwR+LCAAAAAAAAP9djb0NwjAUhB9BMAAlomEAx4giQopS0YAUaJjAcazExDwb/yBYgzWgYQjGYQcihYZcc3fSp7vnB0bOwrwOpdMYc41OKxHvdCnU5maEVRKbvfYCOg0igKuFWY//Q5Ps8cru5h1BtIWxElj5OodhsMrDJD+yC6OKYUUP3kqs0nZu2ptbd97/NW1YeEgp1ycTvLBUovNMKRKc4MwJ8uvMS41kSfjZJSXhjS2WxGKxKukXsGqiHfAAAAA=[0minstall-usecase-installation-2-cqs6d-ckrb2-rnb8d in /home/jenkins/agent/workspace/install_usecase_installation
+[8mha:////4DXXrWFTpg5l0OLPFs3qlgs13V+/dKb4acxOg1W282ltAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] {
+[8mha:////4MiNJIs0lMpV0fnwa5qQ0TU691p07ymn66irXVtAtZhbAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] stage
+[8mha:////4MWW3Xdj1+bfXN82IcC/NWaUVO98Y+rFUNhdXRlDz9CbAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] { (Repository cloning)
+[8mha:////4EECt8wpJmPFgjCsnwtE4mXLXdy8gP5eXXJodkiYPbuPAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] container
+[8mha:////4P8WKD7PcgNBYXdjKtmAzsuelnSimpPqTuAV1COeij7KAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] {
+[8mha:////4P6QHGud/NpdaKDPWBNBRNTuSDn6AuyVnE3mgqpO93kBAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN8W7Eii+AAAA[0m[Pipeline] sh
++ git clone https://github.com/PharmaLedger-IMI/governance-workspace.git
+Cloning into 'governance-workspace'...
+[8mha:////4LirP4UEt4ZNkSx01LjANARzKSD0fKw5BDpIHda7z6ojAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQG9gN7HvgAAAA==[0m[Pipeline] }
+[8mha:////4JM1Bke8Upl4Mw7LV5/Hs5Gi+DlGil9bh8XfR1qQtMHnAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiREGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQG7xuaSvgAAAA==[0m[Pipeline] // container
+[8mha:////4OIJ61YcFapnc0Yxo7205QpUpjHABLuiHkt52Uwx62quAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiqJAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N/hEtxS+AAAA[0m[Pipeline] }
+[8mha:////4Msixe6toqn7KEoh+ojcqf3lReC9oUbiWhC+0mJdhxijAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyKR3Hypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o358biRr4AAAA=[0m[Pipeline] // stage
+[8mha:////4FejZWyvzsI0c/tVLXFwxNJAHuaP1CANEFBCdx2Snr16AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoi0sCKmrlEXThCaEJJG/5ckJZ04EVfjDgQqMeHBsi1Z7/mCKng4ktfMKhwMht6w0U06J5bIDxdHiVk6s54wkFOsU6kjqdqldhQVLCpKWHFYK+wdBYM6woZbcRe1E6jrU/R5O3AojbzBAwqeyVH4+C2zh+11koHwx/kLgHmMUO6abPvm86zeOWgEJsIAAAA=[0m[Pipeline] stage
+[8mha:////4Bd0tmDHqehbCMWycGeYBDFaysn/rSSQUUfMm6uKcFKbAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] { (Customize build)
+[8mha:////4Hxyf6Wuu2wz7xv50CDdqF6iXH4f8RtvR/nfrF01TAe5AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] container
+[8mha:////4OHmeoh6ls7IQqXnY08F+5Di/3nwT1eZm/8ByAi+CVeiAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKiNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPpnFij8IAAAA=[0m[Pipeline] {
+[8mha:////4NXWZY3+QXKGnffTzXoPkZHetL0BAElfqEq5apWle0+fAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] stage
+[8mha:////4FSA4XgKkGx+JPhOGAC+CrE0mj3Dkp2ulOFnRXReeHsWAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] { (Configure config-map)
+[8mha:////4GH/WSibRcZK5CwqqHRxTomZ4OuFYaL5Ix54VRHT2vtiAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEIWoEpvgAAAA==[0m[Pipeline] sh
++ cd governance-workspace/docker/k8s/templates
++ sed s/%domain%/epi/g configmap.yaml.template
++ sed s/%subdomain%/nvs.epi/g
++ sed s/%vaultdomain%/nvs/g
+sed: can't read configmap.yaml.template: No such file or directory
+[8mha:////4Ehrn8EpQBMevZ7FnrqrJbOijZesFE6quAht6bGsWY6dAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISEKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q1Ja5owvgAAAA==[0m[Pipeline] sh
++ cat governance-workspace/docker/k8s/templates/configmap.yaml
+[8mha:////4IKhxA99Y9Hew4HiGLXMRuswCV+ZxYycqeR7A+h90nvPAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISEhIaq0lhteYGJjnFh3xnZIKl7E1/gDgUhUbLHa2WaeL1imCEeOFltDnaPUOAy+t9PCgWN38Txgy2dsmBJ7g9IMkrWpZ5ScDcwpSlgIWBlqPCdHNsNatOquKq/IVqccp+8goHT6Bg8oxGTOKuYvjBE2114npp/nrwDGkKHc7j61D2+GdwK3vgAAAA==[0m[Pipeline] sh
++ cd governance-workspace/docker/k8s/templates
++ sed s/%domain%/epi/g domains-configmap.yaml.template
++ sed s/%subdomain%/nvs.epi/g
+sed: can't read domains-configmap.yaml.template: No such file or directory
++ sed s/%vaultdomain%/nvs/g
+[8mha:////4A6VRwIJhihaiEv1tTnfTLv+MyOnOclymkFidPlzR8JiAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIVEgRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q3HRhmuvgAAAA==[0m[Pipeline] sh
++ cat governance-workspace/docker/k8s/templates/domains-configmap.yaml
+[8mha:////4JtqkZvpmR8UVj2e2UAsb53FbyKz6iSlayT5nRrH7im5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCQFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AHcETLavgAAAA==[0m[Pipeline] }
+[8mha:////4CzyJgyF6t3+6V1SRqkE0Pjz/bG/x2kuJhe9YiTmSpeSAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIjPh1KRWu54QQmMcaJtRtsB6fiRFyNO2ARiYopRvOmea83LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AHv8mlmvgAAAA==[0m[Pipeline] // stage
+[8mha:////4HGZANhL7bU5/36ZGGe6FEWEXDw+RpMvt1rYcoezrAm7AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUakfExBp14QQhDSFp9H+bpLQTJ+Jq3IFAJSY8WLYl6z1fUMYARwqGO429xagsH/xkcuIzhf7qaeaOLlwRRvKat3puqdOntbaUNKwqGGwEbDUqT9GiSbATTt5l5SWa6pxC3g4CmO1GeEAhMjnJkL5lCbC/TV0k/HH+AmAZErC6ydbUn2f5Bnd2xyPCAAAA[0m[Pipeline] stage
+[8mha:////4MnuNw8PGiAD4JP5CBahu9q2CUNNJ3RxI9Fa41BTq56VAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] { (Configure deployment)
+[8mha:////4BzvG7w99UHgNedN5Z6w1vy0b1jOjotdG4CjEuq2tzhKAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSxM6xsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NGWcPtb4AAAA=[0m[Pipeline] sh
++ cd governance-workspace/docker/k8s/templates
++ sed s/%vaultdomain%/nvs/g
++ sed s/%subdomain%/nvs.epi/g
++ sed s/%domain%/epi/g deployment.yaml.template
+sed: can't read deployment.yaml.template: No such file or directory
+[8mha:////4KtnMq5/HrKkn9QM1GT+VDpTr0LqoQklRzQfyUX9ZddIAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZKwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMPsEddt+au/fWFYUrL4AAAA=[0m[Pipeline] sh
++ cat governance-workspace/docker/k8s/templates/deployment.yaml
+[8mha:////4HvthiXK5rDmslme5AbRZyRHEXZ4Wz9uCXJ2szDI9L2RAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZMbGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALNPULftp/b+DZsFOYe+AAAA[0m[Pipeline] sh
++ cd governance-workspace/docker/k8s/templates
++ sed s/%subdomain%/nvs.epi/g service.yaml.template
+sed: can't read service.yaml.template: No such file or directory
++ sed s/%domain%/epi/g
+[8mha:////4K01akcMIHV1d36TyozZJHksTpVA6eB/OASrIIhkOOQpAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSpLBwrGwZGk+ACSKE+Z8AkVSeyKt5B9HMWLnFzr5t3vMF6xjgSEEzq3AwGDvDvJt0WSxTGK6OMrN0YR1hJKeYUFlQr04LCkoKllQ1rDhsFHaOokGdYMutvMvGSdTNOYXyHTjUph/hARUv5iRD+sIcYHeb+kj48/wVwOwT1G37qb1/A9o0Ip6+AAAA[0m[Pipeline] sh
++ cat governance-workspace/docker/k8s/templates/service.yaml
+[8mha:////4Gs3zt56KEcHYHiNqNUXW2qWmiMELgQmmFO32paL0fo9AAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSpHHGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DcUHGca+AAAA[0m[Pipeline] }
+[8mha:////4Kd8BWR8Od13+yPWOAoZp5kwqb7tmcVde0Gg6l0pgqnUAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQYUQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN/bkQnq+AAAA[0m[Pipeline] // stage
+[8mha:////4IyLesyyoas85pyjoHkATrnxoX4HhZIHG5B7nTgQCWksAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCgA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY5trtP2eK9va+AAAA[0m[Pipeline] }
+[8mha:////4KcGA1FXRLp14755PlgRpiwyxDzLir1VculdMt7o4FT9AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRER2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BOVhn6uuP1RprUq+AAAA[0m[Pipeline] // container
+[8mha:////4OLYoLcJBvV2UxHYgxVrVWUn14FbAGA6ZVRcg3/Sjg/bAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRER2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BOWhzlXvP0BKMFW+AAAA[0m[Pipeline] }
+[8mha:////4ASTypFExr1jnhBSXhZ6GKnsZd0nfxgfPCHoFv0GjgGfAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCgA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY59ptP3Opa+m+AAAA[0m[Pipeline] // stage
+[8mha:////4MhVHGXyZ9gNtr1FZbJ791amLavqNlwwfGpj757YWCaZAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUpG6IqWuUhROEJIS00f8lSWknTsTVuAOBSkx4sGxL1nu+oIoBjhQs6wz2DqNybPCjzYlNFPqLp4l1dGaKMJI3TJhJkDbtUgUlA4uKElYc1gaVp+jQJtjwTt5l7SXa+pRC3g4cSqdv8ICCZ3KSIX3LHGB7HXUk/HH+AmAeEpT7Xbam+TyrNxUfRd7CAAAA[0m[Pipeline] stage
+[8mha:////4Aua2tb6eqxUZSIMcqw5y0og0pO6PbA4wP25P7vVCio3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KRNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPIshjPcIAAAA=[0m[Pipeline] { (Build and publish docker Image)
+[8mha:////4PyZ0s2TPjpAnnq5u/WnVReX5IL0QmsFbEpCpd+Vm2mrAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] container
+[8mha:////4DjZl5SwMoGD6gLwZZSroKscLV7RZj8HWX6QIjqPL73MAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QTAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+jQxyjCAAAA[0m[Pipeline] {
+[8mha:////4HHm7tyWnK0a4M5/6Z1tBLVk7mqxEfpnzJ0A75htJqLmAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIIGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGaE3/ivgAAAA==[0m[Pipeline] sh
++ aws --version
+aws-cli/2.2.14 Python/3.8.8 Linux/5.4.117-58.216.amzn2.x86_64 exe/x86_64.alpine.3 prompt/off
+[8mha:////4MN8mC1WTwDWgUNULRELTfNjJbWNPrGzs12clQV2FQXLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSICGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHbImT7vgAAAA==[0m[Pipeline] sh
++ aws configure set aws_access_key_id ********
+[8mha:////4C4tC3CwG6JvjMWE00A/qoxymyZVltfAa61TDGGowyh+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCAaJAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw+l82QrvgAAAA==[0m[Pipeline] sh
++ aws configure set aws_secret_access_key ********
+[8mha:////4EiAbgMQb19pvdzXur9RWjB5kD7nGsKJVW1yrhiYfK+mAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wA5MJ/Mr4AAAA=[0m[Pipeline] sh
++ aws configure set default.region 
+[8mha:////4EYP87+JUrS9oHl8PCnROzeflLk6hO8fmhYdOnAgCvUYAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIRAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAJ5FSGb4AAAA=[0m[Pipeline] sh
++ aws configure set default.output NONE
+[8mha:////4OMCRjmbPb2YUslDSv1qzIu2wNBeyoI+2YYj8bWlgucEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAKJAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw9moEkAvgAAAA==[0m[Pipeline] sh
++ aws ecr-public get-login-password --region us-east-1
++ docker login --username AWS --password-stdin public.ecr.aws/n4q1q0z2
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[8mha:////4Mm2wm7cMrB0djc+XI/Tfz9b1Zs7ka02PZxfOrak1sD2AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSBFEgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAcw+QVkfcu1r/wGhNghPvgAAAA==[0m[Pipeline] sh
++ cd governance-workspace/docker
++ docker build --no-cache --network host -t public.ecr.aws/n4q1q0z2/pharmaledger-epi:1.0 .
+Sending build context to Docker daemon  9.728kB
+Step 1/9 : FROM node:12.21.0
+12.21.0: Pulling from library/node
+1dfe7e1e1bff: Already exists
+df86b11a61e4: Already exists
+006eb4a69e60: Already exists
+6c1c07de8af0: Already exists
+1a51928b48bb: Already exists
+b5f37d573391: Already exists
+3d496a193bbf: Already exists
+6e53b7437874: Already exists
+7823fc8e7189: Already exists
+Digest: sha256:ad1c01aeb58e1fbfb5439eb2b954ab0fcdccd81202f90e6484915222a07d2528
+Status: Downloaded newer image for node:12.21.0
+ ---> adc3ac86765f
+Step 2/9 : RUN npm install -g node-gyp
+ ---> Running in 35b8a22133d0
+/usr/local/bin/node-gyp -> /usr/local/lib/node_modules/node-gyp/bin/node-gyp.js
++ node-gyp@8.1.0
+added 91 packages from 30 contributors in 3.865s
+Removing intermediate container 35b8a22133d0
+ ---> ec75fba5c15f
+Step 3/9 : ENV TARGET_FOLDER_NAME="gov-workspace"
+ ---> Running in 918f4f45a6fa
+Removing intermediate container 918f4f45a6fa
+ ---> 0124242adea0
+Step 4/9 : RUN git clone https://github.com/PharmaLedger-IMI/governance-workspace.git $TARGET_FOLDER_NAME
+ ---> Running in 4b9aaaf12665
+[91mCloning into 'gov-workspace'...
+[0mRemoving intermediate container 4b9aaaf12665
+ ---> 60ee9bc70b67
+Step 5/9 : RUN cd $TARGET_FOLDER_NAME &&     npm run dev-install --unsafe-perm
+ ---> Running in f3f148d8f632
+
+> governance-workspace@1.0.1 dev-install /gov-workspace
+> node ./bin/mkDevEnv.js && npm install
+
+
+> governance-workspace@1.0.1 postinstall /gov-workspace
+> node ./node_modules/octopus/scripts/setEnv --file=../../../env.json "node ./node_modules/octopus/scripts/run"
+
+Running in DEVELOPMENT mode
+Environment updated accordingly to env file passed as argument.
+Preparing to execute cmd node ./node_modules/octopus/scripts/run
+Looking for configuration file at path /gov-workspace/octopus.json
+Action buildWebCardinalComponents was registered.
+[Octopus] Start checking dependencies...
+[Octopus] Found 11 dependencies...
+[Octopus] Running tasks for: [0] cardinal
+Running command git clone --depth=1 --branch=master http://github.com/privatesky/cardinal.git "/gov-workspace/cardinal"
+taskIndex: 0 actionIndex: 0 result: "Finished clone action on dependency cardinal"
+Running command: cd cardinal && npm install
+[91mnpm[0m[91m WARN cardinal@0.1.2 No repository field.
+[0m[91m
+[0madded 6 packages from 3 contributors and audited 6 packages in 3.479s
+found 0 vulnerabilities
+
+Running command: cd cardinal && npm run build
+
+> cardinal@0.1.2 build /gov-workspace/cardinal
+> stencil build --docs
+
+[2m[44:07.4][22m  [36m@stencil/core[39m
+[2m[44:07.5][22m  [36mv1.17.4[39m 🏏
+[2m[44:10.3][22m  build, cardinal, prod mode, started [2m...[22m
+[2m[44:10.3][22m  transpile started [2m...[22m
+[2m[44:17.4][22m  transpile finished [2min 7.14 s[22m
+[2m[44:17.4][22m  copy started [2m...[22m
+[2m[44:17.4][22m  generate lazy started [2m...[22m
+[2m[44:19.4][22m  copy finished (59 files) [2min 1.98 s[22m
+[2m[44:43.9][22m  generate lazy finished [2min 26.50 s[22m
+[2m[44:44.0][22m  created readme docs: dropdown-renderer
+[2m[44:44.0][22m  created readme docs: event-expandable-renderer
+[2m[44:44.0][22m  created readme docs: expandable-renderer
+[2m[44:44.0][22m  created readme docs: mobile-profile-renderer
+[2m[44:44.0][22m  created readme docs: psk-accordion
+[2m[44:44.0][22m  created readme docs: psk-accordion-item
+[2m[44:44.0][22m  created readme docs: psk-app-menu
+[2m[44:44.0][22m  created readme docs: psk-app-root
+[2m[44:44.0][22m  created readme docs: psk-app-router
+[2m[44:44.0][22m  created readme docs: psk-attachments-list
+[2m[44:44.0][22m  created readme docs: psk-barcode-generator
+[2m[44:44.0][22m  created readme docs: psk-barcode-scanner
+[2m[44:44.0][22m  created readme docs: psk-breadcrumb-navigator
+[2m[44:44.0][22m  created readme docs: psk-button
+[2m[44:44.0][22m  created readme docs: psk-button-group
+[2m[44:44.0][22m  created readme docs: psk-button-link
+[2m[44:44.0][22m  created readme docs: psk-button-test
+[2m[44:44.0][22m  created readme docs: psk-card
+[2m[44:44.0][22m  created readme docs: psk-chapter
+[2m[44:44.0][22m  created readme docs: psk-chapter-wrapper
+[2m[44:44.0][22m  created readme docs: psk-checkbox
+[2m[44:44.0][22m  created readme docs: psk-code
+[2m[44:44.0][22m  created readme docs: psk-condition
+[2m[44:44.0][22m  created readme docs: psk-container
+[2m[44:44.0][22m  created readme docs: psk-controller-descriptor
+[2m[44:44.0][22m  created readme docs: psk-copy-clipboard
+[2m[44:44.0][22m  created readme docs: psk-custom
+[2m[44:44.0][22m  created readme docs: psk-date
+[2m[44:44.0][22m  created readme docs: psk-date-input
+[2m[44:44.0][22m  created readme docs: psk-default-renderer
+[2m[44:44.0][22m  created readme docs: psk-description
+[2m[44:44.0][22m  created readme docs: psk-details
+[2m[44:44.0][22m  created readme docs: psk-draggable-list
+[2m[44:44.0][22m  created readme docs: psk-echo
+[2m[44:44.0][22m  created readme docs: psk-email-input
+[2m[44:44.0][22m  created readme docs: psk-event-descriptor
+[2m[44:44.0][22m  created readme docs: psk-example
+[2m[44:44.0][22m  created readme docs: psk-files-chooser
+[2m[44:44.0][22m  created readme docs: psk-floating-menu
+[2m[44:44.0][22m  created readme docs: psk-for-each
+[2m[44:44.0][22m  created readme docs: psk-form
+[2m[44:44.0][22m  created readme docs: psk-form-row
+[2m[44:44.0][22m  created readme docs: psk-grid
+[2m[44:44.0][22m  created readme docs: psk-highlight
+[2m[44:44.0][22m  created readme docs: psk-hoc
+[2m[44:44.0][22m  created readme docs: psk-icon
+[2m[44:44.0][22m  created readme docs: psk-icon-chooser
+[2m[44:44.0][22m  created readme docs: psk-img
+[2m[44:44.0][22m  created readme docs: psk-img-input
+[2m[44:44.0][22m  created readme docs: psk-input
+[2m[44:44.0][22m  created readme docs: psk-label
+[2m[44:44.0][22m  created readme docs: psk-label-test
+[2m[44:44.0][22m  created readme docs: psk-layout
+[2m[44:44.0][22m  created readme docs: psk-layout-item
+[2m[44:44.0][22m  created readme docs: psk-link
+[2m[44:44.0][22m  created readme docs: psk-list
+[2m[44:44.0][22m  created readme docs: psk-list-feedbacks
+[2m[44:44.0][22m  created readme docs: psk-live-code
+[2m[44:44.0][22m  created readme docs: psk-load-placeholder
+[2m[44:44.0][22m  created readme docs: psk-menu-item-renderer
+[2m[44:44.0][22m  created readme docs: psk-mobile
+[2m[44:44.0][22m  created readme docs: psk-modal
+[2m[44:44.0][22m  created readme docs: psk-number-input
+[2m[44:44.0][22m  created readme docs: psk-page
+[2m[44:44.0][22m  created readme docs: psk-page-loader
+[2m[44:44.0][22m  created readme docs: psk-page-not-found
+[2m[44:44.0][22m  created readme docs: psk-page-not-found-renderer
+[2m[44:44.0][22m  created readme docs: psk-password-input
+[2m[44:44.0][22m  created readme docs: psk-pin-popup
+[2m[44:44.0][22m  created readme docs: psk-progress
+[2m[44:44.0][22m  created readme docs: psk-property-descriptor
+[2m[44:44.0][22m  created readme docs: psk-radio
+[2m[44:44.0][22m  created readme docs: psk-radio-group
+[2m[44:44.0][22m  created readme docs: psk-route-redirect
+[2m[44:44.0][22m  created readme docs: psk-select
+[2m[44:44.0][22m  created readme docs: psk-slideshow
+[2m[44:44.0][22m  created readme docs: psk-ssapp
+[2m[44:44.0][22m  created readme docs: psk-stepper
+[2m[44:44.0][22m  created readme docs: psk-stepper-renderer
+[2m[44:44.0][22m  created readme docs: psk-style
+[2m[44:44.0][22m  created readme docs: psk-switch-button
+[2m[44:44.0][22m  created readme docs: psk-tab
+[2m[44:44.0][22m  created readme docs: psk-tab-navigator
+[2m[44:44.0][22m  created readme docs: psk-table
+[2m[44:44.0][22m  created readme docs: psk-text-input
+[2m[44:44.0][22m  created readme docs: psk-textarea
+[2m[44:44.0][22m  created readme docs: psk-toc
+[2m[44:44.0][22m  created readme docs: psk-toolbar
+[2m[44:44.0][22m  created readme docs: psk-ui-alert
+[2m[44:44.0][22m  created readme docs: psk-ui-loader
+[2m[44:44.0][22m  created readme docs: psk-ui-toast
+[2m[44:44.0][22m  created readme docs: psk-user-profile
+[2m[44:44.0][22m  created readme docs: psk-user-profile-renderer
+[2m[44:44.0][22m  created readme docs: psk-wizard
+[2m[44:44.0][22m  created readme docs: query-page-link
+[2m[44:44.0][22m  created readme docs: query-pages-router
+[2m[44:44.0][22m  created readme docs: sidebar-renderer
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/form-components/psk-radio/psk-radio.tsx[39m[2m:[22m[33m101[39m[2m:[22m[33m8[39m
+           Events decorated with @Event() should describe the actual DOM event
+           name, not the handler. In other words "onChangeRadio" would be
+           better named as "changeRadio".
+
+[2m    L100:  [22m        cancelable: true
+[2m    L101:  [22m    }) [41mo[49m[41mn[49m[41mC[49m[41mh[49m[41ma[49m[41mn[49m[41mg[49m[41me[49m[41mR[49m[41ma[49m[41md[49m[41mi[49m[41mo[49m: EventEmitter;
+[2m    L102:  [22m}
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/pages-components/psk-controller-descriptor.tsx[39m[2m:[22m[33m11[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L11:  [22m    @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/pages-components/psk-event-descriptor.tsx[39m[2m:[22m[33m10[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L10:  [22m    @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/pages-components/psk-property-descriptor.tsx[39m[2m:[22m[33m11[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L11:  [22m    @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = '';
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-accordion/psk-accordion-item/psk-accordion-item.tsx[39m[2m:[22m[33m25[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L24:  [22m  })
+[2m     L25:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = '';
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-barcode/psk-barcode-generator/psk-barcode-generator.tsx[39m[2m:[22m[33m35[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L34:  [22m  })
+[2m     L35:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-barcode/psk-barcode-scanner/psk-barcode-scanner.tsx[39m[2m:[22m[33m38[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L37:  [22m  })
+[2m     L38:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = '';
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-card/psk-card.tsx[39m[2m:[22m[33m20[39m[2m:[22m[33m24[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L19:  [22m	})
+[2m     L20:  [22m	@Prop({reflect:true}) [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-card/psk-card.tsx[39m[2m:[22m[33m29[39m[2m:[22m[33m10[39m
+           The @Prop() name "id" is a reserved public name. Please rename the
+           "id" prop so it does not conflict with an existing standardized
+           prototype member. Reusing prop names that are already defined on the
+           element's prototype may cause unexpected runtime errors or
+           user-interface issues on various browsers, so it's best to avoid
+           them entirely.
+
+[2m     L28:  [22m	})
+[2m     L29:  [22m	@Prop() [41mi[49m[41md[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-chapter/psk-chapter-wrapper.tsx[39m[2m:[22m[33m9[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m      L9:  [22m    @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string;
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-chapter/psk-chapter.tsx[39m[2m:[22m[33m21[39m[2m:[22m[33m27[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L20:  [22m	})
+[2m     L21:  [22m	@Prop({ reflect: true }) [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-code/psk-code.tsx[39m[2m:[22m[33m24[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L23:  [22m  })
+[2m     L24:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-copy-clipboard/psk-copy-clipboard.tsx[39m[2m:[22m[33m38[39m[2m:[22m[33m11[39m
+           The @Prop() name "id" is a reserved public name. Please rename the
+           "id" prop so it does not conflict with an existing standardized
+           prototype member. Reusing prop names that are already defined on the
+           element's prototype may cause unexpected runtime errors or
+           user-interface issues on various browsers, so it's best to avoid
+           them entirely.
+
+[2m     L37:  [22m  })
+[2m     L38:  [22m  @Prop() [41mi[49m[41md[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-description/psk-description.tsx[39m[2m:[22m[33m16[39m[2m:[22m[33m10[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L15:  [22m	})
+[2m     L16:  [22m	@Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-details/psk-details.tsx[39m[2m:[22m[33m27[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L26:  [22m  })
+[2m     L27:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = '';
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-example/psk-example.tsx[39m[2m:[22m[33m18[39m[2m:[22m[33m10[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L17:  [22m	})
+[2m     L18:  [22m	@Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-highlight/psk-highlight.tsx[39m[2m:[22m[33m19[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L18:  [22m    })
+[2m     L19:  [22m    @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-img/psk-img.tsx[39m[2m:[22m[33m40[39m[2m:[22m[33m10[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L39:  [22m	})
+[2m     L40:  [22m	@Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string;
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-mobile/psk-mobile.tsx[39m[2m:[22m[33m28[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L27:  [22m  })
+[2m     L28:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = '';
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-page/psk-page.tsx[39m[2m:[22m[33m31[39m[2m:[22m[33m24[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L30:  [22m})
+[2m     L31:  [22m@Prop({reflect:true}) [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+[2m     L32:  [22m @TableOfContentProperty({
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-slideshow/psk-slideshow.tsx[39m[2m:[22m[33m27[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L26:  [22m  })
+[2m     L27:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string;
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-switch-button/psk-switch-button.tsx[39m[2m:[22m[33m55[39m[2m:[22m[33m10[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L54:  [22m	})
+[2m     L55:  [22m	@Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string | null;
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-tabs/psk-tab/psk-tab.tsx[39m[2m:[22m[33m22[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L21:  [22m  })
+[2m     L22:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string;
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-toc/psk-toc.tsx[39m[2m:[22m[33m18[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L17:  [22m})
+[2m     L18:  [22m@Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string;
+[2m     L19:  [22m@State() pskPageElement: HTMLElement;
+
+[2m[44:44.1][22m  [1m[32mbuild finished[39m[22m [2min 33.86 s[22m
+
+[Octopus] Running tasks for: [1] webcardinal
+Running command git clone --depth=1 --branch=master https://github.com/webcardinal/webcardinal-bundler "/gov-workspace/webcardinal"
+taskIndex: 1 actionIndex: 0 result: "Finished clone action on dependency webcardinal"
+Running command: cd webcardinal && npm install && npm run bundle-all && npm run build
+added 1 package and audited 1 package in 1.51s
+found 0 vulnerabilities
+
+
+> webcardinal-bundler@1.0.0 bundle-all /gov-workspace/webcardinal
+> node node_modules/octopus/scripts/run bundle-all
+
+Looking for configuration file at path /gov-workspace/webcardinal/octopus.json
+Action buildWebCardinalComponents was registered.
+[Octopus] Start checking bundle-all...
+[Octopus] Found 5 bundle-all...
+[Octopus] Running tasks for: [0] clone-webcardinal-dependencies
+Running command git clone --depth=1 --branch=master https://github.com/webcardinal/cardinal-internals "/gov-workspace/webcardinal/.webcardinal/dependencies/cardinal-internals"
+taskIndex: 0 actionIndex: 0 result: "Finished clone action on dependency clone-webcardinal-dependencies"
+Running command git clone --depth=1 --branch=master https://github.com/webcardinal/webcardinal-internals "/gov-workspace/webcardinal/.webcardinal/dependencies/webcardinal-internals"
+taskIndex: 0 actionIndex: 1 result: "Finished clone action on dependency clone-webcardinal-dependencies"
+[Octopus] Running tasks for: [1] clone-webcardinal-components
+Running command git clone --depth=1 --branch=master https://github.com/webcardinal/webcardinal-core "/gov-workspace/webcardinal/.webcardinal/components/webcardinal-core"
+taskIndex: 1 actionIndex: 0 result: "Finished clone action on dependency clone-webcardinal-components"
+Running command git clone --depth=1 --branch=master https://github.com/webcardinal/cardinal-core "/gov-workspace/webcardinal/.webcardinal/components/cardinal-core"
+taskIndex: 1 actionIndex: 1 result: "Finished clone action on dependency clone-webcardinal-components"
+Running command git clone --depth=1 --branch=master https://github.com/webcardinal/cardinal-essentials "/gov-workspace/webcardinal/.webcardinal/components/cardinal-essentials"
+taskIndex: 1 actionIndex: 2 result: "Finished clone action on dependency clone-webcardinal-components"
+Running command git clone --depth=1 --branch=master https://github.com/webcardinal/cardinal-forms "/gov-workspace/webcardinal/.webcardinal/components/cardinal-forms"
+taskIndex: 1 actionIndex: 3 result: "Finished clone action on dependency clone-webcardinal-components"
+Running command git clone --depth=1 --branch=master https://github.com/webcardinal/cardinal-wiki "/gov-workspace/webcardinal/.webcardinal/components/cardinal-wiki"
+taskIndex: 1 actionIndex: 4 result: "Finished clone action on dependency clone-webcardinal-components"
+Running command git clone --depth=1 --branch=master https://github.com/webcardinal/cardinal-barcode "/gov-workspace/webcardinal/.webcardinal/components/cardinal-barcode"
+taskIndex: 1 actionIndex: 5 result: "Finished clone action on dependency clone-webcardinal-components"
+[Octopus] Running tasks for: [2] install-webcardinal-dependencies
+Running command: cd ./.webcardinal/dependencies/cardinal-internals && npm install
+added 1 package from 1 contributor and audited 1 package in 0.6s
+found 0 vulnerabilities
+
+Running command: cd ./.webcardinal/dependencies/webcardinal-internals && npm install
+up to date in 0.332s
+found 0 vulnerabilities
+
+[Octopus] Running tasks for: [3] build-webcardinal-dependencies
+Running command: cd ./.webcardinal/dependencies/cardinal-internals && npm run build
+
+> @cardinal/internals@1.0.0 build /gov-workspace/webcardinal/.webcardinal/dependencies/cardinal-internals
+> stencil build --prod
+
+[91m
+Your current version of Node is v12.21.0, however Stencil's recommendation is v14.5.0 or greater. Note that future versions of Stencil will eventually remove support for non-LTS Node versions and an Active LTS version is recommended (https://nodejs.org/en/about/releases/).
+
+[0m[2m[44:54.6][22m  [36m@stencil/core[39m
+[2m[44:54.8][22m  [36mv2.3.0[39m ⛵️
+[2m[44:56.8][22m  build, webcardinal, prod mode, started [2m...[22m
+[2m[44:56.8][22m  transpile started [2m...[22m
+[2m[44:59.0][22m  transpile finished [2min 2.20 s[22m
+[2m[44:59.0][22m  copy started [2m...[22m
+[2m[44:59.0][22m  generate lazy started [2m...[22m
+[2m[44:59.3][22m  copy finished (0 files) [2min 310 ms[22m
+[2m[45:00.9][22m  generate lazy finished [2min 1.91 s[22m
+[2m[45:01.0][22m  [1m[32mbuild finished[39m[22m [2min 4.17 s[22m
+
+[Octopus] Running tasks for: [4] install-webcardinal-components
+Running command: cd ./.webcardinal/components/webcardinal-core && npm install --save-dev ../../dependencies/webcardinal-internals && npm install
++ @webcardinal/internals@1.0.0
+added 225 packages from 173 contributors and audited 225 packages in 5.947s
+
+45 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[91mnpm[0m[91m [0m[91mWARN[0m[91m @stencil/eslint-plugin@0.3.1 requires a peer of @typescript-eslint/parser@^2.23.0 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm [0m[91mWARN @stencil/eslint-plugin@0.3.1 requires a peer of @typescript-eslint/eslint-plugin@^2.23.0 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm WARN[0m[91m @stencil/eslint-plugin@0.3.1 requires a peer of eslint-plugin-react@^7.16.0 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm WARN @stencil/eslint-plugin@0.3.1 requires a peer of eslint@^6.0.0 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm WARN[0m[91m @stencil/eslint-plugin@0.3.1 requires a peer of typescript@^3.8.0 but none is installed. You must install peer dependencies yourself.
+[0m[91m
+[0maudited 225 packages in 1.572s
+
+45 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Running command: cd ./.webcardinal/components/cardinal-core && npm install --save-dev ../../dependencies/webcardinal-internals ../../dependencies/cardinal-internals && npm install
++ @webcardinal/internals@1.0.0
++ @cardinal/internals@1.0.0
+added 5 packages from 1 contributor and audited 5 packages in 0.502s
+found 0 vulnerabilities
+
+audited 5 packages in 0.846s
+found 0 vulnerabilities
+
+Running command: cd ./.webcardinal/components/cardinal-essentials && npm install --save-dev ../../dependencies/webcardinal-internals ../../dependencies/cardinal-internals && npm install
++ @webcardinal/internals@1.0.0
++ @cardinal/internals@1.0.0
+added 5 packages from 1 contributor and audited 5 packages in 0.822s
+found 0 vulnerabilities
+
+audited 5 packages in 0.358s
+found 0 vulnerabilities
+
+Running command: cd ./.webcardinal/components/cardinal-forms && npm install --save-dev ../../dependencies/webcardinal-internals ../../dependencies/cardinal-internals && npm install
++ @webcardinal/internals@1.0.0
++ @cardinal/internals@1.0.0
+added 5 packages from 1 contributor and audited 5 packages in 0.527s
+found 0 vulnerabilities
+
+audited 5 packages in 0.371s
+found 0 vulnerabilities
+
+Running command: cd ./.webcardinal/components/cardinal-wiki && npm install --save-dev ../../dependencies/webcardinal-internals ../../dependencies/cardinal-internals && npm install
++ @webcardinal/internals@1.0.0
++ @cardinal/internals@1.0.0
+added 9 packages from 3 contributors and audited 9 packages in 0.799s
+found 1 high severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+audited 9 packages in 0.378s
+found 1 high severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+Running command: cd ./.webcardinal/components/cardinal-barcode && npm install --save-dev ../../dependencies/webcardinal-internals ../../dependencies/cardinal-internals && npm install
++ @webcardinal/internals@1.0.0
++ @cardinal/internals@1.0.0
+added 3 packages from 1 contributor and audited 3 packages in 0.406s
+found 0 vulnerabilities
+
+audited 3 packages in 0.331s
+found 0 vulnerabilities
+
+Finishing checking tasks...
+
+> webcardinal-bundler@1.0.0 build /gov-workspace/webcardinal
+> node node_modules/octopus/scripts/run build-webcardinal
+
+Looking for configuration file at path /gov-workspace/webcardinal/octopus.json
+Action buildWebCardinalComponents was registered.
+[Octopus] Start checking build-webcardinal...
+[Octopus] Found 1 build-webcardinal...
+[Octopus] Running tasks for: [0] build-webcardinal-components
+[Octopus] Start checking dependencies...
+[Octopus] Found 6 dependencies...
+[Octopus] Running tasks for: [0] build-webcardinal-component_webcardinal-core
+Running command: cd .webcardinal/components/webcardinal-core && npm run build
+
+> @webcardinal/core@1.0.0 build /gov-workspace/webcardinal/.webcardinal/components/webcardinal-core
+> stencil build --prod
+
+[91m
+Your current version of Node is v12.21.0, however Stencil's recommendation is v14.5.0 or greater. Note that future versions of Stencil will eventually remove support for non-LTS Node versions and an Active LTS version is recommended (https://nodejs.org/en/about/releases/).
+
+[0m[2m[45:19.9][22m  [36m@stencil/core[39m
+[2m[45:20.2][22m  [36mv2.3.0[39m ⛵️
+[2m[45:23.3][22m  build, webcardinal, prod mode, started [2m...[22m
+[2m[45:23.3][22m  transpile started [2m...[22m
+[2m[45:28.1][22m  transpile finished [2min 4.81 s[22m
+[2m[45:28.1][22m  copy started [2m...[22m
+[2m[45:28.1][22m  generate lazy started [2m...[22m
+[2m[45:28.6][22m  copy finished (0 files) [2min 517 ms[22m
+[2m[45:35.8][22m  generate lazy finished [2min 7.68 s[22m
+[2m[45:35.8][22m  created readme docs: webc-app-container
+[2m[45:35.8][22m  created readme docs: webc-app-error-toast
+[2m[45:35.8][22m  created readme docs: webc-app-identity
+[2m[45:35.8][22m  created readme docs: webc-app-loader
+[2m[45:35.8][22m  created readme docs: webc-app-menu
+[2m[45:35.8][22m  created readme docs: webc-app-menu-item
+[2m[45:35.8][22m  created readme docs: webc-app-redirect
+[2m[45:35.8][22m  created readme docs: webc-app-root
+[2m[45:35.8][22m  created readme docs: webc-app-router
+[2m[45:35.8][22m  created readme docs: webc-component
+[2m[45:35.8][22m  created readme docs: webc-container
+[2m[45:35.8][22m  created readme docs: webc-docs
+[2m[45:35.8][22m  created readme docs: webc-link
+[2m[45:35.8][22m  created readme docs: webc-modal
+[2m[45:35.8][22m  created readme docs: webc-skin
+[2m[45:35.8][22m  created readme docs: webc-spinner
+[2m[45:35.8][22m  created readme docs: webc-template
+[2m[45:35.9][22m  [1m[32mbuild finished[39m[22m [2min 12.62 s[22m
+
+[Octopus] Running tasks for: [1] build-webcardinal-component_cardinal-core
+Running command: cd .webcardinal/components/cardinal-core && npm run build
+
+> @cardinal/core@1.0.0 build /gov-workspace/webcardinal/.webcardinal/components/cardinal-core
+> stencil build --prod
+
+[91m
+Your current version of Node is v12.21.0, however Stencil's recommendation is v14.5.0 or greater. Note that future versions of Stencil will eventually remove support for non-LTS Node versions and an Active LTS version is recommended (https://nodejs.org/en/about/releases/).
+
+[0m[2m[45:36.3][22m  [36m@stencil/core[39m
+[2m[45:36.6][22m  [36mv2.3.0[39m ⛵️
+[2m[45:38.7][22m  build, webcardinal, prod mode, started [2m...[22m
+[2m[45:38.7][22m  transpile started [2m...[22m
+[2m[45:42.3][22m  transpile finished [2min 3.55 s[22m
+[2m[45:42.3][22m  copy started [2m...[22m
+[2m[45:42.3][22m  generate lazy started [2m...[22m
+[2m[45:42.7][22m  copy finished (6 files) [2min 421 ms[22m
+[2m[45:48.7][22m  generate lazy finished [2min 6.40 s[22m
+[2m[45:48.7][22m  created readme docs: dropdown-renderer
+[2m[45:48.7][22m  created readme docs: event-expandable-renderer
+[2m[45:48.7][22m  created readme docs: expandable-renderer
+[2m[45:48.7][22m  created readme docs: mobile-profile-renderer
+[2m[45:48.7][22m  created readme docs: psk-app-menu
+[2m[45:48.7][22m  created readme docs: psk-app-root
+[2m[45:48.7][22m  created readme docs: psk-app-router
+[2m[45:48.7][22m  created readme docs: psk-button
+[2m[45:48.7][22m  created readme docs: psk-button-link
+[2m[45:48.7][22m  created readme docs: psk-default-renderer
+[2m[45:48.7][22m  created readme docs: psk-link
+[2m[45:48.7][22m  created readme docs: psk-menu-item-renderer
+[2m[45:48.7][22m  created readme docs: psk-mobile
+[2m[45:48.7][22m  created readme docs: psk-page-loader
+[2m[45:48.7][22m  created readme docs: psk-page-not-found
+[2m[45:48.7][22m  created readme docs: psk-page-not-found-renderer
+[2m[45:48.7][22m  created readme docs: psk-route-redirect
+[2m[45:48.7][22m  created readme docs: psk-ssapp
+[2m[45:48.7][22m  created readme docs: psk-ui-loader
+[2m[45:48.7][22m  created readme docs: psk-user-profile
+[2m[45:48.7][22m  created readme docs: psk-user-profile-renderer
+[2m[45:48.7][22m  created readme docs: query-page-link
+[2m[45:48.7][22m  created readme docs: query-pages-router
+[2m[45:48.7][22m  created readme docs: sidebar-renderer
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-mobile/psk-mobile.tsx[39m[2m:[22m[33m26[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L25:  [22m  })
+[2m     L26:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = '';
+
+[2m[45:48.8][22m  [1m[32mbuild finished[39m[22m [2min 10.08 s[22m
+
+[Octopus] Running tasks for: [2] build-webcardinal-component_cardinal-barcode
+Running command: cd .webcardinal/components/cardinal-barcode && npm run build
+
+> @cardinal/barcode@1.0.0 build /gov-workspace/webcardinal/.webcardinal/components/cardinal-barcode
+> stencil build --prod
+
+[91m
+Your current version of Node is v12.21.0, however Stencil's recommendation is v14.5.0 or greater. Note that future versions of Stencil will eventually remove support for non-LTS Node versions and an Active LTS version is recommended (https://nodejs.org/en/about/releases/).
+
+[0m[2m[45:49.2][22m  [36m@stencil/core[39m
+[2m[45:49.5][22m  [36mv2.3.0[39m ⛵️
+[2m[45:51.4][22m  build, webcardinal, prod mode, started [2m...[22m
+[2m[45:51.4][22m  transpile started [2m...[22m
+[2m[45:53.5][22m  transpile finished [2min 2.13 s[22m
+[2m[45:53.5][22m  copy started [2m...[22m
+[2m[45:53.5][22m  generate lazy started [2m...[22m
+[2m[45:53.9][22m  copy finished (4 files) [2min 355 ms[22m
+[2m[46:09.5][22m  generate lazy finished [2min 15.99 s[22m
+[2m[46:09.5][22m  created readme docs: psk-barcode-generator
+[2m[46:09.5][22m  created readme docs: psk-barcode-scanner
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-barcode-generator/psk-barcode-generator.tsx[39m[2m:[22m[33m36[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L35:  [22m  })
+[2m     L36:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-barcode-scanner/psk-barcode-scanner.tsx[39m[2m:[22m[33m38[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L37:  [22m  })
+[2m     L38:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = '';
+
+[2m[46:09.5][22m  [1m[32mbuild finished[39m[22m [2min 18.16 s[22m
+
+[Octopus] Running tasks for: [3] build-webcardinal-component_cardinal-essentials
+Running command: cd .webcardinal/components/cardinal-essentials && npm run build
+
+> @cardinal/essentials@1.0.0 build /gov-workspace/webcardinal/.webcardinal/components/cardinal-essentials
+> stencil build --prod
+
+[91m
+Your current version of Node is v12.21.0, however Stencil's recommendation is v14.5.0 or greater. Note that future versions of Stencil will eventually remove support for non-LTS Node versions and an Active LTS version is recommended (https://nodejs.org/en/about/releases/).
+
+[0m[2m[46:10.0][22m  [36m@stencil/core[39m
+[2m[46:10.2][22m  [36mv2.3.0[39m ⛵️
+[2m[46:12.6][22m  build, webcardinal, prod mode, started [2m...[22m
+[2m[46:12.6][22m  transpile started [2m...[22m
+[2m[46:16.9][22m  transpile finished [2min 4.27 s[22m
+[2m[46:16.9][22m  copy started [2m...[22m
+[2m[46:16.9][22m  generate lazy started [2m...[22m
+[2m[46:17.3][22m  copy finished (4 files) [2min 464 ms[22m
+[2m[46:25.0][22m  generate lazy finished [2min 8.13 s[22m
+[2m[46:25.0][22m  created readme docs: psk-accordion
+[2m[46:25.0][22m  created readme docs: psk-accordion-item
+[2m[46:25.0][22m  created readme docs: psk-attachments-list
+[2m[46:25.0][22m  created readme docs: psk-breadcrumb-navigator
+[2m[46:25.0][22m  created readme docs: psk-button-group
+[2m[46:25.0][22m  created readme docs: psk-card
+[2m[46:25.0][22m  created readme docs: psk-condition
+[2m[46:25.0][22m  created readme docs: psk-container
+[2m[46:25.0][22m  created readme docs: psk-copy-clipboard
+[2m[46:25.0][22m  created readme docs: psk-date
+[2m[46:25.0][22m  created readme docs: psk-details
+[2m[46:25.0][22m  created readme docs: psk-draggable-list
+[2m[46:25.0][22m  created readme docs: psk-echo
+[2m[46:25.0][22m  created readme docs: psk-files-chooser
+[2m[46:25.0][22m  created readme docs: psk-floating-menu
+[2m[46:25.0][22m  created readme docs: psk-for-each
+[2m[46:25.0][22m  created readme docs: psk-grid
+[2m[46:25.0][22m  created readme docs: psk-highlight
+[2m[46:25.0][22m  created readme docs: psk-icon
+[2m[46:25.0][22m  created readme docs: psk-icon-chooser
+[2m[46:25.0][22m  created readme docs: psk-img
+[2m[46:25.0][22m  created readme docs: psk-layout
+[2m[46:25.0][22m  created readme docs: psk-layout-item
+[2m[46:25.0][22m  created readme docs: psk-list
+[2m[46:25.0][22m  created readme docs: psk-list-feedbacks
+[2m[46:25.0][22m  created readme docs: psk-load-placeholder
+[2m[46:25.0][22m  created readme docs: psk-modal
+[2m[46:25.0][22m  created readme docs: psk-pin-popup
+[2m[46:25.0][22m  created readme docs: psk-progress
+[2m[46:25.0][22m  created readme docs: psk-slideshow
+[2m[46:25.0][22m  created readme docs: psk-stepper
+[2m[46:25.0][22m  created readme docs: psk-stepper-renderer
+[2m[46:25.0][22m  created readme docs: psk-style
+[2m[46:25.0][22m  created readme docs: psk-switch-button
+[2m[46:25.0][22m  created readme docs: psk-tab
+[2m[46:25.0][22m  created readme docs: psk-tab-navigator
+[2m[46:25.0][22m  created readme docs: psk-toolbar
+[2m[46:25.0][22m  created readme docs: psk-ui-alert
+[2m[46:25.0][22m  created readme docs: psk-ui-toast
+[2m[46:25.0][22m  created readme docs: psk-wizard
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-accordion/psk-accordion-item/psk-accordion-item.tsx[39m[2m:[22m[33m26[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L25:  [22m  })
+[2m     L26:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = '';
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-card/psk-card.tsx[39m[2m:[22m[33m19[39m[2m:[22m[33m24[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L18:  [22m	})
+[2m     L19:  [22m	@Prop({reflect:true}) [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-card/psk-card.tsx[39m[2m:[22m[33m28[39m[2m:[22m[33m10[39m
+           The @Prop() name "id" is a reserved public name. Please rename the
+           "id" prop so it does not conflict with an existing standardized
+           prototype member. Reusing prop names that are already defined on the
+           element's prototype may cause unexpected runtime errors or
+           user-interface issues on various browsers, so it's best to avoid
+           them entirely.
+
+[2m     L27:  [22m	})
+[2m     L28:  [22m	@Prop() [41mi[49m[41md[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-copy-clipboard/psk-copy-clipboard.tsx[39m[2m:[22m[33m36[39m[2m:[22m[33m11[39m
+           The @Prop() name "id" is a reserved public name. Please rename the
+           "id" prop so it does not conflict with an existing standardized
+           prototype member. Reusing prop names that are already defined on the
+           element's prototype may cause unexpected runtime errors or
+           user-interface issues on various browsers, so it's best to avoid
+           them entirely.
+
+[2m     L35:  [22m  })
+[2m     L36:  [22m  @Prop() [41mi[49m[41md[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-details/psk-details.tsx[39m[2m:[22m[33m23[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L22:  [22m  })
+[2m     L23:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = '';
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-highlight/psk-highlight.tsx[39m[2m:[22m[33m19[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L18:  [22m    })
+[2m     L19:  [22m    @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-img/psk-img.tsx[39m[2m:[22m[33m40[39m[2m:[22m[33m10[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L39:  [22m	})
+[2m     L40:  [22m	@Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string;
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-slideshow/psk-slideshow.tsx[39m[2m:[22m[33m26[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L25:  [22m  })
+[2m     L26:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string;
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-switch-button/psk-switch-button.tsx[39m[2m:[22m[33m53[39m[2m:[22m[33m10[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L52:  [22m	})
+[2m     L53:  [22m	@Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string | null;
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-tabs/psk-tab/psk-tab.tsx[39m[2m:[22m[33m23[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L22:  [22m  })
+[2m     L23:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string;
+
+[2m[46:25.2][22m  [1m[32mbuild finished[39m[22m [2min 12.60 s[22m
+
+[Octopus] Running tasks for: [4] build-webcardinal-component_cardinal-forms
+Running command: cd .webcardinal/components/cardinal-forms && npm run build
+
+> @cardinal/forms@1.0.0 build /gov-workspace/webcardinal/.webcardinal/components/cardinal-forms
+> stencil build --prod
+
+[91m
+Your current version of Node is v12.21.0, however Stencil's recommendation is v14.5.0 or greater. Note that future versions of Stencil will eventually remove support for non-LTS Node versions and an Active LTS version is recommended (https://nodejs.org/en/about/releases/).
+
+[0m[2m[46:25.7][22m  [36m@stencil/core[39m
+[2m[46:25.9][22m  [36mv2.3.0[39m ⛵️
+[2m[46:28.0][22m  build, webcardinal, prod mode, started [2m...[22m
+[2m[46:28.0][22m  transpile started [2m...[22m
+[2m[46:30.9][22m  transpile finished [2min 2.92 s[22m
+[2m[46:30.9][22m  copy started [2m...[22m
+[2m[46:30.9][22m  generate lazy started [2m...[22m
+[2m[46:31.3][22m  copy finished (1 file) [2min 357 ms[22m
+[2m[46:36.1][22m  generate lazy finished [2min 5.19 s[22m
+[2m[46:36.1][22m  created readme docs: psk-checkbox
+[2m[46:36.1][22m  created readme docs: psk-date-input
+[2m[46:36.1][22m  created readme docs: psk-email-input
+[2m[46:36.1][22m  created readme docs: psk-form
+[2m[46:36.1][22m  created readme docs: psk-form-row
+[2m[46:36.1][22m  created readme docs: psk-img-input
+[2m[46:36.1][22m  created readme docs: psk-input
+[2m[46:36.1][22m  created readme docs: psk-label
+[2m[46:36.1][22m  created readme docs: psk-number-input
+[2m[46:36.1][22m  created readme docs: psk-password-input
+[2m[46:36.1][22m  created readme docs: psk-radio
+[2m[46:36.1][22m  created readme docs: psk-radio-group
+[2m[46:36.1][22m  created readme docs: psk-select
+[2m[46:36.1][22m  created readme docs: psk-text-input
+[2m[46:36.1][22m  created readme docs: psk-textarea
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-radio/psk-radio.tsx[39m[2m:[22m[33m100[39m[2m:[22m[33m8[39m
+           Events decorated with @Event() should describe the actual DOM event
+           name, not the handler. In other words "onChangeRadio" would be
+           better named as "changeRadio".
+
+[2m     L99:  [22m        cancelable: true
+[2m    L100:  [22m    }) [41mo[49m[41mn[49m[41mC[49m[41mh[49m[41ma[49m[41mn[49m[41mg[49m[41me[49m[41mR[49m[41ma[49m[41md[49m[41mi[49m[41mo[49m: EventEmitter;
+[2m    L101:  [22m}
+
+[2m[46:36.2][22m  [1m[32mbuild finished[39m[22m [2min 8.21 s[22m
+
+[Octopus] Running tasks for: [5] build-webcardinal-component_cardinal-wiki
+Running command: cd .webcardinal/components/cardinal-wiki && npm run build
+
+> @cardinal/wiki@1.0.0 build /gov-workspace/webcardinal/.webcardinal/components/cardinal-wiki
+> stencil build --prod
+
+[91m
+Your current version of Node is v12.21.0, however Stencil's recommendation is v14.5.0 or greater. Note that future versions of Stencil will eventually remove support for non-LTS Node versions and an Active LTS version is recommended (https://nodejs.org/en/about/releases/).
+
+[0m[2m[46:36.6][22m  [36m@stencil/core[39m
+[2m[46:36.9][22m  [36mv2.3.0[39m ⛵️
+[2m[46:38.9][22m  build, webcardinal, prod mode, started [2m...[22m
+[2m[46:39.0][22m  transpile started [2m...[22m
+[2m[46:41.6][22m  transpile finished [2min 2.60 s[22m
+[2m[46:41.6][22m  copy started [2m...[22m
+[2m[46:41.6][22m  generate lazy started [2m...[22m
+[2m[46:41.9][22m  copy finished (2 files) [2min 342 ms[22m
+[2m[46:46.5][22m  generate lazy finished [2min 4.89 s[22m
+[2m[46:46.5][22m  created readme docs: psk-chapter
+[2m[46:46.5][22m  created readme docs: psk-chapter-wrapper
+[2m[46:46.5][22m  created readme docs: psk-code
+[2m[46:46.5][22m  created readme docs: psk-controller-descriptor
+[2m[46:46.5][22m  created readme docs: psk-description
+[2m[46:46.5][22m  created readme docs: psk-event-descriptor
+[2m[46:46.5][22m  created readme docs: psk-example
+[2m[46:46.5][22m  created readme docs: psk-live-code
+[2m[46:46.5][22m  created readme docs: psk-page
+[2m[46:46.5][22m  created readme docs: psk-property-descriptor
+[2m[46:46.5][22m  created readme docs: psk-table
+[2m[46:46.5][22m  created readme docs: psk-toc
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/pages-components/psk-controller-descriptor.tsx[39m[2m:[22m[33m15[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L15:  [22m    @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/pages-components/psk-event-descriptor.tsx[39m[2m:[22m[33m14[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L14:  [22m    @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/pages-components/psk-property-descriptor.tsx[39m[2m:[22m[33m14[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L14:  [22m    @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = '';
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-chapter/psk-chapter-wrapper.tsx[39m[2m:[22m[33m13[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L13:  [22m    @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string;
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-chapter/psk-chapter.tsx[39m[2m:[22m[33m20[39m[2m:[22m[33m27[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L19:  [22m	})
+[2m     L20:  [22m	@Prop({ reflect: true }) [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-code/psk-code.tsx[39m[2m:[22m[33m23[39m[2m:[22m[33m11[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L22:  [22m  })
+[2m     L23:  [22m  @Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-description/psk-description.tsx[39m[2m:[22m[33m17[39m[2m:[22m[33m10[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L16:  [22m	})
+[2m     L17:  [22m	@Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-example/psk-example.tsx[39m[2m:[22m[33m22[39m[2m:[22m[33m10[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L21:  [22m	})
+[2m     L22:  [22m	@Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-page/psk-page.tsx[39m[2m:[22m[33m26[39m[2m:[22m[33m24[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L25:  [22m})
+[2m     L26:  [22m@Prop({reflect:true}) [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string = "";
+[2m     L27:  [22m @TableOfContentProperty({
+
+[1m[33m[ WARN  ][39m[22m  Build Warn: [36m./src/components/psk-toc/psk-toc.tsx[39m[2m:[22m[33m19[39m[2m:[22m[33m13[39m
+           The @Prop() name "title" is a reserved public name. Please rename
+           the "title" prop so it does not conflict with an existing
+           standardized prototype member. Reusing prop names that are already
+           defined on the element's prototype may cause unexpected runtime
+           errors or user-interface issues on various browsers, so it's best to
+           avoid them entirely.
+
+[2m     L18:  [22m})
+[2m     L19:  [22m@Prop() [41mt[49m[41mi[49m[41mt[49m[41ml[49m[41me[49m: string;
+[2m     L20:  [22m@State() pskPageElement: HTMLElement;
+
+[2m[46:46.5][22m  [1m[32mbuild finished[39m[22m [2min 7.60 s[22m
+
+[Octopus] Finishing checking tasks... 
+
+[Octopus] Start checking dependencies...
+[Octopus] Found 6 dependencies...
+[Octopus] Running tasks for: [0] copy-webcardinal-component_cardinal-barcode
+Start copying .webcardinal/components/cardinal-barcode/build/dist/webcardinal to folder webcardinal/components/cardinal-barcode
+Start copying .webcardinal/components/cardinal-barcode/extended to folder webcardinal/extended/cardinal-barcode
+[Octopus] Running tasks for: [1] copy-webcardinal-component_cardinal-core
+Start copying .webcardinal/components/cardinal-core/build/dist/webcardinal to folder webcardinal/components/cardinal-core
+[Octopus] Running tasks for: [2] copy-webcardinal-component_cardinal-essentials
+Start copying .webcardinal/components/cardinal-essentials/build/dist/webcardinal to folder webcardinal/components/cardinal-essentials
+[Octopus] Running tasks for: [3] copy-webcardinal-component_cardinal-forms
+Start copying .webcardinal/components/cardinal-forms/build/dist/webcardinal to folder webcardinal/components/cardinal-forms
+[Octopus] Running tasks for: [4] copy-webcardinal-component_cardinal-wiki
+Start copying .webcardinal/components/cardinal-wiki/build/dist/webcardinal to folder webcardinal/components/cardinal-wiki
+[Octopus] Running tasks for: [5] copy-webcardinal-component_webcardinal-core
+Start copying .webcardinal/components/webcardinal-core/build/dist/webcardinal to folder webcardinal/components/webcardinal-core
+Start copying .webcardinal/components/webcardinal-core/base to folder webcardinal/base
+[Octopus] Finishing checking tasks... 
+
+[WebCardinal] buildWebCardinalComponents command finished.
+[Octopus] Finishing checking tasks... 
+
+[Octopus] Running tasks for: [2] privatesky
+Running command git clone --depth=1 --branch=master http://github.com/privatesky/privatesky.git "/gov-workspace/privatesky"
+taskIndex: 2 actionIndex: 0 result: "Finished clone action on dependency privatesky"
+Running command: cd privatesky && npm install
+[91mnpm WARN deprecated querystring@0.2.0: The
+[0m
+> PrivateSky@0.5.0 postinstall /gov-workspace/privatesky
+> node ./node_modules/octopus/scripts/setEnv --file=../../../env.json "node ./node_modules/octopus/scripts/run"
+
+Running in STABLE (FREEZED) mode
+Environment updated accordingly to env file passed as argument.
+Preparing to execute cmd node ./node_modules/octopus/scripts/run
+Looking for configuration file at path /gov-workspace/privatesky/octopus.json
+Action buildWebCardinalComponents was registered.
+Setting a default action "smartClone" on "bar" task/dependency
+Setting a default action "smartClone" on "bar-fs-adapter" task/dependency
+Setting a default action "smartClone" on "blockchain" task/dependency
+Setting a default action "smartClone" on "buffer-crc32" task/dependency
+Setting a default action "smartClone" on "callflow" task/dependency
+Setting a default action "smartClone" on "choreo" task/dependency
+Setting a default action "smartClone" on "dsu-wizard" task/dependency
+Setting a default action "smartClone" on "dossier" task/dependency
+Setting a default action "smartClone" on "double-check" task/dependency
+Setting a default action "smartClone" on "key-ssi-resolver" task/dependency
+Setting a default action "smartClone" on "node-fd-slicer" task/dependency
+Setting a default action "smartClone" on "opendsu" task/dependency
+Setting a default action "smartClone" on "overwrite-require" task/dependency
+Setting a default action "smartClone" on "psk-bindable-model" task/dependency
+Setting a default action "smartClone" on "pskbuffer" task/dependency
+Setting a default action "smartClone" on "pskcrypto" task/dependency
+Setting a default action "smartClone" on "pskdb" task/dependency
+Setting a default action "smartClone" on "psk-http-client" task/dependency
+Setting a default action "smartClone" on "pskisolates" task/dependency
+Setting a default action "smartClone" on "psklogger" task/dependency
+Setting a default action "smartClone" on "psk-cache" task/dependency
+Setting a default action "smartClone" on "psk-security-context" task/dependency
+Setting a default action "smartClone" on "pskwallet" task/dependency
+Setting a default action "smartClone" on "queue" task/dependency
+Setting a default action "smartClone" on "soundpubsub" task/dependency
+Setting a default action "smartClone" on "ssapp-middleware" task/dependency
+Setting a default action "smartClone" on "swarm-engine" task/dependency
+Setting a default action "smartClone" on "swarmutils" task/dependency
+Setting a default action "smartClone" on "syndicate" task/dependency
+Setting a default action "smartClone" on "apihub" task/dependency
+Setting a default action "smartClone" on "apihub-contracts" task/dependency
+Setting a default action "smartClone" on "whys" task/dependency
+Setting a default action "smartClone" on "zmq_adapter" task/dependency
+Setting a default action "smartClone" on "psk-dbf" task/dependency
+Setting a default action "smartClone" on "bricksledger" task/dependency
+[Octopus] Start checking dependencies...
+[Octopus] Found 38 dependencies...
+[Octopus] Running tasks for: [0] bar
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/bar.git "/gov-workspace/privatesky/modules/bar"
+taskIndex: 0 actionIndex: 0 result: "Finished clone action on dependency bar"
+[Octopus] Running tasks for: [1] bar-fs-adapter
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/bar-fs-adapter.git "/gov-workspace/privatesky/modules/bar-fs-adapter"
+taskIndex: 1 actionIndex: 0 result: "Finished clone action on dependency bar-fs-adapter"
+[Octopus] Running tasks for: [2] blockchain
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/blockchain.git "/gov-workspace/privatesky/modules/blockchain"
+taskIndex: 2 actionIndex: 0 result: "Finished clone action on dependency blockchain"
+[Octopus] Running tasks for: [3] buffer-crc32
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/buffer-crc32.git "/gov-workspace/privatesky/modules/buffer-crc32"
+taskIndex: 3 actionIndex: 0 result: "Finished clone action on dependency buffer-crc32"
+[Octopus] Running tasks for: [4] callflow
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/callflow.git "/gov-workspace/privatesky/modules/callflow"
+taskIndex: 4 actionIndex: 0 result: "Finished clone action on dependency callflow"
+[Octopus] Running tasks for: [5] choreo
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/choreo.git "/gov-workspace/privatesky/modules/choreo"
+taskIndex: 5 actionIndex: 0 result: "Finished clone action on dependency choreo"
+[Octopus] Running tasks for: [6] dsu-wizard
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/dsu-wizard.git "/gov-workspace/privatesky/modules/dsu-wizard"
+taskIndex: 6 actionIndex: 0 result: "Finished clone action on dependency dsu-wizard"
+[Octopus] Running tasks for: [7] dossier
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/dossier.git "/gov-workspace/privatesky/modules/dossier"
+taskIndex: 7 actionIndex: 0 result: "Finished clone action on dependency dossier"
+[Octopus] Running tasks for: [8] double-check
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/double-check.git "/gov-workspace/privatesky/modules/double-check"
+taskIndex: 8 actionIndex: 0 result: "Finished clone action on dependency double-check"
+[Octopus] Running tasks for: [9] key-ssi-resolver
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/key-ssi-resolver.git "/gov-workspace/privatesky/modules/key-ssi-resolver"
+taskIndex: 9 actionIndex: 0 result: "Finished clone action on dependency key-ssi-resolver"
+[Octopus] Running tasks for: [10] node-fd-slicer
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/node-fd-slicer.git "/gov-workspace/privatesky/modules/node-fd-slicer"
+taskIndex: 10 actionIndex: 0 result: "Finished clone action on dependency node-fd-slicer"
+[Octopus] Running tasks for: [11] opendsu
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/opendsu.git "/gov-workspace/privatesky/modules/opendsu"
+taskIndex: 11 actionIndex: 0 result: "Finished clone action on dependency opendsu"
+[Octopus] Running tasks for: [12] overwrite-require
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/overwrite-require.git "/gov-workspace/privatesky/modules/overwrite-require"
+taskIndex: 12 actionIndex: 0 result: "Finished clone action on dependency overwrite-require"
+[Octopus] Running tasks for: [13] psk-bindable-model
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/psk-bindable-model.git "/gov-workspace/privatesky/modules/psk-bindable-model"
+taskIndex: 13 actionIndex: 0 result: "Finished clone action on dependency psk-bindable-model"
+[Octopus] Running tasks for: [14] pskbuffer
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/pskbuffer.git "/gov-workspace/privatesky/modules/pskbuffer"
+taskIndex: 14 actionIndex: 0 result: "Finished clone action on dependency pskbuffer"
+[Octopus] Running tasks for: [15] pskcrypto
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/pskcrypto.git "/gov-workspace/privatesky/modules/pskcrypto"
+taskIndex: 15 actionIndex: 0 result: "Finished clone action on dependency pskcrypto"
+[Octopus] Running tasks for: [16] pskdb
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/pskdb.git "/gov-workspace/privatesky/modules/pskdb"
+taskIndex: 16 actionIndex: 0 result: "Finished clone action on dependency pskdb"
+[Octopus] Running tasks for: [17] psk-http-client
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/psk-http-client.git "/gov-workspace/privatesky/modules/psk-http-client"
+taskIndex: 17 actionIndex: 0 result: "Finished clone action on dependency psk-http-client"
+[Octopus] Running tasks for: [18] pskisolates
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/pskisolates.git "/gov-workspace/privatesky/modules/pskisolates"
+taskIndex: 18 actionIndex: 0 result: "Finished clone action on dependency pskisolates"
+[Octopus] Running tasks for: [19] psklogger
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/psklogger.git "/gov-workspace/privatesky/modules/psklogger"
+taskIndex: 19 actionIndex: 0 result: "Finished clone action on dependency psklogger"
+[Octopus] Running tasks for: [20] psk-cache
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/psk-cache.git "/gov-workspace/privatesky/modules/psk-cache"
+taskIndex: 20 actionIndex: 0 result: "Finished clone action on dependency psk-cache"
+[Octopus] Running tasks for: [21] psk-security-context
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/psk-security-context.git "/gov-workspace/privatesky/modules/psk-security-context"
+taskIndex: 21 actionIndex: 0 result: "Finished clone action on dependency psk-security-context"
+[Octopus] Running tasks for: [22] pskwallet
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/pskwallet.git "/gov-workspace/privatesky/modules/pskwallet"
+taskIndex: 22 actionIndex: 0 result: "Finished clone action on dependency pskwallet"
+[Octopus] Running tasks for: [23] queue
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/queue.git "/gov-workspace/privatesky/modules/queue"
+taskIndex: 23 actionIndex: 0 result: "Finished clone action on dependency queue"
+[Octopus] Running tasks for: [24] soundpubsub
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/soundpubsub.git "/gov-workspace/privatesky/modules/soundpubsub"
+taskIndex: 24 actionIndex: 0 result: "Finished clone action on dependency soundpubsub"
+[Octopus] Running tasks for: [25] ssapp-middleware
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/ssapp-middleware.git "/gov-workspace/privatesky/modules/ssapp-middleware"
+taskIndex: 25 actionIndex: 0 result: "Finished clone action on dependency ssapp-middleware"
+[Octopus] Running tasks for: [26] swarm-engine
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/swarm-engine.git "/gov-workspace/privatesky/modules/swarm-engine"
+taskIndex: 26 actionIndex: 0 result: "Finished clone action on dependency swarm-engine"
+[Octopus] Running tasks for: [27] swarmutils
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/swarmutils.git "/gov-workspace/privatesky/modules/swarmutils"
+taskIndex: 27 actionIndex: 0 result: "Finished clone action on dependency swarmutils"
+[Octopus] Running tasks for: [28] syndicate
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/syndicate.git "/gov-workspace/privatesky/modules/syndicate"
+taskIndex: 28 actionIndex: 0 result: "Finished clone action on dependency syndicate"
+[Octopus] Running tasks for: [29] apihub
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/apihub.git "/gov-workspace/privatesky/modules/apihub"
+taskIndex: 29 actionIndex: 0 result: "Finished clone action on dependency apihub"
+[Octopus] Running tasks for: [30] apihub-contracts
+Running command git clone --depth=1 --branch=master https://github.com/PrivateSky/apihub-contracts.git "/gov-workspace/privatesky/modules/apihub-contracts"
+taskIndex: 30 actionIndex: 0 result: "Finished clone action on dependency apihub-contracts"
+[Octopus] Running tasks for: [31] whys
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/whys.git "/gov-workspace/privatesky/modules/whys"
+taskIndex: 31 actionIndex: 0 result: "Finished clone action on dependency whys"
+[Octopus] Running tasks for: [32] zmq_adapter
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/zmq_adapter.git "/gov-workspace/privatesky/modules/zmq_adapter"
+taskIndex: 32 actionIndex: 0 result: "Finished clone action on dependency zmq_adapter"
+[Octopus] Running tasks for: [33] psk-dbf
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/psk-dbf.git "/gov-workspace/privatesky/modules/psk-dbf"
+taskIndex: 33 actionIndex: 0 result: "Finished clone action on dependency psk-dbf"
+[Octopus] Running tasks for: [34] bricksledger
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/bricksledger.git "/gov-workspace/privatesky/modules/bricksledger"
+taskIndex: 34 actionIndex: 0 result: "Finished clone action on dependency bricksledger"
+[Octopus] Running tasks for: [35] psk-integration-testing
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/psk-integration-testing.git "/gov-workspace/privatesky/tests/psk-integration-testing"
+taskIndex: 35 actionIndex: 0 result: "Finished clone action on dependency psk-integration-testing"
+[Octopus] Running tasks for: [36] psk-smoke-testing
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/psk-smoke-testing.git "/gov-workspace/privatesky/tests/psk-smoke-testing"
+taskIndex: 36 actionIndex: 0 result: "Finished clone action on dependency psk-smoke-testing"
+[Octopus] Running tasks for: [37] psk-unit-testing
+Running command git clone --depth=1 --branch=master https://github.com/privatesky/psk-unit-testing.git "/gov-workspace/privatesky/tests/psk-unit-testing"
+taskIndex: 37 actionIndex: 0 result: "Finished clone action on dependency psk-unit-testing"
+Finishing checking tasks...
+[91mnpm[0m[91m [0m[91mnotice[0m[91m created a lockfile as package-lock.json. You should commit this file.
+[0m[91mnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.3.2 (node_modules/chokidar/node_modules/fsevents):
+[0m[91mnpm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[0m[91m
+[0madded 164 packages from 135 contributors and audited 165 packages in 28.447s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[Octopus] Running tasks for: [3] build privatesky
+Running command: cd privatesky && npm run build
+
+> PrivateSky@0.5.0 build /gov-workspace/privatesky
+> node ./bin/scripts/pskbuild.js --projectMap=./builds/domain_build.json && node ./bin/scripts/pskbuild.js --projectMap=./builds/build.json
+
+Found project map ./builds/domain_build.json
+Reading targets and their dependencies list...
+Cleaning output folder
+Starts rebuilding
+Building target domain
+domain done
+Finished rebuilding
+Found project map ./builds/build.json
+Reading targets and their dependencies list...
+Cleaning output folder
+Starts rebuilding
+Building target webshims
+Building target pskruntime
+Building target pskWebServer
+Building target consoleTools
+Building target blockchain
+Building target openDSU
+Building target nodeBoot
+Building target testsRuntime
+Building target bindableModel
+Building target loaderBoot
+Building target swBoot
+Building target iframeBoot
+Building target launcherBoot
+Building target testRunnerBoot
+consoleTools done
+blockchain done
+pskruntime done
+pskWebServer done
+openDSU done
+testsRuntime done
+nodeBoot done
+bindableModel done
+launcherBoot done
+testRunnerBoot done
+webshims done
+loaderBoot done
+swBoot done
+iframeBoot done
+Finished rebuilding
+[Octopus] Running tasks for: [4] menu-wallet-prototype
+Running command git clone --depth=1 --branch=master http://github.com/privatesky/menu-wallet-prototype.git "/gov-workspace/menu-wallet-prototype"
+taskIndex: 4 actionIndex: 0 result: "Finished clone action on dependency menu-wallet-prototype"
+Running command: cd menu-wallet-prototype && npm install
+added 1 package and audited 1 package in 1.854s
+found 0 vulnerabilities
+
+[Octopus] Running tasks for: [5] apihub-root/bpd-wallet/loader
+Running command git clone --depth=1 --branch=master http://github.com/privatesky/trust-loader.git "/gov-workspace/apihub-root/bpd-wallet/loader"
+taskIndex: 5 actionIndex: 0 result: "Finished clone action on dependency apihub-root/bpd-wallet/loader"
+Running command: cd apihub-root/bpd-wallet/loader && npm install
+
+> core-js@2.6.11 postinstall /gov-workspace/apihub-root/bpd-wallet/loader/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> ejs@2.7.4 postinstall /gov-workspace/apihub-root/bpd-wallet/loader/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
+
+> trust-loader@0.2.0 postinstall /gov-workspace/apihub-root/bpd-wallet/loader
+> node ./node_modules/octopus/scripts/run
+
+Looking for configuration file at path /gov-workspace/apihub-root/bpd-wallet/loader/octopus.json
+[Octopus] Start checking dependencies...
+[Octopus] Found 1 dependencies...
+[Octopus] Running tasks for: [0] PSK bundles
+Start copying ../../../privatesky/psknode/bundles/swBoot.js to folder ./swBoot.js
+Start copying ../../../privatesky/psknode/bundles/webshims.js to folder ./bundles/webshims.js
+Start copying ../../../privatesky/psknode/bundles/loaderBoot.js to folder ./bundles/loaderBoot.js
+Start copying assets/defaults/images-pwa to folder assets/images-pwa
+Finishing checking tasks...
+[91mnpm WARN trust-loader@0.2.0 No repository field.
+[0m[91mnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[0m[91m
+[0madded 535 packages from 301 contributors and audited 539 packages in 10.199s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 262 vulnerabilities (1 low, 5 moderate, 256 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+[Octopus] Running tasks for: [6] governance-wallet-prototype
+Running command git clone --depth=1 --branch=master http://github.com/privatesky/menu-wallet-prototype.git "/gov-workspace/governance-wallet-prototype"
+taskIndex: 6 actionIndex: 0 result: "Finished clone action on dependency governance-wallet-prototype"
+Running command: cd governance-wallet-prototype && npm install
+added 1 package and audited 1 package in 1.624s
+found 0 vulnerabilities
+
+Start copying ./apihub-root/governance-wallet/build/build.file to folder ./governance-wallet-prototype/bin/build.file
+[Octopus] Running tasks for: [7] apihub-root/governance-wallet/loader
+Running command git clone --depth=1 --branch=master http://github.com/privatesky/trust-loader.git "/gov-workspace/apihub-root/governance-wallet/loader"
+taskIndex: 7 actionIndex: 0 result: "Finished clone action on dependency apihub-root/governance-wallet/loader"
+Running command: cd apihub-root/governance-wallet/loader && npm install
+
+> core-js@2.6.11 postinstall /gov-workspace/apihub-root/governance-wallet/loader/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall /gov-workspace/apihub-root/governance-wallet/loader/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
+
+> trust-loader@0.2.0 postinstall /gov-workspace/apihub-root/governance-wallet/loader
+> node ./node_modules/octopus/scripts/run
+
+Looking for configuration file at path /gov-workspace/apihub-root/governance-wallet/loader/octopus.json
+[Octopus] Start checking dependencies...
+[Octopus] Found 1 dependencies...
+[Octopus] Running tasks for: [0] PSK bundles
+Start copying ../../../privatesky/psknode/bundles/swBoot.js to folder ./swBoot.js
+Start copying ../../../privatesky/psknode/bundles/webshims.js to folder ./bundles/webshims.js
+Start copying ../../../privatesky/psknode/bundles/loaderBoot.js to folder ./bundles/loaderBoot.js
+Start copying assets/defaults/images-pwa to folder assets/images-pwa
+Finishing checking tasks...
+[91mnpm WARN trust-loader@0.2.0 No repository field.
+[0m[91mnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[0m[91m
+[0madded 535 packages from 301 contributors and audited 539 packages in 7.96s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 262 vulnerabilities (1 low, 5 moderate, 256 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+[Octopus] Running tasks for: [8] bpd-ssapp
+Running command git clone --depth=1 --branch=master https://github.com/PrivateSky/bpd.git "/gov-workspace/bpd-ssapp"
+taskIndex: 8 actionIndex: 0 result: "Finished clone action on dependency bpd-ssapp"
+Running command: cd bpd-ssapp && npm install
+added 1 package and audited 1 package in 1.728s
+found 0 vulnerabilities
+
+[Octopus] Running tasks for: [9] dossier-explorer-wallet-prototype
+Running command git clone --depth=1 --branch=master https://github.com/PrivateSky/dossier-explorer-wallet-prototype.git "/gov-workspace/dossier-explorer-wallet-prototype"
+taskIndex: 9 actionIndex: 0 result: "Finished clone action on dependency dossier-explorer-wallet-prototype"
+Running command: cd dossier-explorer-wallet-prototype && npm install
+[91mnpm WARN dossier-explorer@0.2.0 No repository field.
+[0m[91m
+[0madded 1 package and audited 1 package in 1.576s
+found 0 vulnerabilities
+
+[Octopus] Running tasks for: [10] dossier-explorer-ssapp
+Running command git clone --depth=1 --branch=master https://github.com/PrivateSky/dossier-explorer-ssapp.git "/gov-workspace/dossier-explorer-ssapp"
+taskIndex: 10 actionIndex: 0 result: "Finished clone action on dependency dossier-explorer-ssapp"
+Running command: cd dossier-explorer-ssapp && npm install
+added 1 package and audited 1 package in 1.568s
+found 0 vulnerabilities
+
+Finishing checking tasks...
+[91mnpm WARN governance-workspace@1.0.1 scripts['server'] should probably be scripts['start'].
+[0m[91m
+[0madded 1 package and audited 1 package in 278.359s
+found 0 vulnerabilities
+
+Removing intermediate container f3f148d8f632
+ ---> 0f66a3ce8fef
+Step 6/9 : RUN cd $TARGET_FOLDER_NAME &&     echo 'npm run server & \n sleep 1m \n npm run build-all \n tail -f /dev/null' >> startup-script.sh
+ ---> Running in 56222b405399
+Removing intermediate container 56222b405399
+ ---> 35cb435cfdbc
+Step 7/9 : RUN cd $TARGET_FOLDER_NAME && cat startup-script.sh
+ ---> Running in a8bd23f8ce22
+npm run server & 
+ sleep 1m 
+ npm run build-all 
+ tail -f /dev/null
+Removing intermediate container a8bd23f8ce22
+ ---> de004d896ba4
+Step 8/9 : EXPOSE 8080/tcp
+ ---> Running in 607bae66b9f5
+Removing intermediate container 607bae66b9f5
+ ---> a6a8ce970759
+Step 9/9 : CMD cd $TARGET_FOLDER_NAME &&     bash startup-script.sh
+ ---> Running in c23b9d3c70d6
+Removing intermediate container c23b9d3c70d6
+ ---> 7a09a1557bb9
+Successfully built 7a09a1557bb9
+Successfully tagged public.ecr.aws/n4q1q0z2/pharmaledger-epi:1.0
+[8mha:////4BtXtwguLIVjJmnOVvFoGYTsArOTDfhy6FW9/O2AUSlKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpiCgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAcw+Qbk/5Kpr/wHgBxNWvgAAAA==[0m[Pipeline] sh
++ docker push public.ecr.aws/n4q1q0z2/pharmaledger-epi:1.0
+The push refers to repository [public.ecr.aws/n4q1q0z2/pharmaledger-epi]
+efa3d71b5834: Preparing
+8e1a52716a36: Preparing
+59b1d31df965: Preparing
+e461db97c053: Preparing
+5a3d34d2d0b7: Preparing
+5eac6bd7c6ce: Preparing
+b22d75b61f4a: Preparing
+e34081af2c41: Preparing
+25f2c43959c6: Preparing
+28f17d067081: Preparing
+f56d0812d4cc: Preparing
+0919c6356f3e: Preparing
+30840de9c53a: Preparing
+5eac6bd7c6ce: Waiting
+b22d75b61f4a: Waiting
+e34081af2c41: Waiting
+25f2c43959c6: Waiting
+28f17d067081: Waiting
+f56d0812d4cc: Waiting
+0919c6356f3e: Waiting
+30840de9c53a: Waiting
+efa3d71b5834: Pushed
+5a3d34d2d0b7: Pushed
+59b1d31df965: Pushed
+e461db97c053: Pushed
+5eac6bd7c6ce: Pushed
+e34081af2c41: Pushed
+f56d0812d4cc: Pushed
+b22d75b61f4a: Pushed
+0919c6356f3e: Pushed
+30840de9c53a: Pushed
+28f17d067081: Pushed
+8e1a52716a36: Pushed
+25f2c43959c6: Pushed
+1.0: digest: sha256:4e3762813c7a48756fb9d100fbdd4401c4d37ff8ada8f6a5d77937205258434d size: 3057
+[8mha:////4CVancU7VmO1UYkzsqlkx+ltqIWJ4AMIRpt4KKssbb/7AAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGLT8ClQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw9RAe/XvgAAAA==[0m[Pipeline] }
+[8mha:////4GEXMXWsJEhTKPfnawyAIPSbOvS+iEGFwIrEVRDmiSBUAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGLT8ClQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w9i4rRrvgAAAA==[0m[Pipeline] // container
+[8mha:////4P+bTBwlmzhOZMOPhX+qTNkisf/MJu3Ofzrw4ADO8n1WAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpiISEqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZH3Lt6w8NAesDvgAAAA==[0m[Pipeline] }
+[8mha:////4L5gNU19llnFY0ryDmfKrLzTX/mjt1qAo2iHIa9hqy4iAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLShAIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QE+4rC/vgAAAA==[0m[Pipeline] // stage
+[8mha:////4AdPEa9ouDkkepziAYAbC13Qf+4J3thMKfOPDquLFWgoAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoi0LCyIqWvUhROEJoSk0f8lSUknTsTVuAOBSkx4sGxL1nu+oAoejuQ1swoHg6E3bHSTzokl8sPFUWKWzqwnDOQU61TqSKp2qR1FBYuKElYc1gp7R8GgjrDhVtxF7QTq+hR93g4cSiNv8ICCZ3IUPn7L7GF7nWQg/HH+AmAeI5S7Jtu++TyrNypMS9LCAAAA[0m[Pipeline] stage
+[8mha:////4MIaaJ0kbq9Pl9jOsXTp+GcIh61ApOVYR3VDzPHnDYAMAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUFhbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAQB2j23CAAAA[0m[Pipeline] { (Usecase deployment)
+[8mha:////4C7anl6wTmTDZmwQd6woHs82Th6dTJfNRJwBkM5pkyJaAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUMLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD27blSrCAAAA[0m[Pipeline] container
+[8mha:////4FnylNPzmY/KkxFYhtHbKcIsU+VaEfZPDML/JZYWm9ThAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAokFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfADKbit4wgAAAA==[0m[Pipeline] {
+[8mha:////4FW6gjauYos15dZKycfNpfFYkEgAFQoxbic3Nmrku3JlAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN5arJPu+AAAA[0m[Pipeline] sh
++ cd governance-workspace/docker
++ kubectl apply -f ./k8s/templates -n default
+error: no objects passed to apply
+[8mha:////4IcP4hTr+38UHAJP08Xfflgxs5GEREaRQavpDOJ5NLQpAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN/nPyFW+AAAA[0m[Pipeline] }
+[8mha:////4IAc7DpELa18jYtkcZWvWeVenQwwqQL739/VkKQC/Ll7AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUaRBVLRWGl5gEmPsWHeO7eBUvIiv8QcCkajYYrWzzTxfsI4Bjhw0WkW9odga9G7U88LMob86zmj5gi1TZKewUbnhTp0WbDgpWFKUsBKwUdQ6joZ0gq2w8i4rJ0lX5xTm7yCgNN0ADyjEbE4ypC9MAXa3sYtMP89fAUzeJyjr+lP7N8GNW6S+AAAA[0m[Pipeline] // container
+[8mha:////4PJxHzkqxTnGZ0gUnSrOQU87AEp2je9xgoFf30EW7Mm9AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGigQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN94PDva+AAAA[0m[Pipeline] }
+[8mha:////4AYNmWB1NUNynC1OJ4BAnJFTs88uHVuY1VS5ltW29GovAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJChZAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN52NX3C+AAAA[0m[Pipeline] // stage
+[8mha:////4M8Swmx2XI4jZXUF6wcXpL7VZlQktKkeG1cfRxrqS+EuAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICDRJCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7l22w//yEL0vgAAAA==[0m[Pipeline] }
+[8mha:////4Efz/QaA2teEQEajysLiM9P6aUjcF+ocOLyKsKofMWAuAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKhQwhR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8BJbSter0AAAA=[0m[Pipeline] // node
+[8mha:////4J/Tf3/oC6tGvOgWoLUaKGamU/wDRoWNDf/JdzM81fNJAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRFUiIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPA63KML0AAAA=[0m[Pipeline] }
+[8mha:////4Hb4WUzS0L30103lcuErbyYR0V9F2v4OWhob5Yc1cAGnAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkLgzGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHQsrV570AAAA=[0m[Pipeline] // podTemplate
+[8mha:////4KyNdN/uf2CU15u0+k4JokCc6LvJZ1YGFH0WtLl6qYu5AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpkKBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PutINt9AGTTsq29AAAA[0m[Pipeline] }
+[8mha:////4DK8NnQXMEslqFF6yE7ddJ/qR5Y/PNm3oS6CceCuy1PbAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJpQBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPzl6bhr0AAAA=[0m[Pipeline] // podTemplate
+[8mha:////4ObQJdQkWk559m8uJ0NA4jX79quATNbZ7u7xpiyhl1EpAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJpQBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8TZNsP6Ef8zL0AAAA=[0m[Pipeline] }
+[8mha:////4PdjrQHWt1Ad+8ON6RUGf3HKe3oyI1MApOA3KBRWXwdoAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpkKBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PudINt+AJuoOBW9AAAA[0m[Pipeline] // podTemplate
+[8mha:////4OivOyBJna2M10vN2WdBtZXMale+nxy3ICUoL61JSFp/AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkLgzGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FeVkKsv0HvbFfX70AAAA=[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE
