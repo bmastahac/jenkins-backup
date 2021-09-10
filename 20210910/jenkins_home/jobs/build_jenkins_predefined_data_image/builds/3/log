@@ -1,0 +1,177 @@
+Started by user [8mha:////4G19tTm4MAkjDeaQ50+UkJNFFeR3w/slwWJLejo+FVgoAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL93MQkAFFPtg++AAAA[0mmab
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4KQ4nQHzoizlWJhcMrmfP4ZtQr21g23OA67AlRm7f+BEAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4H58ktrztD9GWn8dAZ0UJOosdbMGsC5ZvC8Mk3WN3VRKAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4OjBRqdKRoTT4zVjMoXG4OSopdAe9GJYwWxo0ZDK8VDmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4PHgf4X/N+KdathW4kbJhs7rA+ErjKAJ8v/7PrS3M53UAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4HvdKFC/csV1fWuiW7xrZSsYw7LQGZgqFJoTkNKUM7WvAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4MKHNsyM9X0kb8xKioDXcyWmXNqA+kevFO5+LnLL/NKZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] node
+Created Pod: kubernetes jenkins/build-jenkins-predefined-data-image-3-tgt2g-fgp3d-xz4fl
+Agent [8mha:////4BRVCAU7WnK96Iwnr1Aumg+P4KfOdTGc5YmQGeSAtl3PAAAAyB+LCAAAAAAAAP9djUEOAUEQRcsIB7AUGwfomcQIC7EQG5Jh4wRN17SmVXd6agTHcA02DuE47mASK/M3/y9e3n9+oFUE6O9LVTiKd44KZzFeOYV2cfUYrKHj2jHCL40I4BKgV+P/0NH08Zre/TuCaAlti6R5n0GzDJahkx3kWSZWkk42HAzpSaXr1nTzX9d/fTXGDLNk506+ZAzJtjRWiQPS0VAhfECFuSFUQkmWwpykRpEK1jzQItc+VeJyG+b2C5NAGRv2AAAA[0mbuild-jenkins-predefined-data-image-3-tgt2g-fgp3d-xz4fl is provisioned from template build_jenkins_predefined_data_image_3-tgt2g-fgp3d
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  annotations:
+    buildUrl: "http://jenkins/job/build_jenkins_predefined_data_image/3/"
+    runUrl: "job/build_jenkins_predefined_data_image/3/"
+  labels:
+    jenkins: "slave"
+    jenkins/label-digest: "34e3ac6addfe1f4fbf17522950ee1976fa0a5cdb"
+    jenkins/label: "build_jenkins_predefined_data_image_3-tgt2g"
+  name: "build-jenkins-predefined-data-image-3-tgt2g-fgp3d-xz4fl"
+spec:
+  containers:
+  - command:
+    - "cat"
+    env:
+    - name: "aws_key_id"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_key_id"
+          name: "aws-config"
+    - name: "aws_access_key"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_access_key"
+          name: "aws-config"
+    image: "node:latest"
+    imagePullPolicy: "IfNotPresent"
+    name: "node"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - command:
+    - "cat"
+    env:
+    - name: "aws_key_id"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_key_id"
+          name: "aws-config"
+    - name: "aws_access_key"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_access_key"
+          name: "aws-config"
+    image: "public.ecr.aws/n4q1q0z2/pharmaledger-docker-aws-jenkins-agent:1.0"
+    imagePullPolicy: "Always"
+    name: "docker"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - env:
+    - name: "JENKINS_SECRET"
+      value: "********"
+    - name: "JENKINS_TUNNEL"
+      value: "jenkins:50000"
+    - name: "JENKINS_AGENT_NAME"
+      value: "build-jenkins-predefined-data-image-3-tgt2g-fgp3d-xz4fl"
+    - name: "aws_key_id"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_key_id"
+          name: "aws-config"
+    - name: "aws_access_key"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_access_key"
+          name: "aws-config"
+    - name: "JENKINS_NAME"
+      value: "build-jenkins-predefined-data-image-3-tgt2g-fgp3d-xz4fl"
+    - name: "JENKINS_AGENT_WORKDIR"
+      value: "/home/jenkins/agent"
+    - name: "JENKINS_URL"
+      value: "http://jenkins/"
+    image: "jenkins/inbound-agent:4.3-4"
+    name: "jnlp"
+    resources:
+      limits: {}
+      requests:
+        memory: "256Mi"
+        cpu: "100m"
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  nodeSelector:
+    kubernetes.io/os: "linux"
+  restartPolicy: "Never"
+  volumes:
+  - hostPath:
+      path: "/var/run/docker.sock"
+    name: "volume-0"
+  - emptyDir:
+      medium: ""
+    name: "workspace-volume"
+
+Running on [8mha:////4DNbIZgv/I4zCFAGiem1DEaXLQNczrfiD2s2eBDKZAGpAAAAxx+LCAAAAAAAAP9djUEOAUEQRcsIB7AUGwdonSAsZDZsSLBxgqZrWtOqOz01MhzDNdg4hOO4A4mV+Zv/Fy/vP97QyCN094XOPfV2nnLvsLfyGt38EjA6S8e1Z4RfaglAGaFT4f/QUXp/prfwSiBZQNMhGd4voV5Ex9BaHtRZSafIyA1HS2by1bUrutmvq7/hO8YMU7nzp1AwRrktrNPigHS0lIsQUWNmCbXQipWwJ2VQDAQb7huRmTDQorwOMyc/wyN9XPcAAAA=[0mbuild-jenkins-predefined-data-image-3-tgt2g-fgp3d-xz4fl in /home/jenkins/agent/workspace/build_jenkins_predefined_data_image
+[8mha:////4ERlOeCsiuiOh4MCRDietbCHxw6pU1XZRY7fecbmkLT6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4OAqaOryhf3sMrd6c7+prPuAP2YfUbI9n13DfkGVKi/VAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] stage
+[8mha:////4DXXrWFTpg5l0OLPFs3qlgs13V+/dKb4acxOg1W282ltAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] { (Git clone)
+[8mha:////4LqheBiRZeukbW8e/Um36JiU24cxYuCXpcz5pq5qOc8zAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCakRFa6XhBSYxxo5159gOTsWL+Bp/IBCJii1WO9vM8wXrGODIQaNV1BuKrUHvRj0vzBz6q+OMli/YMkV2ChuVG+7UacGGk4IlRQkrARtFreNoSCfYCivvsnKSdHVOYf4OAkrTDfCAQszmJEP6whRgdxu7yPTz/BXA5BOU9f5TtX8D0loxuL4AAAA=[0m[Pipeline] sh
++ git clone --single-branch --branch 20210712 https://github.com/bmastahac/jenkins-backup.git
+Cloning into 'jenkins-backup'...
+Checking out files:  41% (5682/13638)   Checking out files:  42% (5728/13638)   Checking out files:  43% (5865/13638)   Checking out files:  44% (6001/13638)   Checking out files:  45% (6138/13638)   Checking out files:  46% (6274/13638)   Checking out files:  47% (6410/13638)   Checking out files:  48% (6547/13638)   Checking out files:  49% (6683/13638)   Checking out files:  50% (6819/13638)   Checking out files:  51% (6956/13638)   Checking out files:  52% (7092/13638)   Checking out files:  53% (7229/13638)   Checking out files:  54% (7365/13638)   Checking out files:  55% (7501/13638)   Checking out files:  56% (7638/13638)   Checking out files:  57% (7774/13638)   Checking out files:  58% (7911/13638)   Checking out files:  59% (8047/13638)   Checking out files:  60% (8183/13638)   Checking out files:  61% (8320/13638)   Checking out files:  62% (8456/13638)   Checking out files:  63% (8592/13638)   Checking out files:  64% (8729/13638)   Checking out files:  65% (8865/13638)   Checking out files:  66% (9002/13638)   Checking out files:  67% (9138/13638)   Checking out files:  68% (9274/13638)   Checking out files:  69% (9411/13638)   Checking out files:  70% (9547/13638)   Checking out files:  71% (9683/13638)   Checking out files:  72% (9820/13638)   Checking out files:  73% (9956/13638)   Checking out files:  74% (10093/13638)   Checking out files:  75% (10229/13638)   Checking out files:  76% (10365/13638)   Checking out files:  77% (10502/13638)   Checking out files:  78% (10638/13638)   Checking out files:  79% (10775/13638)   Checking out files:  80% (10911/13638)   Checking out files:  81% (11047/13638)   Checking out files:  82% (11184/13638)   Checking out files:  83% (11320/13638)   Checking out files:  84% (11456/13638)   Checking out files:  85% (11593/13638)   Checking out files:  86% (11729/13638)   Checking out files:  87% (11866/13638)   Checking out files:  88% (12002/13638)   Checking out files:  88% (12106/13638)   Checking out files:  89% (12138/13638)   Checking out files:  90% (12275/13638)   Checking out files:  91% (12411/13638)   Checking out files:  92% (12547/13638)   Checking out files:  93% (12684/13638)   Checking out files:  94% (12820/13638)   Checking out files:  95% (12957/13638)   Checking out files:  96% (13093/13638)   Checking out files:  97% (13229/13638)   Checking out files:  98% (13366/13638)   Checking out files:  99% (13502/13638)   Checking out files: 100% (13638/13638)   Checking out files: 100% (13638/13638), done.
+[8mha:////4HT/lKA7ATBOene49JgLfrEWB5L9cMlPg/qCCjd03+wqAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMWQod9tP7cMbEQkck74AAAA=[0m[Pipeline] sh
++ ls
+jenkins-backup
+[8mha:////4FOqqitmtbgkwtZZ105+QpRokPNiX+nVdIieOuSbxpBaAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICokRUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDudt+ah/eUDgHir4AAAA=[0m[Pipeline] sh
++ cd jenkins-backup/20210712/jenkins_home/
++ ls
+aws
+awscliv2.zip
+config.xml
+copy_reference_file.log
+glibc-2.31-r0.apk
+glibc-bin-2.31-r0.apk
+hudson.model.UpdateCenter.xml
+hudson.plugins.git.GitTool.xml
+identity.key.enc
+jenkins.install.InstallUtil.lastExecVersion
+jenkins.install.UpgradeWizard.state
+jenkins.model.JenkinsLocationConfiguration.xml
+jenkins.telemetry.Correlator.xml
+jobs
+logs
+nodeMonitors.xml
+org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+plugins
+queue.xml
+queue.xml.bak
+secret.key
+secret.key.not-so-secret
+secrets
+updates
+userContent
+users
+war
+[8mha:////4LLT0prqKQXaqDEfzrEjWLP38zLRJuCecSFAS03sPjRcAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bq/le42+AAAA[0m[Pipeline] }
+[8mha:////4EkDuVaFb0eZvhIgLpXNSAwwd0oTC5zlGYUs7iZ8/ZspAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBQVCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/AEjYFGS9AAAA[0m[Pipeline] // stage
+[8mha:////4ALxAYNReEBPROQOIbI/MNWDCbcbs2LZIGxranNePWkEAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRDUJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/AA6Ss1S9AAAA[0m[Pipeline] }
+[8mha:////4NImYp1IOe7mt5MVViW4D+WZW5fL76/XN96ptFh5EVP/AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiKMFYVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwAL6Zs+b0AAAA=[0m[Pipeline] // node
+[8mha:////4DCyuNVQsUnssSAY6n43Uogy2HjkoM68fFYvCCRJH1/DAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRDUJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AGgBOwy9AAAA[0m[Pipeline] }
+[8mha:////4ON3NBo7Q1Gny7KGYTswJtjtgHum7wXQQlg3Szq43x1JAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBQVCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AGJ5Uqi9AAAA[0m[Pipeline] // podTemplate
+[8mha:////4DtA6ki9yC8eFVjQfsGyLAZKH53b7bEanVPjcAVChrWFAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBiA5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8BK1nRVL0AAAA=[0m[Pipeline] }
+[8mha:////4C6uyD/inQQo5wwRB3iVYFeOBO9CVwa56/DmSbRjjZaoAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRUCIqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny3VaQ7T845dX3vQAAAA==[0m[Pipeline] // podTemplate
+[8mha:////4Gg/D8tRK2NWVuaEL+Dr3EtlgcVlXzCOeQQMBrb+sWmGAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkrMbJtWHxCyrUWmjeg/YhTH6Rv+Y/SCRx8k73nOW83timiBNHp1pLnadUe9WH0S1PTRy7W+BJtXxVNVPiYFVlp4obe16xYrFYl+XYaOws1YGTJyfY69Y8TBEMueIicXFHjdw3A57I9FIWE+ULc8ThPjaJ6df5G8Dc94K8LAVZ+QF+r3LHvQAAAA==[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

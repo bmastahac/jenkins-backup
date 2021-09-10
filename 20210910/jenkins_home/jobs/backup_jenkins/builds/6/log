@@ -1,0 +1,227 @@
+Started by user [8mha:////4G19tTm4MAkjDeaQ50+UkJNFFeR3w/slwWJLejo+FVgoAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL93MQkAFFPtg++AAAA[0mmab
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4KQ4nQHzoizlWJhcMrmfP4ZtQr21g23OA67AlRm7f+BEAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4H58ktrztD9GWn8dAZ0UJOosdbMGsC5ZvC8Mk3WN3VRKAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4OjBRqdKRoTT4zVjMoXG4OSopdAe9GJYwWxo0ZDK8VDmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4PHgf4X/N+KdathW4kbJhs7rA+ErjKAJ8v/7PrS3M53UAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4HvdKFC/csV1fWuiW7xrZSsYw7LQGZgqFJoTkNKUM7WvAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4MKHNsyM9X0kb8xKioDXcyWmXNqA+kevFO5+LnLL/NKZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] node
+Created Pod: kubernetes jenkins/backup-jenkins-6-wr917-xplkl-216ht
+Agent [8mha:////4FMyVj/XHzAF9hbg94zuN6oxDtyjJqwt3N1NAivJWq06AAAAuB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAylEgYd/eT83ILSktQi/aTE5OzSAt2s1LzszLxiXTPd8iJLQ3PdioKc7BxdI0OzjBIAn3wvEOEAAAA=[0mbackup-jenkins-6-wr917-xplkl-216ht is provisioned from template backup_jenkins_6-wr917-xplkl
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  annotations:
+    buildUrl: "http://jenkins/job/backup_jenkins/6/"
+    runUrl: "job/backup_jenkins/6/"
+  labels:
+    jenkins: "slave"
+    jenkins/label-digest: "2f74e454191813d73bd0731c91533fc52cc44bca"
+    jenkins/label: "backup_jenkins_6-wr917"
+  name: "backup-jenkins-6-wr917-xplkl-216ht"
+spec:
+  containers:
+  - command:
+    - "cat"
+    image: "node:latest"
+    imagePullPolicy: "IfNotPresent"
+    name: "node"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - command:
+    - "cat"
+    image: "public.ecr.aws/n4q1q0z2/pharmaledger-kubectl-jenkins-agent:1.0"
+    imagePullPolicy: "IfNotPresent"
+    name: "kubectl"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - env:
+    - name: "JENKINS_SECRET"
+      value: "********"
+    - name: "JENKINS_TUNNEL"
+      value: "jenkins:50000"
+    - name: "JENKINS_AGENT_NAME"
+      value: "backup-jenkins-6-wr917-xplkl-216ht"
+    - name: "JENKINS_NAME"
+      value: "backup-jenkins-6-wr917-xplkl-216ht"
+    - name: "JENKINS_AGENT_WORKDIR"
+      value: "/home/jenkins/agent"
+    - name: "JENKINS_URL"
+      value: "http://jenkins/"
+    image: "jenkins/inbound-agent:4.3-4"
+    name: "jnlp"
+    resources:
+      limits: {}
+      requests:
+        memory: "256Mi"
+        cpu: "100m"
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  nodeSelector:
+    kubernetes.io/os: "linux"
+  restartPolicy: "Never"
+  serviceAccountName: "jdefaultmns"
+  volumes:
+  - hostPath:
+      path: "/var/run/docker.sock"
+    name: "volume-0"
+  - emptyDir:
+      medium: ""
+    name: "workspace-volume"
+
+Running on [8mha:////4OhiLYHCuTrKfsVFErYHFv6gpE8xpuCvYPa2K1Wd0J7eAAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAylEgZd/eT83ILSktQi/aTE5OzSAt2s1LzszLxiXTPd8iJLQ3PdioKc7BxdI0OzjBJ9AO7oumbiAAAA[0mbackup-jenkins-6-wr917-xplkl-216ht in /home/jenkins/agent/workspace/backup_jenkins
+[8mha:////4ERlOeCsiuiOh4MCRDietbCHxw6pU1XZRY7fecbmkLT6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4OAqaOryhf3sMrd6c7+prPuAP2YfUbI9n13DfkGVKi/VAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] stage
+[8mha:////4DXXrWFTpg5l0OLPFs3qlgs13V+/dKb4acxOg1W282ltAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] { (Repository cloning)
+[8mha:////4MiNJIs0lMpV0fnwa5qQ0TU691p07ymn66irXVtAtZhbAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] container
+[8mha:////4MWW3Xdj1+bfXN82IcC/NWaUVO98Y+rFUNhdXRlDz9CbAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4JYPVjFWXVeVfumA3pxsAtfAPji0JSqZ1sjfsE00DqMjAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud19ah/eeSmYHb4AAAA=[0m[Pipeline] sh
++ git clone https://github.com/PharmaLedger-IMI/governance-workspace.git
+Cloning into 'governance-workspace'...
+[8mha:////4AQnY5QUSN+thsYWWkXuFrUaHt7TG8saGk+kxvB/RkGFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr6/2VK+AAAA[0m[Pipeline] sh
++ cd governance-workspace/jenkins/docker/backup
++ sed s,%GITHUB_USER%,bmastahac,g jenkins-backup.yaml.template
++ sed s,%GITHUB_ACCESS_TOKEN%,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,g
++ sed s,%GITHUB_USER_EMAIL%,mab@rms.ro,g
+[8mha:////4LcjzvMeS8eBwB5wsRRQt0PlsI2p8Omg1xkwCO64XFKYAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN/+Owku+AAAA[0m[Pipeline] sh
++ cat governance-workspace/jenkins/docker/backup/jenkins-backup.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkins-backup
+  namespace: jenkins
+  labels:
+    app: jenkins-backup
+spec:
+  restartPolicy: Never
+  affinity:
+    podAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+              - key: app
+                operator: In
+                values:
+                  - jenkins
+          topologyKey: topology.kubernetes.io/zone
+  containers:
+    - name: jenkins-backup
+      image: alpine/git
+      env:
+        - name: GITHUB_USER
+          value: "bmastahac"
+        - name: GITHUB_USER_EMAIL
+          value: "mab@rms.ro"
+        - name: GITHUB_ACCESS_TOKEN
+          value: "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"
+
+      command: [ "sh" ]
+      args:
+        - "-cx"
+        - "
+        mkdir /var/backup;
+        cd /var/backup;
+
+        git init;
+        git config --global user.name \"${GITHUB_USER}\";
+        git config --global user.email \"${GITHUB_USER_EMAIL}\";
+
+
+
+        mkdir $(date +%Y%m%d);
+        cp -r /var/jenkins_home ./$(date +%Y%m%d);
+        rm -rf ./$(date +%Y%m%d)/jenkins_home/caches;
+        git remote add origin https://${GITHUB_USER}:${GITHUB_ACCESS_TOKEN}@github.com/${GITHUB_USER}/jenkins-backup.git;
+
+        git push origin --delete $(date +%Y%m%d) &>/dev/null || true;
+
+        git add ./;
+        git commit -m \"add jenkins data\";
+        git checkout -b $(date +%Y%m%d);
+        git push --set-upstream origin $(date +%Y%m%d);
+
+        "
+      volumeMounts:
+        - mountPath: /var/jenkins_home
+          name: jenkins
+  volumes:
+    - name: jenkins
+      persistentVolumeClaim:
+        claimName: jenkins-claim
+[8mha:////4EfTP0GTn082iraaJUk/DcjfQvxLq/plc/kJT1mJA06KAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] }
+[8mha:////4LRd4x6pbYlSsARq93Vf0jvmujoRCthmN0dKgjrJp5rgAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyqSwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfl6fofL4AAAA=[0m[Pipeline] // container
+[8mha:////4A58SosocLwht9bc26s7OGIshhxRGl5XKfnDWqZo4np4AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICHRKiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BtQlufq+AAAA[0m[Pipeline] }
+[8mha:////4GUsyBLn2p0tHx6UienUYVEkfhJEPrCrz74X8gLhjylpAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6LEkRgn14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmvhfk+1KQlR9JNeShvQAAAA==[0m[Pipeline] // stage
+[8mha:////4F4a70pDbPone/Mp8zf1De4TyYIKNMDTJNeFSWXHND66AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYSDqJAQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxXbzOZZv7GzYasEAAAA=[0m[Pipeline] stage
+[8mha:////4Bd0tmDHqehbCMWycGeYBDFaysn/rSSQUUfMm6uKcFKbAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] { (Deploy jenkins backup container)
+[8mha:////4Hxyf6Wuu2wz7xv50CDdqF6iXH4f8RtvR/nfrF01TAe5AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] container
+[8mha:////4OHmeoh6ls7IQqXnY08F+5Di/3nwT1eZm/8ByAi+CVeiAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKiNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPpnFij8IAAAA=[0m[Pipeline] {
+[8mha:////4N7h0ntzw34yVEV0WF++7GGnt6y7Sebp9jQb+xG8RVYpAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBrANZ3i+AAAA[0m[Pipeline] sh
++ cd governance-workspace/jenkins/docker/backup
++ kubectl apply -f . -n jenkins
+The Pod "jenkins-backup" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	Volumes:        []core.Volume{{Name: "jenkins", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "jenkins-claim"}}}, {Name: "default-token-q2mpj", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-q2mpj", DefaultMode: &420}}}},
+  	InitContainers: nil,
+  	Containers: []core.Container{
+  		{
+  			... // 5 identical fields
+  			Ports:   nil,
+  			EnvFrom: nil,
+  			Env: []core.EnvVar{
+  				{Name: "GITHUB_USER", Value: "bmastahac"},
+  				{Name: "GITHUB_USER_EMAIL", Value: "mab@rms.ro"},
+  				{
+  					Name:      "GITHUB_ACCESS_TOKEN",
+- 					Value:     "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",
++ 					Value:     "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",
+  					ValueFrom: nil,
+  				},
+  			},
+  			Resources:    core.ResourceRequirements{},
+  			VolumeMounts: []core.VolumeMount{{Name: "jenkins", MountPath: "/var/jenkins_home"}, {Name: "default-token-q2mpj", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}},
+  			... // 12 identical fields
+  		},
+  	},
+  	EphemeralContainers: nil,
+  	RestartPolicy:       "Never",
+  	... // 25 identical fields
+  }
+
+[8mha:////4EIIDLRCfMIuIORl3v8G+T3nUBnlPVfVz5FxzHwA1SWVAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N+4u68W+AAAA[0m[Pipeline] }
+[8mha:////4OpsTK+0Utr/UC5IeYYVndtlrrSpAfPX5JB/4C651/6kAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyk8LGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DdZseDS+AAAA[0m[Pipeline] // container
+[8mha:////4P3rREUt1p12FrrKl7fJlM92PwUEfUxB4c7Xy7rzbfdkAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiaCgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN8nuLWa+AAAA[0m[Pipeline] }
+[8mha:////4FU8g0DFiT82SLgcJg4bVS5V8bC4VXWBrwUk3uj0fgBnAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCqJAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN4psfOC+AAAA[0m[Pipeline] // stage
+[8mha:////4PgY2v3W1A1DlhPAAAh5Mh7IasrWRv8ucQUewVSjswyfAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRqECIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPcXd3UL0AAAA=[0m[Pipeline] }
+[8mha:////4Ku9VMRWLefvpaIY0/auWC/M72p9tlnm8kLeWpMN8XJpAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBoqBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5LutINt/ADTbhAa9AAAA[0m[Pipeline] // node
+[8mha:////4E8312XwUwCyqZQqiGSjzej/uKDY+afCkwKmwV3ZvYrgAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5LutINt/ABLC40y9AAAA[0m[Pipeline] }
+[8mha:////4MicEH/YvSBxPDe6UMThADoC5MSUU7HAhpJGvin0zhcPAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPeOlKkr0AAAA=[0m[Pipeline] // podTemplate
+[8mha:////4EBN5FwqxGpAktrqwetPWuzSEX1su/X1p8ihi7EKVfSPAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIU2DlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyshRk+w9e8C3YvQAAAA==[0m[Pipeline] }
+[8mha:////4GhTQ41UATsuAFdPsGvev1Bq0/aMj97RJdBdUSpBPdxfAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIU2DlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyci/Iyg/tuWn0vQAAAA==[0m[Pipeline] // podTemplate
+[8mha:////4PPDZrxMCdV6CU1o5CqdpUtfHGsDRXkUxgJdAIfmZslrAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcXZNsPy6AOvr0AAAA=[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE
