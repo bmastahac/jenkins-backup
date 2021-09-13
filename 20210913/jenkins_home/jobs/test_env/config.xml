@@ -1,0 +1,34 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.41">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.92">
+    <script>  podTemplate(
+      containers: [
+          containerTemplate(name: &apos;node&apos;, image: &apos;node:latest&apos;, ttyEnabled: true, command: &apos;cat&apos;)
+          ]
+      ){
+          node(POD_LABEL){
+              container(&apos;node&apos;){
+                    sh &apos;git clone https://github.com/PharmaLedger-IMI/governance-workspace.git&apos;
+                    sh &apos;cd governance-workspace &amp;&amp; git log -n 1 --format=&quot;%H&quot; &gt; usecase.version &amp;&amp; cat usecase.version&apos;
+                    script{
+                      //usecase_version = sh(  returnStdout: true, script: &apos;cat governance-workspace/usecase.version&apos;)
+                      usecase_version = sh(  returnStdout: true, script: &apos;cd governance-workspace &amp;&amp; git log -n 1 --format=&quot;%H&quot;&apos;)
+                    }
+                    sh &quot;echo &apos;${usecase_version}&apos;&quot;
+                    sh &apos;echo end&apos;
+              }
+              
+          }
+          
+          
+          
+      }</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

@@ -1,0 +1,72 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.41">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.92">
+    <script>
+def label = &quot;worker-${UUID.randomUUID().toString()}&quot;
+def source = &quot;$POD_DOCKER_REPOSITORY&quot;+&apos;/pharmaledger-kubectl-jenkins-agent:1.0&apos;
+podTemplate(label: label, serviceAccount: &apos;jdefaultmns&apos;,namespace: &apos;jenkins&apos;,containers: [
+  containerTemplate(name: &apos;kubectl&apos;, image: source, command: &apos;cat&apos;, ttyEnabled: true)
+],
+volumes: [
+  hostPathVolume(mountPath: &apos;/var/run/docker.sock&apos;, hostPath: &apos;/var/run/docker.sock&apos;)
+]){
+  node(label) {
+      
+              script {
+                //checkout scm
+                sh &apos;echo test docker file &gt; dockerfile&apos;
+                sh &apos;chmod a+rw dockerfile&apos;
+                sh &apos;cat dockerfile&apos;
+                sh &apos;cat /home/jenkins/agent/workspace/test/dockerfile&apos;
+                sh &apos;pwd &amp;&amp; ls -a&apos;
+                def file= &quot;${env.WORKSPACE}/dockerfile&quot;
+//                def t1 = new FileParameterValue.FileItemImpl(new File(file))
+//                def name = t1.getName()
+//                sh &apos;echo $name&apos;
+                def myJson = readFile(&apos;dockerfile&apos;)
+                
+                
+                
+                
+//                sh &apos;cat $myJson&apos;
+//                def stream = t1.getInputStream()
+                sh &apos;echo invoke pipeline&apos;
+//                build job: &apos;build-and-push-docker-image&apos;,
+//                        parameters: [
+//                                //[$class: &quot;StashedFileParameterValue&quot;, name: &quot;dockerfile&quot;, file: new FileParameterValue.FileItemImpl(new File(file))],
+//                                [$class: &quot;StashedFileParameterValue&quot;, name: &quot;dockerfile&quot;, file: t1],
+//                                [string(name: &apos;DATA_IMAGE_NAME&apos;, value:&apos;val1&apos;)],
+//                                [string(name: &apos;DATA_IMAGE_VERSION&apos;, value:&apos;val1&apos;)]
+//                                ]
+                build job: &apos;build-and-push-docker-image&apos;,
+                        parameters: [
+                                //[$class: &quot;StashedFileParameterValue&quot;, name: &quot;dockerfile&quot;, file: new FileParameterValue.FileItemImpl(new File(file))],
+//                                [$class: &quot;StashedFileParameterValue&quot;, name: &quot;dockerfile&quot;, file: t1],
+
+                                string(name: &apos;DATA_IMAGE_NAME&apos;, value:&apos;val1&apos;),
+                                string(name: &apos;DATA_IMAGE_VERSION&apos;, value:&apos;val1&apos;),
+                                base64File(name: &apos;dockerfile&apos;, base64: Base64.encoder.encodeToString(myJson.bytes))
+                                ]
+            }
+
+      
+    stage(&apos;Clean blockchain network&apos;) {
+        
+
+        container(&apos;kubectl&apos;) {
+            sh &apos;echo hello&apos;
+            
+        }
+    }
+  }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
