@@ -1,0 +1,87 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.41">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>DATA_IMAGE_NAME</name>
+          <description></description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DATA_IMAGE_VERSION</name>
+          <description></description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <io.jenkins.plugins.file__parameters.Base64FileParameterDefinition plugin="file-parameters@99.102.vbc6a133bcbbb">
+          <name>dockerfile</name>
+        </io.jenkins.plugins.file__parameters.Base64FileParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.92">
+    <script>//$POD_DOCKER_REPOSITORY - source : Jenkins env variable
+
+
+//Pipeline parameters
+// dockerfile - base64 small file
+// DATA_IMAGE_NAME - string
+// DATA_IMAGE_VERSION - string
+
+def docker_image_source = &quot;$POD_DOCKER_REPOSITORY&quot;+&apos;/&apos;+&quot;$KUBECTL_JENKINS_AGENT_DOCKER_IMAGE_NAME&quot;+&apos;:&apos;+&quot;$KUBECTL_JENKINS_AGENT_DOCKER_IMAGE_VERSION&quot;
+
+podTemplate(
+    containers: [
+        containerTemplate(name: &apos;docker&apos;, image: docker_image_source, alwaysPullImage:true , ttyEnabled: true, command: &apos;cat&apos;)
+    ],
+    volumes: [hostPathVolume(hostPath: &apos;/var/run/docker.sock&apos;, mountPath: &apos;/var/run/docker.sock&apos;)],
+    envVars: [secretEnvVar(key: &apos;aws_key_id&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_key_id&apos;),
+              secretEnvVar(key: &apos;aws_access_key&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_access_key&apos;)
+             ]
+  ){
+            podTemplate(
+          containers: [
+              containerTemplate(name: &apos;node&apos;, image: &apos;node:latest&apos;, ttyEnabled: true, command: &apos;cat&apos;)
+              ]
+          ){
+              node(POD_LABEL){
+
+                  stage (&apos;Build and publish docker Image&apos;){
+                            container (&apos;docker&apos;){
+                                sh &apos;aws --version&apos;
+                                sh &apos;aws configure set aws_access_key_id &quot;$aws_key_id&quot;&apos;
+                                sh &apos;aws configure set aws_secret_access_key &quot;$aws_access_key&quot;&apos;
+                                sh &apos;aws configure set default.region &quot;eu-east-1&quot;&apos;
+                                sh &apos;aws configure set default.output \&apos;NONE\&apos;&apos;
+                                sh &apos;aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin $POD_DOCKER_REPOSITORY&apos;
+                                    withFileParameter(&apos;dockerfile&apos;){
+                                        sh &apos;cat $dockerfile &gt; Dockerfile&apos;    
+                                        sh &apos;docker build --no-cache --network host -t $POD_DOCKER_REPOSITORY/$DATA_IMAGE_NAME:$DATA_IMAGE_VERSION .&apos;
+                                        //sh &apos;docker push $POD_DOCKER_REPOSITORY/$DATA_IMAGE_NAME:$DATA_IMAGE_VERSION&apos;
+                                        
+                                    }
+                                
+                                
+                                
+                            }
+                        }
+
+              }
+
+          }
+
+
+
+
+  }
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

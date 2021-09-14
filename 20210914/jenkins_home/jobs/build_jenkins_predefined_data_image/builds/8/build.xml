@@ -1,0 +1,157 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>JENKINS_BACKUP_REPOSITORY</name>
+          <description></description>
+          <value>https://github.com/bmastahac/jenkins-backup.git</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>BRANCH</name>
+          <description></description>
+          <value>20210712</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>JENKINS_PREDEFINED_DATA_IMAGE_VERSION</name>
+          <description></description>
+          <value>1.1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>REGISTRY</name>
+          <description></description>
+          <value>public.ecr.aws/n4q1q0z2</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>JENKINS_PREDIFINED_DATA_IMAGE_NAME</name>
+          <description></description>
+          <value>pharmaledger-jenkins-predefined-data</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>JENKINS_BACKUP_REPOSITORY</string>
+        <string>BRANCH</string>
+        <string>JENKINS_PREDEFINED_DATA_IMAGE_VERSION</string>
+        <string>REGISTRY</string>
+        <string>JENKINS_PREDIFINED_DATA_IMAGE_NAME</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>mab</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>5</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.19">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.92">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>9181</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>9180</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>14869</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>270</queueId>
+  <timestamp>1626093531967</timestamp>
+  <startTime>1626093531969</startTime>
+  <result>FAILURE</result>
+  <duration>24296</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>podTemplate(
+    containers: [
+        containerTemplate(name: &apos;docker&apos;, image: &apos;public.ecr.aws/n4q1q0z2/pharmaledger-docker-aws-jenkins-agent:1.0&apos;,alwaysPullImage:true , ttyEnabled: true, command: &apos;cat&apos;)
+    ],
+    volumes: [hostPathVolume(hostPath: &apos;/var/run/docker.sock&apos;, mountPath: &apos;/var/run/docker.sock&apos;)],
+    envVars: [secretEnvVar(key: &apos;aws_key_id&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_key_id&apos;),
+              secretEnvVar(key: &apos;aws_access_key&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_access_key&apos;)
+             ]
+  ){
+            podTemplate(
+          containers: [
+              containerTemplate(name: &apos;node&apos;, image: &apos;node:latest&apos;, ttyEnabled: true, command: &apos;cat&apos;)
+              ]
+          ){
+              node(POD_LABEL){
+              
+                  stage (&apos;Git clone&apos;){
+                      sh &apos;git clone https://github.com/PharmaLedger-IMI/governance-workspace.git&apos;
+                      sh &apos;cd governance-workspace/jenkins/docker/predefined &amp;&amp; sed &quot;s,%BACKUP_BRANCH_NAME%,${BRANCH},g&quot; Dockerfile.template | sed &quot;s,%JENKINS_BACKUP_REPOSITORY%,${JENKINS_BACKUP_REPOSITORY},g&quot; &gt; Dockerfile&apos;
+                      sh &apos;cat governance-workspace/jenkins/docker/predefined/Dockerfile&apos;
+                  }
+                  
+                  
+                  stage (&apos;Build and publish docker Image&apos;){
+                            container (&apos;docker&apos;){
+                                sh &apos;aws --version&apos;
+                                sh &apos;aws configure set aws_access_key_id &quot;$aws_key_id&quot;&apos;
+                                sh &apos;aws configure set aws_secret_access_key &quot;$aws_access_key&quot;&apos;
+                                sh &apos;aws configure set default.region &quot;eu-east-1&quot;&apos;
+                                sh &apos;aws configure set default.output \&apos;NONE\&apos;&apos;
+                                sh &apos;aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin $REGISTRY&apos;
+                                sh &apos;cd governance-workspace/jenkins/docker/predefined &amp;&amp; docker build --no-cache --network host -t $REGISTRY/$JENKINS_PREDIFINED_DATA_IMAGE_NAME:$JENKINS_PREDEFINED_DATA_IMAGE_VERSION .&apos;
+                                sh &apos;docker push $REGISTRY/$JENKINS_PREDIFINED_DATA_IMAGE_NAME:$JENKINS_PREDEFINED_DATA_IMAGE_VERSION&apos;
+                            }
+                        }
+              
+              }
+              
+          }
+   
+      
+      
+      
+  }</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>211303826</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>187318604</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>3923241669</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>111079245</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>52257678</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>37</iota>
+    <head>1:37</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>
