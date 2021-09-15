@@ -1,0 +1,26 @@
+Started at Tue Sep 14 13:46:31 GMT 2021
+Checking backup_jenkins
+Checking build-and-push-docker-image
+Checking build_jenkins_predefined_data_image
+Checking clean-eth-adaptor
+Checking clean-Quorum-fresh-mode
+Checking clean_usecase_installation
+Checking clean_usecase_using_blockchain
+Checking deploy-eth-adaptor
+Checking deploy-Quorum-fresh-mode
+Checking deploy_usecase_installation
+Checking deploy_usecase_using_blockchain
+Finished at Tue Sep 14 13:46:31 GMT 2021. 2ms
+Started at Wed Sep 15 13:46:31 GMT 2021
+Checking backup_jenkins
+Checking build-and-push-docker-image
+Checking build_jenkins_predefined_data_image
+Checking clean-eth-adaptor
+Checking clean-Quorum-fresh-mode
+Checking clean_usecase_installation
+Checking clean_usecase_using_blockchain
+Checking deploy-eth-adaptor
+Checking deploy-Quorum-fresh-mode
+Checking deploy_usecase_installation
+Checking deploy_usecase_using_blockchain
+Finished at Wed Sep 15 13:46:31 GMT 2021. 115ms

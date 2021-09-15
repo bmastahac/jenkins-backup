@@ -1,0 +1,120 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.92">
+    <parentIds>
+      <string>16</string>
+    </parentIds>
+    <id>17</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.92">
+      <arguments>
+        <entry>
+          <string>job</string>
+          <string>build-and-push-docker-image</string>
+        </entry>
+        <entry>
+          <string>parameters</string>
+          <list>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>DATA_IMAGE_NAME</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>pharmaledger-jenkins-predefined-data</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>pharmaledger-jenkins-predefined-data</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>DATA_IMAGE_VERSION</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>1.5</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>1.5</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>base64File</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>dockerfile</string>
+                </entry>
+                <entry>
+                  <string>base64</string>
+                  <string>RlJPTSBhbHBpbmUvZ2l0ClJVTiBta2RpciAvdmFyL2plbmtpbnMtYmFja3VwCgpFTlYgQkFDS1VQX0JSQU5DSF9OQU1FPSIyMDIxMDkxNCIKRU5WIEpFTktJTlNfQkFDS1VQX1JFUE9TSVRPUlkgPSAiaHR0cHM6Ly9naXRodWIuY29tL2JtYXN0YWhhYy9qZW5raW5zLWJhY2t1cC5naXQiClJVTiBnaXQgY2xvbmUgLS1zaW5nbGUtYnJhbmNoIC0tYnJhbmNoIDIwMjEwOTE0IGh0dHBzOi8vZ2l0aHViLmNvbS9ibWFzdGFoYWMvamVua2lucy1iYWNrdXAuZ2l0IC92YXIvamVua2lucy1iYWNrdXAgJiYgbHMgL3Zhci9qZW5raW5zLWJhY2t1cApSVU4gY2QgL3Zhci9qZW5raW5zLWJhY2t1cC8yMDIxMDkxNC9qZW5raW5zX2hvbWUgJiYgY3AgLWEgLiAuLi8uLi8KUlVOIGNkIC92YXIvamVua2lucy1iYWNrdXAgJiYgcm0gLXJmIDIwMjEwOTE0ICYmIHJtIC1yZiAuLy5naXQKQ01EIFsgInNoIiBdCgoKCg==</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings/>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.45">
+      <startTime>1631613750364</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+    <wf.a.LabelAction plugin="workflow-api@2.45">
+      <displayName>Building build-and-push-docker-image</displayName>
+    </wf.a.LabelAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.45">
+      <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" plugin="workflow-step-api@2.23">
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerListener.onCompleted(BuildTriggerListener.java:53)</trace>
+          <trace>hudson.model.listeners.RunListener.fireCompleted(RunListener.java:209)</trace>
+          <trace>org.jenkinsci.plugins.workflow.job.WorkflowRun.finish(WorkflowRun.java:617)</trace>
+          <trace>org.jenkinsci.plugins.workflow.job.WorkflowRun.access$800(WorkflowRun.java:137)</trace>
+          <trace>org.jenkinsci.plugins.workflow.job.WorkflowRun$GraphL.onNewHead(WorkflowRun.java:1037)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.notifyListeners(CpsFlowExecution.java:1473)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$3.run(CpsThreadGroup.java:489)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.run(CpsVmExecutorService.java:38)</trace>
+          <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:136)</trace>
+          <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+          <trace>jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+        <result>
+          <name>FAILURE</name>
+          <ordinal>2</ordinal>
+          <color>RED</color>
+          <completeBuild>true</completeBuild>
+        </result>
+        <causes class="java.util.Arrays$ArrayList">
+          <a class="jenkins.model.CauseOfInterruption-array">
+            <org.jenkinsci.plugins.workflow.support.steps.build.DownstreamFailureCause plugin="pipeline-build-step@2.13">
+              <id>build-and-push-docker-image#11</id>
+            </org.jenkinsci.plugins.workflow.support.steps.build.DownstreamFailureCause>
+          </a>
+        </causes>
+        <actualInterruption>false</actualInterruption>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

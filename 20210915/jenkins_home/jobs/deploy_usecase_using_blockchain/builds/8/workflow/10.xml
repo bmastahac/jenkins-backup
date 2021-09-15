@@ -1,0 +1,49 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.92">
+    <parentIds>
+      <string>9</string>
+    </parentIds>
+    <id>10</id>
+    <startId>5</startId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.45">
+      <startTime>1631650834780</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.45">
+      <error class="hudson.AbortException">
+        <detailMessage>Queue task was cancelled</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution$CancelledItemListener.onLeft(ExecutorStepExecution.java:245)</trace>
+          <trace>hudson.model.Queue$LeftItem.enter(Queue.java:2794)</trace>
+          <trace>hudson.model.Queue$Item.cancel(Queue.java:2387)</trace>
+          <trace>hudson.model.Queue.cancel(Queue.java:758)</trace>
+          <trace>org.csanchez.jenkins.plugins.kubernetes.PodUtils.cancelQueueItemFor(PodUtils.java:79)</trace>
+          <trace>org.csanchez.jenkins.plugins.kubernetes.pod.retention.Reaper$TerminateAgentOnImagePullBackOff.onEvent(Reaper.java:276)</trace>
+          <trace>org.csanchez.jenkins.plugins.kubernetes.pod.retention.Reaper.lambda$eventReceived$2(Reaper.java:160)</trace>
+          <trace>java.lang.Iterable.forEach(Iterable.java:75)</trace>
+          <trace>org.csanchez.jenkins.plugins.kubernetes.pod.retention.Reaper.eventReceived(Reaper.java:158)</trace>
+          <trace>org.csanchez.jenkins.plugins.kubernetes.pod.retention.Reaper.eventReceived(Reaper.java:67)</trace>
+          <trace>io.fabric8.kubernetes.client.utils.WatcherToggle.eventReceived(WatcherToggle.java:49)</trace>
+          <trace>io.fabric8.kubernetes.client.dsl.internal.AbstractWatchManager.eventReceived(AbstractWatchManager.java:145)</trace>
+          <trace>io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager$TypedWatcherWebSocketListener.onMessage(WatchConnectionManager.java:83)</trace>
+          <trace>okhttp3.internal.ws.RealWebSocket.onReadMessage(RealWebSocket.java:323)</trace>
+          <trace>okhttp3.internal.ws.WebSocketReader.readMessageFrame(WebSocketReader.java:219)</trace>
+          <trace>okhttp3.internal.ws.WebSocketReader.processNextFrame(WebSocketReader.java:105)</trace>
+          <trace>okhttp3.internal.ws.RealWebSocket.loopReader(RealWebSocket.java:274)</trace>
+          <trace>okhttp3.internal.ws.RealWebSocket$2.onResponse(RealWebSocket.java:214)</trace>
+          <trace>okhttp3.RealCall$AsyncCall.execute(RealCall.java:203)</trace>
+          <trace>okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

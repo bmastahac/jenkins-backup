@@ -1,0 +1,164 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>test</upstreamProject>
+            <upstreamUrl>job/test/</upstreamUrl>
+            <upstreamBuild>33</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UserIdCause>
+                <userId>admin</userId>
+              </hudson.model.Cause_-UserIdCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamNodeAction plugin="pipeline-build-step@2.13">
+      <upstreamNodeId>16</upstreamNodeId>
+      <upstreamRunId>test#33</upstreamRunId>
+    </org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamNodeAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>DATA_IMAGE_NAME</name>
+          <description></description>
+          <value>val1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>DATA_IMAGE_VERSION</name>
+          <description></description>
+          <value>val1</value>
+        </hudson.model.StringParameterValue>
+        <io.jenkins.plugins.file__parameters.Base64FileParameterValue plugin="file-parameters@99.102.vbc6a133bcbbb">
+          <name>file</name>
+          <base64>dGVzdCBkb2NrZXIgZmlsZQo=</base64>
+        </io.jenkins.plugins.file__parameters.Base64FileParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>DATA_IMAGE_NAME</string>
+        <string>DATA_IMAGE_VERSION</string>
+        <string>dockerfile</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>8057</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>8055</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.19">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.92">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>9578</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>9570</buildableDurationMillis>
+      <waitingDurationMillis>3</waitingDurationMillis>
+      <executingDurationMillis>1587</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>544</queueId>
+  <timestamp>1631526762231</timestamp>
+  <startTime>1631526762234</startTime>
+  <result>FAILURE</result>
+  <duration>11433</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>//$POD_DOCKER_REPOSITORY - source : Jenkins env variable
+
+
+//Pipeline parameters
+// dockerfile - stashed file
+// DATA_IMAGE_NAME - string
+// DATA_IMAGE_VERSION - string
+
+def docker_image_source = &quot;$POD_DOCKER_REPOSITORY&quot;+&apos;/&apos;+&quot;$KUBECTL_JENKINS_AGENT_DOCKER_IMAGE_NAME&quot;+&apos;:&apos;+&quot;$KUBECTL_JENKINS_AGENT_DOCKER_IMAGE_VERSION&quot;
+
+podTemplate(
+    containers: [
+        containerTemplate(name: &apos;docker&apos;, image: docker_image_source, alwaysPullImage:true , ttyEnabled: true, command: &apos;cat&apos;)
+    ],
+    volumes: [hostPathVolume(hostPath: &apos;/var/run/docker.sock&apos;, mountPath: &apos;/var/run/docker.sock&apos;)],
+    envVars: [secretEnvVar(key: &apos;aws_key_id&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_key_id&apos;),
+              secretEnvVar(key: &apos;aws_access_key&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_access_key&apos;)
+             ]
+  ){
+            podTemplate(
+          containers: [
+              containerTemplate(name: &apos;node&apos;, image: &apos;node:latest&apos;, ttyEnabled: true, command: &apos;cat&apos;)
+              ]
+          ){
+              node(POD_LABEL){
+
+                  stage (&apos;Build and publish docker Image&apos;){
+                            container (&apos;docker&apos;){
+                                sh &apos;aws --version&apos;
+                                sh &apos;aws configure set aws_access_key_id &quot;$aws_key_id&quot;&apos;
+                                sh &apos;aws configure set aws_secret_access_key &quot;$aws_access_key&quot;&apos;
+                                sh &apos;aws configure set default.region &quot;eu-east-1&quot;&apos;
+                                sh &apos;aws configure set default.output \&apos;NONE\&apos;&apos;
+                                sh &apos;aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin $POD_DOCKER_REPOSITORY&apos;
+                                withFileParameter(&apos;dockerfile&apos;){
+                                    sh &apos;cat $dockerfile&apos;    
+                                }
+                                
+                                
+                                //sh &apos;docker build --no-cache --network host -t $POD_DOCKER_REPOSITORY/$DATA_IMAGE_NAME:$DATA_IMAGE_VERSION .&apos;
+                                //sh &apos;docker push $POD_DOCKER_REPOSITORY/$DATA_IMAGE_NAME:$DATA_IMAGE_VERSION&apos;
+                            }
+                        }
+
+              }
+
+          }
+
+
+
+
+  }
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>94057603</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>234749280</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1198826944</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>139085045</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>23222823</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>24</iota>
+    <head>1:24</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

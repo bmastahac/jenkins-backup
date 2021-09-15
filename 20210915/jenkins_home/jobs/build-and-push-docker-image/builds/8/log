@@ -1,0 +1,229 @@
+Started by upstream project "[8mha:////4CVjiaPakaV1fqnKGVC1jTfJXeIvuVDXhIZohczavYNyAAAAtB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAylEgYN/az8JP2S1OKS+KTSzJyU+KzUvOzMvOL4gqLUlNS0zLzUlPiUxJJEfQCnZycn3QAAAA==[0mtest_build_jenkins_predefined_data" build number [8mha:////4G+ITkwR7mZdMAG2NrMR+Yna2jbeKvHJjnJrHcPPGTHpAAAAtB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBk39rPwk/ZLU4pL4pNLMnJT4rNS87My84viCotSU1LTMvNSU+JTEkkR9QwB8QiIm3gAAAA==[0m1
+originally caused by:
+ Started by user [8mha:////4D7lhoyTb2CZyILRNnvEj3yX8u7ydzhlzzbMrGZOlmEuAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4KQ4nQHzoizlWJhcMrmfP4ZtQr21g23OA67AlRm7f+BEAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4H58ktrztD9GWn8dAZ0UJOosdbMGsC5ZvC8Mk3WN3VRKAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4OjBRqdKRoTT4zVjMoXG4OSopdAe9GJYwWxo0ZDK8VDmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4PHgf4X/N+KdathW4kbJhs7rA+ErjKAJ8v/7PrS3M53UAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4HvdKFC/csV1fWuiW7xrZSsYw7LQGZgqFJoTkNKUM7WvAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4MKHNsyM9X0kb8xKioDXcyWmXNqA+kevFO5+LnLL/NKZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] node
+Created Pod: kubernetes jenkins/build-and-push-docker-image-8-6rzph-cll9h-n1hzj
+Agent [8mha:////4G6Hwnv/tzcS4mY8Vt54PQa5198XubyCobWOfopc/KNhAAAAwh+LCAAAAAAAAP9djbENwjAURD9BMAAlomEAx6JBRCgVDUiBhglMbNlJfmzLsRFkDNaAhiEYhx2IlIpcc1c8vXt9YdI4WKrAG6Pj3OjGoIiPhgvc361wWOjqZLyAPqMI4OZgMeD/0HX6fKcP+4kgOsAUhZZeZTAODj3MspJdGUWmJT17V2i57XTzgW7X9/DXdoN6SGhuahu8cPQSCuSEaU5saBThJq+EI0XNpCAbsnatVSRHTBTRK9WWP9FDyhnuAAAA[0mbuild-and-push-docker-image-8-6rzph-cll9h-n1hzj is provisioned from template build-and-push-docker-image_8-6rzph-cll9h
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  annotations:
+    buildUrl: "http://jenkins/job/build-and-push-docker-image/8/"
+    runUrl: "job/build-and-push-docker-image/8/"
+  labels:
+    jenkins: "slave"
+    jenkins/label-digest: "4b8cd98cbe9b4cb209ddb0963c18281a8b020cc6"
+    jenkins/label: "build-and-push-docker-image_8-6rzph"
+  name: "build-and-push-docker-image-8-6rzph-cll9h-n1hzj"
+spec:
+  containers:
+  - command:
+    - "cat"
+    env:
+    - name: "aws_key_id"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_key_id"
+          name: "aws-config"
+    - name: "aws_access_key"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_access_key"
+          name: "aws-config"
+    image: "node:latest"
+    imagePullPolicy: "IfNotPresent"
+    name: "node"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - command:
+    - "cat"
+    env:
+    - name: "aws_key_id"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_key_id"
+          name: "aws-config"
+    - name: "aws_access_key"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_access_key"
+          name: "aws-config"
+    image: "public.ecr.aws/n4q1q0z2/pharmaledger-docker-aws-jenkins-agent:1.0"
+    imagePullPolicy: "Always"
+    name: "docker"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - env:
+    - name: "JENKINS_SECRET"
+      value: "********"
+    - name: "JENKINS_TUNNEL"
+      value: "jenkins:50000"
+    - name: "JENKINS_AGENT_NAME"
+      value: "build-and-push-docker-image-8-6rzph-cll9h-n1hzj"
+    - name: "aws_key_id"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_key_id"
+          name: "aws-config"
+    - name: "aws_access_key"
+      valueFrom:
+        secretKeyRef:
+          key: "aws_access_key"
+          name: "aws-config"
+    - name: "JENKINS_NAME"
+      value: "build-and-push-docker-image-8-6rzph-cll9h-n1hzj"
+    - name: "JENKINS_AGENT_WORKDIR"
+      value: "/home/jenkins/agent"
+    - name: "JENKINS_URL"
+      value: "http://jenkins/"
+    image: "jenkins/inbound-agent:4.3-4"
+    name: "jnlp"
+    resources:
+      limits: {}
+      requests:
+        memory: "256Mi"
+        cpu: "100m"
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  nodeSelector:
+    kubernetes.io/os: "linux"
+  restartPolicy: "Never"
+  volumes:
+  - hostPath:
+      path: "/var/run/docker.sock"
+    name: "volume-0"
+  - emptyDir:
+      medium: ""
+    name: "workspace-volume"
+
+Running on [8mha:////4LdLDOTNbjKS3gEZCNaKK0hct6AbfBWsFFKd9fgpuWrvAAAAwx+LCAAAAAAAAP9djb0NwjAUhB9BMAAlomEAx6JB/CgVDUiBhglMbNlJXmzLsRFkDNaAhiEYhx2IlIpcc1d8+u71hVHtYK4Cr42OM6NrgyI+Gi5wf7fCYa7Lk/ECugwigJuDWY//Q5fJ85087CeC6ABjFFp6lcIwOPQwSQt2ZRSZlvTsXa7lttVNe7pd1/1f2w7qYUMzU9nghaOXkCMnTHNiQ60IN1kpHMkrJgVZkaVrrCIZ4loRvVBNQX/G9Moz7wAAAA==[0mbuild-and-push-docker-image-8-6rzph-cll9h-n1hzj in /home/jenkins/agent/workspace/build-and-push-docker-image
+[8mha:////4ERlOeCsiuiOh4MCRDietbCHxw6pU1XZRY7fecbmkLT6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4OAqaOryhf3sMrd6c7+prPuAP2YfUbI9n13DfkGVKi/VAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] stage
+[8mha:////4DXXrWFTpg5l0OLPFs3qlgs13V+/dKb4acxOg1W282ltAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] { (Build and publish docker Image)
+[8mha:////4MiNJIs0lMpV0fnwa5qQ0TU691p07ymn66irXVtAtZhbAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] container
+[8mha:////4MWW3Xdj1+bfXN82IcC/NWaUVO98Y+rFUNhdXRlDz9CbAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4JYPVjFWXVeVfumA3pxsAtfAPji0JSqZ1sjfsE00DqMjAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud19ah/eeSmYHb4AAAA=[0m[Pipeline] sh
++ aws --version
+aws-cli/2.2.14 Python/3.8.8 Linux/5.4.117-58.216.amzn2.x86_64 exe/x86_64.alpine.3 prompt/off
+[8mha:////4AQnY5QUSN+thsYWWkXuFrUaHt7TG8saGk+kxvB/RkGFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr6/2VK+AAAA[0m[Pipeline] sh
++ aws configure set aws_access_key_id ********
+[8mha:////4LcjzvMeS8eBwB5wsRRQt0PlsI2p8Omg1xkwCO64XFKYAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN/+Owku+AAAA[0m[Pipeline] sh
++ aws configure set aws_secret_access_key ********
+[8mha:////4MkaLf4kfeX17Efy1OnIv2oB/F/tsmWZVVhj2L3Q69oNAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNzzd72C+AAAA[0m[Pipeline] sh
++ aws configure set default.region eu-east-1
+[8mha:////4Jsbk8otN3Z3nHyelQ9l6xWNmnrEwU61CHaiIl42lCAXAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiaCgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN33s9Hm+AAAA[0m[Pipeline] sh
++ aws configure set default.output NONE
+[8mha:////4L/xF7DiWw0nCnfLZf/e8VMg8HqgTXEa03FF/r8B75t0AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiqJAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN7LwbP6+AAAA[0m[Pipeline] sh
++ aws ecr-public get-login-password --region us-east-1
++ docker login --username AWS --password-stdin public.ecr.aws/n4q1q0z2
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[8mha:////4EFbGK1aERWoBywkNCbSsQY52XKyykeu9T+cvD76w1iSAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUsCHE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAa2aj2jCAAAA[0m[Pipeline] withFileParameter
+[8mha:////4L/J9fu/7l4qWzsnlCmx5hsRJ6cBo0PmlgRCbkxDGHZcAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] {
+[8mha:////4C/AnhPtsM1aL01Qxy6B30RtdelFVLpOoP6liNFMKSFSAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMWQo99tP7cIbaOP4NL4AAAA=[0m[Pipeline] sh
++ cat /home/jenkins/agent/workspace/build-and-push-docker-image@tmp/dockerfile7324369139803054730.tmp
+[8mha:////4LX/39T3tkDIeq4i4yNTaolQFcx4qsi3NwOxQV6VkIJyAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKC0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJp+grPefqv0bq7DVH74AAAA=[0m[Pipeline] sh
++ docker build --no-cache --network host -t public.ecr.aws/n4q1q0z2/pharmaledger-jenkins-predefined-data:test .
+Sending build context to Docker daemon  2.048kB
+Step 1/8 : FROM alpine/git
+ ---> b8f176fa3f0d
+Step 2/8 : RUN mkdir /var/jenkins-backup
+ ---> Running in b50e3d7ffdbd
+Removing intermediate container b50e3d7ffdbd
+ ---> 0361286b28d4
+Step 3/8 : ENV BACKUP_BRANCH_NAME="20210910"
+ ---> Running in 88bb6e11fefa
+Removing intermediate container 88bb6e11fefa
+ ---> 62291973e5ac
+Step 4/8 : ENV JENKINS_BACKUP_REPOSITORY = "https://github.com/bmastahac/jenkins-backup.git"
+ ---> Running in 6b23d2bfa716
+Removing intermediate container 6b23d2bfa716
+ ---> f319d3912fff
+Step 5/8 : RUN git clone --single-branch --branch 20210910 https://github.com/bmastahac/jenkins-backup.git /var/jenkins-backup && ls /var/jenkins-backup
+ ---> Running in ee7266cbd2d5
+[91mCloning into '/var/jenkins-backup'...
+[0m[91mUpdating files:  67% (6560/9648)[0m[91mUpdating files:  68% (6561/9648)[0m[91mUpdating files:  69% (6658/9648)[0m[91mUpdating files:  70% (6754/9648)[0m[91mUpdating files:  71% (6851/9648)[0m[91mUpdating files:  72% (6947/9648)[0m[91mUpdating files:  73% (7044/9648)[0m[91mUpdating files:  74% (7140/9648)[0m[91mUpdating files:  75% (7236/9648)[0m[91mUpdating files:  76% (7333/9648)[0m[91mUpdating files:  77% (7429/9648)[0m[91mUpdating files:  78% (7526/9648)[0m[91mUpdating files:  79% (7622/9648)[0m[91mUpdating files:  80% (7719/9648)[0m[91mUpdating files:  81% (7815/9648)[0m[91mUpdating files:  81% (7857/9648)[0m[91mUpdating files:  82% (7912/9648)[0m[91mUpdating files:  83% (8008/9648)[0m[91mUpdating files:  84% (8105/9648)[0m[91mUpdating files:  85% (8201/9648)[0m[91mUpdating files:  86% (8298/9648)[0m[91mUpdating files:  87% (8394/9648)[0m[91mUpdating files:  88% (8491/9648)[0m[91mUpdating files:  89% (8587/9648)[0m[91mUpdating files:  90% (8684/9648)[0m[91mUpdating files:  91% (8780/9648)[0m[91mUpdating files:  92% (8877/9648)[0m[91mUpdating files:  93% (8973/9648)[0m[91mUpdating files:  94% (9070/9648)[0m[91mUpdating files:  95% (9166/9648)[0m[91mUpdating files:  96% (9263/9648)[0m[91mUpdating files:  97% (9359/9648)[0m[91mUpdating files:  98% (9456/9648)[0m[91mUpdating files:  99% (9552/9648)[0m[91mUpdating files: 100% (9648/9648)[0m[91mUpdating files: 100% (9648/9648), done.
+[0m20210910
+Removing intermediate container ee7266cbd2d5
+ ---> 08ecc3f72d30
+Step 6/8 : RUN cd /var/jenkins-backup/20210910/jenkins_home && cp -a . ../../
+ ---> Running in 692551b159ac
+Removing intermediate container 692551b159ac
+ ---> 4d157e5ae2db
+Step 7/8 : RUN cd /var/jenkins-backup && rm -rf 20210910 && rm -rf ./.git
+ ---> Running in 96a96e4d590f
+Removing intermediate container 96a96e4d590f
+ ---> aa31b5b6094f
+Step 8/8 : CMD [ "sh" ]
+ ---> Running in 06c9cfed5fe7
+Removing intermediate container 06c9cfed5fe7
+ ---> 947f612f2e23
+Successfully built 947f612f2e23
+Successfully tagged public.ecr.aws/n4q1q0z2/pharmaledger-jenkins-predefined-data:test
+[8mha:////4N9Yw1APmyMyPVFpwTqTDu5xQDAF98i1lGgUjDJZZVWcAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDudt+ah/e6oHOBr4AAAA=[0m[Pipeline] sh
++ docker push public.ecr.aws/n4q1q0z2/pharmaledger-jenkins-predefined-data:test
+The push refers to repository [public.ecr.aws/n4q1q0z2/pharmaledger-jenkins-predefined-data]
+3b896f5646e0: Preparing
+52340f054370: Preparing
+d21f9c14482c: Preparing
+c20f3ce75684: Preparing
+6b7571447006: Preparing
+9af2a1f7d4aa: Preparing
+b2d5eeeaba3a: Preparing
+9af2a1f7d4aa: Waiting
+b2d5eeeaba3a: Waiting
+6b7571447006: Layer already exists
+9af2a1f7d4aa: Layer already exists
+b2d5eeeaba3a: Layer already exists
+c20f3ce75684: Pushed
+3b896f5646e0: Pushed
+52340f054370: Pushed
+d21f9c14482c: Pushed
+test: digest: sha256:651a12f80841156c442db27a0a71db273244b44766246a9b552d54f21f156eb1 size: 1785
+[8mha:////4Ip2fbufGKF5yEc9I/p8Twd1gE9xsyK7KTD1JzVfiEOVAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BvGsvpe+AAAA[0m[Pipeline] }
+[8mha:////4Nmwn5g/eWWM4Yk1H4bimxX4uXVgH+uSldhwlF8RxH2WAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikCgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAM5QTDr4AAAA=[0m[Pipeline] // withFileParameter
+[8mha:////4KVclmYQirNsXWc5FIyyGBvtNgXKXr9G2X7iNX9qgGGGAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRKWgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrQ659/QEVP1UfvgAAAA==[0m[Pipeline] }
+[8mha:////4L54681mF2FGaFfOJAJIRRi4LMxct3AlhVJsrt6dA6ehAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0FAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QEKvQBNvgAAAA==[0m[Pipeline] // container
+[8mha:////4BBvKiWzzltPEoeq9SXk3V/Pp6+go8E6KgqRvBxpJQeaAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICVEgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Iddu+wFJP1HLvgAAAA==[0m[Pipeline] }
+[8mha:////4Bh/rfJRcBEI978WAykpdwLSaTH4mwh3ykW5lw7bpw/9AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkbsQ4uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwA50dwJ70AAAA=[0m[Pipeline] // stage
+[8mha:////4OAnxlNfwxOdut9+mc9lHcvQgEzKayf4usLb74peUGEGAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBokFCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5LutINt/AKXGO5a9AAAA[0m[Pipeline] }
+[8mha:////4EchowK9eZ9LIAQCbrb0XeTaSxEfu3+uarXQTZC/6zTMAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRoqBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5LutINt/AITy5Du9AAAA[0m[Pipeline] // node
+[8mha:////4BB0kMzeyqajULdDrl6mtiQN7N7pKKlux+BFexPQcyQWAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5LutINt/AMK4Qwu9AAAA[0m[Pipeline] }
+[8mha:////4Mbw7Fysh/RwerJk4oGONJYnWJZroPGxytZvC1Hz5H8HAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUjJVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8AyMAqr70AAAA=[0m[Pipeline] // podTemplate
+[8mha:////4Ayc/rYEYjUOT4kPtzNRUqFvTNkIcfk88D7poOmiY3l+AAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIU0jlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyfSnIyg9OLA1qvQAAAA==[0m[Pipeline] }
+[8mha:////4KyhfxzX47P33t9tU0RLzYr04xYs4HrhcTWchBN1tlp7AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUjJVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwAXZAJyb0AAAA=[0m[Pipeline] // podTemplate
+[8mha:////4BG+PhydKELDfqCyJkTGS/yEfYAbY8CDUZYoGB2MNjQLAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+ABvarvm9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

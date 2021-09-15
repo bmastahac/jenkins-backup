@@ -1,0 +1,80 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.92">
+    <parentIds>
+      <string>21</string>
+    </parentIds>
+    <id>22</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.92">
+      <arguments>
+        <entry>
+          <string>job</string>
+          <string>build-and-push-docker-image</string>
+        </entry>
+        <entry>
+          <string>parameters</string>
+          <list>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>DATA_IMAGE_NAME</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>pharmaledger-ethadapter</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>pharmaledger-ethadapter</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>DATA_IMAGE_VERSION</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>1.0</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>1.0</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>base64File</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>dockerfile</string>
+                </entry>
+                <entry>
+                  <string>base64</string>
+                  <string>RlJPTSBkZWJpYW46bGF0ZXN0CgpSVU4gYXB0LWdldCB1cGRhdGUgJiYgXAoJYXB0LWdldCAteSBpbnN0YWxsIG5vZGVqcyAmJiBcCglhcHQtZ2V0IC15IGluc3RhbGwgbnBtIC0tbm8taW5zdGFsbC1yZWNvbW1lbmRzCgpSVU4gbnBtIGluc3RhbGwgLWcgbm9kZS1neXAKClJVTiBhcHQtZ2V0IC15IGluc3RhbGwgZ2l0CgpFTlYgVEFSR0VUX0ZPTERFUl9OQU1FPSJlUEktd29ya3NwYWNlIgpSVU4gZ2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9QaGFybWFMZWRnZXItSU1JL2VwaS13b3Jrc3BhY2UuZ2l0ICRUQVJHRVRfRk9MREVSX05BTUUKClJVTiBjZCAkVEFSR0VUX0ZPTERFUl9OQU1FICYmIFwKICAgIG5wbSBydW4gZGV2LWluc3RhbGwgLS11bnNhZmUtcGVybQoKUlVOIGNkICRUQVJHRVRfRk9MREVSX05BTUUgJiYgXAogICAgbnBtIHJ1biBidWlsZCBwcml2YXRlc2t5CgpSVU4gY2QgJFRBUkdFVF9GT0xERVJfTkFNRS9ldGhhZGFwdGVyL0V0aEFkYXB0ZXIgJiYgXAogICAgbnBtIGluc3RhbGwgLS11bnNhZmUtcGVybQoKV09SS0RJUiAvJFRBUkdFVF9GT0xERVJfTkFNRS9ldGhhZGFwdGVyL0V0aEFkYXB0ZXIKCkVYUE9TRSAzMDAwCgpDTUQgWyAibm9kZSIgLCAiaW5kZXguanMiIF0K</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings/>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.45">
+      <startTime>1631660114274</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+    <wf.a.LabelAction plugin="workflow-api@2.45">
+      <displayName>Building build-and-push-docker-image</displayName>
+    </wf.a.LabelAction>
+  </actions>
+</Tag>

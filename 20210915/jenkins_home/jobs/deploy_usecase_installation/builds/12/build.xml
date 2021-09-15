@@ -1,0 +1,191 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>usecaseRepository</name>
+          <description></description>
+          <value>https://github.com/PharmaLedger-IMI/epi-workspace</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>workspace</name>
+          <description>usecase workspace folder</description>
+          <value>epi-workspace</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>domain</name>
+          <description></description>
+          <value>epiqa</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>subdomain</name>
+          <description></description>
+          <value>nvs.epiqa</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>vaultdomain</name>
+          <description></description>
+          <value>nvs</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>usecaseRepository</string>
+        <string>workspace</string>
+        <string>domain</string>
+        <string>subdomain</string>
+        <string>vaultdomain</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>2</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.19">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.92">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>12193</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>12191</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>657439</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>624</queueId>
+  <timestamp>1631618814976</timestamp>
+  <startTime>1631618814978</startTime>
+  <result>SUCCESS</result>
+  <duration>670540</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>//Jenkins env variable
+//$POD_DOCKER_REPOSITORY
+//$KUBECTL_JENKINS_AGENT
+//$KUBECTL_JENKINS_AGENT_VERSION
+
+
+def kubectl_image_source = &quot;$POD_DOCKER_REPOSITORY&quot;+&apos;:&apos;+&quot;$KUBECTL_JENKINS_AGENT&quot;+&apos;_&apos;+&quot;$KUBECTL_JENKINS_AGENT_VERSION&quot;
+
+  podTemplate(
+      containers: [
+          containerTemplate(name: &apos;node&apos;, image: &apos;node:latest&apos;, ttyEnabled: true, command: &apos;cat&apos;)
+          ]
+      ){
+
+        podTemplate(serviceAccount: &apos;jdefaultmns&apos;,namespace: &apos;jenkins&apos;,containers: [
+              containerTemplate(name: &apos;kubectl&apos;, image: kubectl_image_source, command: &apos;cat&apos;, ttyEnabled: true)
+            ],
+            volumes: [
+              hostPathVolume(mountPath: &apos;/var/run/docker.sock&apos;, hostPath: &apos;/var/run/docker.sock&apos;)
+            ]){
+
+                  node(POD_LABEL){
+
+                    stage (&apos;Repository cloning&apos;){
+                        container(&apos;node&apos;){
+                            sh &apos;git clone $usecaseRepository&apos;
+                        }
+                    }
+
+                    stage (&apos;Customize build&apos;){
+                        container(&apos;node&apos;){
+                            stage (&apos;Configure config-map&apos;){
+                                sh &apos;cd $workspace/docker/k8s/templates &amp;&amp; sed &quot;s/%domain%/$domain/g&quot; configmap.yaml.template | sed &quot;s/%bdns-entries%//g&quot; | sed &quot;s/%subdomain%/$subdomain/g&quot; | sed &quot;s/%vaultdomain%/$vaultdomain/g&quot; &gt; configmap.yaml&apos;
+                                sh &apos;cat $workspace/docker/k8s/templates/configmap.yaml&apos;
+
+                                sh &apos;cd $workspace/docker/k8s/templates &amp;&amp; sed &quot;s/%domain%/$domain/g&quot; domains-configmap.yaml.template | sed &quot;s/%subdomain%/$subdomain/g&quot; | sed &quot;s/%vaultdomain%/$vaultdomain/g&quot; | sed &quot;s/%anchoring%/FS/g&quot; | sed &quot;s/%anchoringEndPoint%/\\&quot;enableBricksLedger\\&quot;: false/g&quot; &gt; domains-configmap.yaml&apos;
+                                sh &apos;cat $workspace/docker/k8s/templates/domains-configmap.yaml&apos;
+                            }
+                            stage (&apos;Configure deployment&apos;){
+                                sh &apos;cd $workspace/docker/k8s/templates &amp;&amp; sed &quot;s/%domain%/$domain/g&quot; deployment.yaml.template | sed &quot;s/%subdomain%/$subdomain/g&quot; | sed &quot;s/%vaultdomain%/$vaultdomain/g&quot; &gt; deployment.yaml&apos;
+                                sh &apos;cat $workspace/docker/k8s/templates/deployment.yaml&apos;
+
+                                sh &apos;cd $workspace/docker/k8s/templates &amp;&amp; sed &quot;s/%subdomain%/$subdomain/g&quot; service.yaml.template | sed &quot;s/%domain%/$domain/g&quot; &gt; service.yaml&apos;
+                                sh &apos;cat $workspace/docker/k8s/templates/service.yaml&apos;
+                                script{
+                                   usecase_version = sh(  returnStdout: true, script: &apos;cd $workspace &amp;&amp; git log -n 1 --format=&quot;%H&quot;&apos;)
+                                }
+                            }
+                        }
+                    }
+
+                    stage (&apos;Build and publish docker Image&apos;){
+
+                        def docker_image = &quot;${ORGANISATION__DEPLOYMENT_PREFIX}-${domain}&quot;
+                        def dockerfile = readFile(&quot;${workspace}/docker/Dockerfile&quot;)
+                        build job: &apos;build-and-push-docker-image&apos;,
+                        parameters: [
+                                string(name: &apos;DATA_IMAGE_NAME&apos;, value:&quot;$docker_image&quot;),
+                                string(name: &apos;DATA_IMAGE_VERSION&apos;, value:&quot;$usecase_version&quot;),
+                                base64File(name: &apos;dockerfile&apos;, base64: Base64.encoder.encodeToString(dockerfile.bytes))
+                                ]
+                    }
+
+                   stage (&apos;Usecase deployment&apos;){
+                       container(&apos;kubectl&apos;){
+                             sh &apos;cd $workspace/docker &amp;&amp; kubectl apply -f ./k8s/templates -n default&apos;
+                             sh &apos;kubectl get pods -n default&apos;
+                             sh &apos;kubectl get services -n default&apos;
+                        }
+                    }
+
+
+                  }
+
+            }
+    }
+
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>305251089</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>110264976</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>4914767669</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>82321661</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>136070768</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>70</iota>
+    <head>1:70</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

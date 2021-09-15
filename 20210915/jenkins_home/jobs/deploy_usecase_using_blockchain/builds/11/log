@@ -1,0 +1,489 @@
+Started by user [8mha:////4D7lhoyTb2CZyILRNnvEj3yX8u7ydzhlzzbMrGZOlmEuAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Obtained jenkins/pipelines/blockchain/deploy_usecase_using_blockchain.groovy from git https://github.com/PharmaLedger-IMI/governance-workspace.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4KQ4nQHzoizlWJhcMrmfP4ZtQr21g23OA67AlRm7f+BEAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4H58ktrztD9GWn8dAZ0UJOosdbMGsC5ZvC8Mk3WN3VRKAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4OjBRqdKRoTT4zVjMoXG4OSopdAe9GJYwWxo0ZDK8VDmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4PHgf4X/N+KdathW4kbJhs7rA+ErjKAJ8v/7PrS3M53UAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4HvdKFC/csV1fWuiW7xrZSsYw7LQGZgqFJoTkNKUM7WvAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4MKHNsyM9X0kb8xKioDXcyWmXNqA+kevFO5+LnLL/NKZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] node
+Created Pod: kubernetes jenkins/deploy-usecase-using-blockchain-11-gkmhn-rm5jz-kf675
+Agent [8mha:////4PhHqZcotjhbyle4YqrvO1MQ7w7ViMBSf76aRlpV1PKMAAAAxx+LCAAAAAAAAP9djb0NwjAUhB9BMAAlomEAJ4pEQoFCQwNSoGEC4zycH8e2bAcRxmANaBiCcdiBSFTkmrvi03fPD4ysgXneZFZJnylplUB/rzIU21ajEYWsDsoh/DLwAK4GZj3+D42Txyu567cH3g7GAiV3eQrDxggHk7SkFxoIKnlwdKaQfNXppj3d5tf9X92NhYN1wFStG4cmyFAL1ZLGIqMWu+6E5CQUq1hOC0nCkPCqziUxdVTeSHWOl9EXcDtN/PMAAAA=[0mdeploy-usecase-using-blockchain-11-gkmhn-rm5jz-kf675 is provisioned from template deploy_usecase_using_blockchain_11-gkmhn-rm5jz
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  annotations:
+    buildUrl: "http://jenkins/job/deploy_usecase_using_blockchain/11/"
+    runUrl: "job/deploy_usecase_using_blockchain/11/"
+  labels:
+    jenkins: "slave"
+    jenkins/label-digest: "de8162b418ce8f827c9ced11816463ab8553890b"
+    jenkins/label: "deploy_usecase_using_blockchain_11-gkmhn"
+  name: "deploy-usecase-using-blockchain-11-gkmhn-rm5jz-kf675"
+spec:
+  containers:
+  - command:
+    - "cat"
+    image: "node:latest"
+    imagePullPolicy: "IfNotPresent"
+    name: "node"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - command:
+    - "cat"
+    image: "public.ecr.aws/n4q1q0z2/epi:pharmaledger-kubectl-jenkins-agent_1.0"
+    imagePullPolicy: "IfNotPresent"
+    name: "kubectl"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - env:
+    - name: "JENKINS_SECRET"
+      value: "********"
+    - name: "JENKINS_TUNNEL"
+      value: "jenkins:50000"
+    - name: "JENKINS_AGENT_NAME"
+      value: "deploy-usecase-using-blockchain-11-gkmhn-rm5jz-kf675"
+    - name: "JENKINS_NAME"
+      value: "deploy-usecase-using-blockchain-11-gkmhn-rm5jz-kf675"
+    - name: "JENKINS_AGENT_WORKDIR"
+      value: "/home/jenkins/agent"
+    - name: "JENKINS_URL"
+      value: "http://jenkins/"
+    image: "jenkins/inbound-agent:4.3-4"
+    name: "jnlp"
+    resources:
+      limits: {}
+      requests:
+        memory: "256Mi"
+        cpu: "100m"
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  nodeSelector:
+    kubernetes.io/os: "linux"
+  restartPolicy: "Never"
+  serviceAccountName: "jdefaultmns"
+  volumes:
+  - hostPath:
+      path: "/var/run/docker.sock"
+    name: "volume-0"
+  - emptyDir:
+      medium: ""
+    name: "workspace-volume"
+
+Running on [8mha:////4EYNaTi/nbwBO0HddRGIMlOyrAGaGz6e+cKitzg2AfhXAAAAyB+LCAAAAAAAAP9djb0NwjAUhB9BMAAlomEAx4pEQoEiChqQAg0TGOeRP8e2bAcRxmANaBiCcdiBSFTkmrvi03fPD4ysgXnepFZJnytplUB/r1IU21ajEYWsDsoh/DLwAK4GZj3+D43ixyu+67cH3g7GAmXm8gSGjREOJknJLowKJjN6dKaQ2arTTXu6za/7v7obCwdrylWtG4eGpqiFakljkTOLXXdCchKKVzxnhSRBQLKqziUxdVjeSHWOliH9AkbDH6b0AAAA[0mdeploy-usecase-using-blockchain-11-gkmhn-rm5jz-kf675 in /home/jenkins/agent/workspace/deploy_usecase_using_blockchain
+[8mha:////4ERlOeCsiuiOh4MCRDietbCHxw6pU1XZRY7fecbmkLT6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4OAqaOryhf3sMrd6c7+prPuAP2YfUbI9n13DfkGVKi/VAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] stage
+[8mha:////4DXXrWFTpg5l0OLPFs3qlgs13V+/dKb4acxOg1W282ltAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] { (Repository cloning)
+[8mha:////4MiNJIs0lMpV0fnwa5qQ0TU691p07ymn66irXVtAtZhbAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] container
+[8mha:////4MWW3Xdj1+bfXN82IcC/NWaUVO98Y+rFUNhdXRlDz9CbAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4JYPVjFWXVeVfumA3pxsAtfAPji0JSqZ1sjfsE00DqMjAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud19ah/eeSmYHb4AAAA=[0m[Pipeline] sh
++ git clone https://github.com/PharmaLedger-IMI/epi-workspace
+Cloning into 'epi-workspace'...
+[8mha:////4M02ZnSF+3GWonWE1WQRRaaQTNzJeBl6mVpGA4GP8EjFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BoOEdWO+AAAA[0m[Pipeline] }
+[8mha:////4Jckgmv05CUFFF4zFw4ZLpec63O30AXbcWeGUiCfkQ4OAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyKawcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfnAYgMb4AAAA=[0m[Pipeline] // container
+[8mha:////4GiuGyBwjDavMhNNjsnDfwCWOz0wUXuoRVuDlSEN9TOVAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICDQ2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BqREs8C+AAAA[0m[Pipeline] }
+[8mha:////4OAlYgr+8yv0TtNNjpvBTIYTNLC8HuuEeyFhg3M+2T8HAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRFUKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPKIvUHr0AAAA=[0m[Pipeline] // stage
+[8mha:////4OI542rvSvSzOMt64UguTNZ6STwXE6h8dPR/Lz/KGQJzAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjukiIitZywwtMYowT6y7YF5KKF/E1/oAhEhVb7ay0mucLyhThQNHJzmLvMTVeDmF0ucmJYn8JNMmOzrIhTBSs1HbS1NrjgprYwhJRwErB2mITKHl0DBvVmbupgkFXnTjmba+g8O0NHiBUNrOJ/IU5wvY6tonw5/krgHlgEDVDsas/x/INHPRjt8EAAAA=[0m[Pipeline] stage
+[8mha:////4Nv4p2NTv3ax7jiDBRw9TvsZbafPAmPUIKO960vXvCvEAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] { (Customize build)
+[8mha:////4L/J9fu/7l4qWzsnlCmx5hsRJ6cBo0PmlgRCbkxDGHZcAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] container
+[8mha:////4Bd0tmDHqehbCMWycGeYBDFaysn/rSSQUUfMm6uKcFKbAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] {
+[8mha:////4Hxyf6Wuu2wz7xv50CDdqF6iXH4f8RtvR/nfrF01TAe5AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] stage
+[8mha:////4OHmeoh6ls7IQqXnY08F+5Di/3nwT1eZm/8ByAi+CVeiAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKiNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPpnFij8IAAAA=[0m[Pipeline] { (Configure config-map)
+[8mha:////4N7h0ntzw34yVEV0WF++7GGnt6y7Sebp9jQb+xG8RVYpAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBrANZ3i+AAAA[0m[Pipeline] sh
++ cd epi-workspace/docker/k8s/templates
++ sed s/%vaultdomain%/nvs/g
++ sed s/%subdomain%/nvs.epiqa/g
++ sed s/%bdns-entries%//g
++ sed s/%domain%/epiqa/g configmap.yaml.template
+[8mha:////4CCR1vMxxvATwjvA81nOT58qjltDj08eh1dgVQ78rUDIAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN/E8fGG+AAAA[0m[Pipeline] sh
++ cat epi-workspace/docker/k8s/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nvs.epiqa
+data:
+  bdns.hosts: |-
+    {
+      
+      "default": {
+        "replicas": [],
+        "brickStorages": [
+          "$ORIGIN"
+        ],
+        "anchoringServices": [
+          "$ORIGIN"
+        ],
+        "notifications": [
+          "$ORIGIN"
+        ]
+      },   
+      "vault": {
+        "replicas": [],
+        "brickStorages": [
+          "$ORIGIN"
+        ],
+        "anchoringServices": [
+          "$ORIGIN"
+        ],
+        "notifications": [
+          "$ORIGIN"
+        ]
+      },
+      "vault.nvs": {
+        "replicas": [],
+        "brickStorages": [
+          "$ORIGIN"
+        ],
+        "anchoringServices": [
+          "$ORIGIN"
+        ],
+        "notifications": [
+          "$ORIGIN"
+        ]
+      },      
+      "epiqa": {
+        "replicas": [],
+        "brickStorages": [
+          "$ORIGIN"
+        ],
+        "anchoringServices": [
+          "$ORIGIN"
+        ],
+        "notifications": [
+          "$ORIGIN"
+        ]
+      },
+      "nvs.epiqa": {
+        "replicas": [],
+        "brickStorages": [
+          "$ORIGIN"
+        ],
+        "anchoringServices": [
+          "$ORIGIN"
+        ],
+        "notifications": [
+          "$ORIGIN"
+        ]
+      },
+      "nvs": {
+        "replicas": [],
+        "brickStorages": [
+            "$ORIGIN"
+        ],
+        "anchoringServices": [
+            "$ORIGIN"
+        ],
+        "notifications": [
+            "$ORIGIN"
+        ]
+      }
+    }
+
+  apihub.json: |-
+    {
+      "storage": "../apihub-root",
+      "port": 8080,
+      "preventRateLimit": true,
+      "activeComponents": [
+        "virtualMQ",
+        "messaging",
+        "notifications",
+        "filesManager",
+        "bdns",
+        "bricksLedger",
+        "bricksFabric",
+        "bricking",
+        "anchoring",
+        "dsu-wizard",
+        "gtin-dsu-wizard",
+        "epi-mapping-engine",
+        "debugLogger",
+        "staticServer"
+      ],
+      "componentsConfig": {
+        "epi-mapping-engine": {
+          "module": "./../../epi-utils",
+          "function": "getEPIMappingEngineForAPIHUB"
+        },
+        "gtin-dsu-wizard": {
+          "module": "./../../gtin-dsu-wizard"
+        },
+        "bricking": {},
+        "anchoring": {}
+      },
+      "enableRequestLogger": true,
+      "enableJWTAuthorisation": false,
+      "enableLocalhostAuthorization": false,
+      "skipJWTAuthorisation": [
+        "/assets",
+        "/leaflet-wallet",
+        "/dsu-fabric-wallet",
+        "/directory-summary",
+        "/resources",
+        "/bdns",
+        "/anchor/epi",
+        "/anchor/default",
+        "/anchor/vault",
+        "/bricking",
+        "/bricksFabric",
+        "/bricksledger",
+        "/create-channel",
+        "/forward-zeromq",
+        "/send-message",
+        "/receive-message",
+        "/files",
+        "/notifications",
+        "/mq"
+      ]
+    }
+[8mha:////4Ih+dBKIARs2PFYo43bu8XXgQ8U9FQQmbhCx3iLrhcH5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEyb1FKvgAAAA==[0m[Pipeline] sh
++ cd epi-workspace/docker/k8s/templates
++ sed s/%domain%/epiqa/g domains-configmap.yaml.template
++ + sed s/%subdomain%/nvs.epiqa/g
++ sed s/%anchoring%/ETH/g
+sed s/%vaultdomain%/nvs/g
++ sed s/%anchoringEndPoint%/"endpoint": "http:\/\/ethadapter-service:3000"/g
+[8mha:////4M/NLwY0+pjOyFXhP03+OKWKgq/S78wcaeGroealxyp/AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQUGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAFzXkpTvgAAAA==[0m[Pipeline] sh
++ cat epi-workspace/docker/k8s/templates/domains-configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: domains-nvs.epiqa
+data:
+   default.json: |-
+     {
+       "anchoring": {
+         "type": "FS",
+         "option": {
+           "enableBricksLedger": false
+         },
+         "commands": {
+           "addAnchor": "anchor"
+         }
+       }
+     }
+   vault.nvs.json: |-
+    {
+      "anchoring": {
+        "type": "FS",
+        "option": {}
+      }
+    }     
+   vault.json: |-
+     {
+       "anchoring": {
+         "type": "FS",
+         "option": {}
+       }
+     }     
+   epiqa.json: |-
+     {
+       "anchoring": {
+         "type": "ETH",
+         "option": {
+           "endpoint": "http://ethadapter-service:3000"
+         },
+         "commands": {
+           "addAnchor": "anchor"
+         }
+       }
+     }
+   nvs.epiqa.json: |-
+     {
+       "anchoring": {
+         "type": "FS",
+         "option": {
+           "enableBricksLedger": false
+         },
+         "commands": {
+           "addAnchor": "anchor"
+         }
+       }
+     }
+   nvs.json: |-
+     {
+       "anchoring": {
+         "type": "FS",
+         "option": {
+           "enableBricksLedger": false
+         },
+         "commands": {
+           "addAnchor": "anchor"
+         }
+       }
+     }
+[8mha:////4IgoaOoaGMHWdh29QnXRxdDivApSpTnvzyCYPoNUbLOKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQYOEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEwPXV5vgAAAA==[0m[Pipeline] }
+[8mha:////4KukTCPld5+hFk4VhbHbzxO8J/JQoRYti30eLHsmmKbhAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiadDPGyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+AQPeLsW+AAAA[0m[Pipeline] // stage
+[8mha:////4F4e0L8wq0Xgs2K7+h2sZIqTYP2xfZ7zhlhxAhIZuFozAAAApx+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycoiUnxF1Yo26cILQhJA0eq8kKenEibgadyBQiQkPlm3J+p4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOVum22/+TyrN71uYzbCAAAA[0m[Pipeline] stage
+[8mha:////4MPXEtb9QEHpRWjU+bQ9Tgg01q4J5hP0StM8p85Q9GqoAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUxIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+ty4Up8IAAAA=[0m[Pipeline] { (Configure deployment)
+[8mha:////4NrDOyrWLTYI2nZrDI4F2ve8ek4N+brNqmGob9dc4072AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud9+ahfettHKdL4AAAA=[0m[Pipeline] sh
++ cd epi-workspace/docker/k8s/templates
++ sed s/%domain%/epiqa/g deployment.yaml.template
++ sed s/%subdomain%/nvs.epiqa/g
++ sed s/%vaultdomain%/nvs/g
+[8mha:////4O2HtsDyI9MRKMRrMA9Mai79Fuqmp1/xBWLhVuntB8CRAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIilBJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3f9+DRbb4AAAA=[0m[Pipeline] sh
++ cat epi-workspace/docker/k8s/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: nvs.epiqa
+  name: nvs.epiqa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: nvs.epiqa
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.service: nvs.epiqa
+    spec:
+      containers:
+      - image: public.ecr.aws/n4q1q0z2/pharmaledger-epiqa:1.0
+        imagePullPolicy: "Always"
+        name: epi
+        ports:
+          - containerPort: 8080
+        volumeMounts:
+          - name: epi-config-volume
+            mountPath: /ePI-workspace/apihub-root/external-volume/config/apihub.json
+            subPath: apihub.json
+          - name: epi-config-volume
+            mountPath: /ePI-workspace/apihub-root/external-volume/config/bdns.hosts
+            subPath: bdns.hosts
+          - name: epi-domains-volume
+            mountPath: /ePI-workspace/apihub-root/external-volume/config/domains/epiqa.json
+            subPath: epiqa.json
+          - name: epi-domains-volume
+            mountPath: /ePI-workspace/apihub-root/external-volume/config/domains/nvs.epiqa.json
+            subPath: nvs.epiqa.json
+          - name: epi-domains-volume
+            mountPath: /ePI-workspace/apihub-root/external-volume/config/domains/nvs.json
+            subPath: nvs.json
+          - name: epi-domains-volume
+            mountPath: /ePI-workspace/apihub-root/external-volume/config/domains/default.json
+            subPath: default.json
+          - name: epi-domains-volume
+            mountPath: /ePI-workspace/apihub-root/external-volume/config/domains/vault.json
+            subPath: vault.json            
+      restartPolicy: Always
+      volumes:
+        - name: epi-config-volume
+          configMap:
+            name: nvs.epiqa
+        - name: epi-domains-volume
+          configMap:
+            name: domains-nvs.epiqa
+[8mha:////4P7TT60QiFkYFE/uatBSvufuiAl8HX+hxd81jHEF987TAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyt32U/vwBjB2kCK+AAAA[0m[Pipeline] sh
++ cd epi-workspace/docker/k8s/templates
++ sed s/%domain%/epiqa/g
++ sed s/%subdomain%/nvs.epiqa/g service.yaml.template
+[8mha:////4B72uhgditKNDcRHYyDCCCUUc+5UdhfsIdFFTUmlnn/ZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO62n9qHN3FHizu+AAAA[0m[Pipeline] sh
++ cat epi-workspace/docker/k8s/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    io.kompose.service: nvs.epiqa
+  name: epiqa
+spec:
+  ports:
+    - name: "80"
+      port: 80
+      targetPort: 8080
+  selector:
+    io.kompose.service: nvs.epiqa
+  type: ClusterIP
+[8mha:////4Dqr5KYZFn25hPiSy1zRP+bl1NSHjG3+d+Y9xNDtfxEoAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCIkFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLk+91sh/lZfADPwZ97wgAAAA==[0m[Pipeline] script
+[8mha:////4OYvYQtXnU8lJ5vCCVJcKa8tkhJ2QsJtMB3kKph1r5XMAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QIIBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADpB/iZwgAAAA==[0m[Pipeline] {
+[8mha:////4LRdnRzKzA2bJrrTdZTKx0tZhYpJd+d4s4vtGtterqhiAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUICEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEGDPXtvgAAAA==[0m[Pipeline] sh
++ cd epi-workspace
++ git log -n 1 --format=%H
+[8mha:////4KPSkxnOHYo/UwxcJxUbf+gI+/CyVhckf+t7YR18LziiAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUCCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQF5ECgKvgAAAA==[0m[Pipeline] }
+[8mha:////4HXMyoi/MwYSs+k/Z2qBOIxXtruqg5Ui9bO7Bo44h3xbAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw+pT4efvgAAAA==[0m[Pipeline] // script
+[8mha:////4H+Dat4ss/BRm++ARS5ZY+bR42+XkmbFq/9u4urm8R8CAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvP68Jv8q+AAAA[0m[Pipeline] }
+[8mha:////4J0mUEYr7xBYQnSXwpLdiDKcrK2OntdqNHO9MVwljAyVAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCgA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY5dpvP5dLLDu+AAAA[0m[Pipeline] // stage
+[8mha:////4IAWc/kFwAGoGoqU17N5Yt9/cKgpwTdLQdVtQyZLmUwvAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIjPh1KRWu54QQmMcaJtRtsB6fiRFyNO2ARiYopRvOmea83LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDPtdu+wHlmWyevgAAAA==[0m[Pipeline] }
+[8mha:////4IaKk6DU/PJNWOKiURxIzdcPYuxCYctorff0Yg7OVdXnAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCUDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGVd5zrsP8uZbvS+AAAA[0m[Pipeline] // container
+[8mha:////4NAfxqVC/AYfj0KVUfp5SPdsCPmQynnXsiSWO/9H5KL3AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwACaHDbb4AAAA=[0m[Pipeline] }
+[8mha:////4CSwkIWifJao91fC8NfVk/uHq6C4Z+EX/eFJf/B2+pR8AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJISQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUu32u7eEDMeNQnL4AAAA=[0m[Pipeline] // stage
+[8mha:////4JRsn7Rslz1rydlN9HxtB0AjXoX4Pn685rq8A7Wc1vrgAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYTTIIGEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFjKDbbz7F8A25pDRTBAAAA[0m[Pipeline] stage
+[8mha:////4NrC3Dx95x0BJH8jSlwbWdV+UnWk2sB1HWmubbqfHFoTAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QQIJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD9vR8YwgAAAA==[0m[Pipeline] { (Build and publish docker Image)
+[8mha:////4Gx5yXBJT+iw7Jrm4FHmqDPSzQJlp9daGYymqiK74q4VAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSUIAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNzJSLA2+AAAA[0m[Pipeline] readFile
+[8mha:////4C6lVDzcpH+eYiIzH5Kl6fS0dyKdhzalUYAvrub2KbaXAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCARISSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wATIMs3b4AAAA=[0m[Pipeline] build
+Scheduling project: [8mha:////4CKsRFMh9KfNpQed0X/e4cJr5v5ibHzg01i6Wgv07vZkAAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzpEgZF/az8JP2k0sycFN3EvBTdgtLiDN2U/OTs1CLdzNzE9FR9APkCvXTWAAAA[0mbuild-and-push-docker-image
+Starting building: [8mha:////4ODsMQusk/79sSyE4xDgrp+KcY33ARbX1hmV2seZW4uMAAAAsB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgYV/az8JP2k0sycFN3EvBTdgtLiDN2U/OTs1CLdzNzE9FR9YwN9AJZuKq7ZAAAA[0mbuild-and-push-docker-image #30
+[8mha:////4Cg5z0iqgJJ5AvRcbtkR0GeTvM6B+1hOlds3aNQOGvFXAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJJCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+22u3eEDeCxVWr4AAAA=[0m[Pipeline] }
+[8mha:////4Luh8iHK/g6X4RXK9pmMFM8gDQcI+EcD7tXi1TddnND0AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIRAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAR0N+TL4AAAA=[0m[Pipeline] // stage
+[8mha:////4OoJskDcrVTtH+UJSCVUse8Q1B+fR9GLIGOHR6XILjZ6AAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTICQkREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgdQ7HdfI7lG8wg6ynBAAAA[0m[Pipeline] stage
+[8mha:////4BZeDYDa8/lGV/TBBTzNEIKtiCKcrt3IEtJQhsD0IqddAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAd9J1uLCAAAA[0m[Pipeline] { (Usecase deployment)
+[8mha:////4HIuH3bsHN/EKCEJPEylKMzetwglBYzpqAA8DzigALu2AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0oRNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsP+Y+xAMIAAAA=[0m[Pipeline] container
+[8mha:////4MPAMM16UFYfyaatTPfEqWyTgTiOiasiD6XqjvtUujDWAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KgtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPlyKrR8IAAAA=[0m[Pipeline] {
+[8mha:////4HZ2XlZpaWyOquVkc1Z0togMkdPXBV5ZcldxOa0JLkMHAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAQWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBkhu+A6+AAAA[0m[Pipeline] sh
++ cd epi-workspace/docker
++ kubectl apply -f ./k8s/templates -n default
+configmap/nvs.epiqa created
+deployment.apps/nvs.epiqa created
+configmap/domains-nvs.epiqa created
+service/epiqa created
+[8mha:////4FlPSYH8E9DeVZoGCyjOz9hXlYCnfO4wmgiiMofYcFuQAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgZAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN4dyYIm+AAAA[0m[Pipeline] sh
++ kubectl get pods -n default
+NAME                                       READY   STATUS              RESTARTS   AGE
+ethadapter                                 1/1     Running             0          13m
+governance-54d9cf896f-bk9lx                1/1     Running             0          10h
+nvs.epiqa-78f876d4f8-gz5sg                 0/1     ContainerCreating   0          1s
+quorum-node1-deployment-5c9844fc7f-7zpqp   1/1     Running             0          26m
+quorum-node2-deployment-7fcfcc4b67-tdvk7   1/1     Running             0          26m
+quorum-node3-deployment-8fd8c49c6-nw6m6    1/1     Running             0          26m
+[8mha:////4GTpwoMx3Ds82qyxPIn8h7Yz5E4iLqbElm9fSUm3i2kXAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgYQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN8ZDe5C+AAAA[0m[Pipeline] sh
++ kubectl get services -n default
+NAME                 TYPE           CLUSTER-IP       EXTERNAL-IP                                                                  PORT(S)           AGE
+epiqa                ClusterIP      10.100.106.11    <none>                                                                       80/TCP            2s
+ethadapter-service   LoadBalancer   10.100.123.59    a570dc151a59f4531b8a1993648f98ed-1942919093.eu-central-1.elb.amazonaws.com   3000:30349/TCP    13m
+governance-service   ClusterIP      10.100.25.98     <none>                                                                       80/TCP            10h
+jenkins              ExternalName   <none>           jenkins.jenkins.svc.cluster.local                                            80/TCP            15h
+kubernetes           ClusterIP      10.100.0.1       <none>                                                                       443/TCP           113d
+quorum-node1         NodePort       10.100.199.247   <none>                                                                       30303:32027/TCP   26m
+quorum-node1-rpc     NodePort       10.100.79.241    <none>                                                                       8545:32111/TCP    26m
+quorum-node2         NodePort       10.100.61.110    <none>                                                                       30303:32343/TCP   26m
+quorum-node2-rpc     NodePort       10.100.65.148    <none>                                                                       8545:32727/TCP    26m
+quorum-node3         NodePort       10.100.230.177   <none>                                                                       30303:31679/TCP   26m
+quorum-node3-rpc     NodePort       10.100.44.38     <none>                                                                       8545:30434/TCP    26m
+[8mha:////4NeZLDziyUUUEasFE3rU1cpOzc3LTN+WeqvhjF1IESBoAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCQxpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGW9z3WoPwb5Ql6+AAAA[0m[Pipeline] }
+[8mha:////4OtN3EEcieCh+xxsTwpCMHB9mf2ORxB234RAXa5gpdUBAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRRWgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJygP+1x1/QEZexcMvgAAAA==[0m[Pipeline] // container
+[8mha:////4FNqaMRaN+0d8IFpnKC8BkW1JiHqNdftpjetoKJHEMBnAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIaBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrn2uw8hOYT9vgAAAA==[0m[Pipeline] }
+[8mha:////4LomwFNxbaHm8i9nCtj2uzWlLJZehJXUjTyPffdS9SexAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSRNAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QEnf7yovgAAAA==[0m[Pipeline] // stage
+[8mha:////4KQeC/XyR7g1n0rSXrdgKkuvGV6pk7UTMCAzNhk49VekAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJpEEJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5LutINt/ANbxdjO9AAAA[0m[Pipeline] }
+[8mha:////4ICHqGcdJTqpucv8PvP847QEUIyS+9UsU6GRL70H6ED2AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJUauFY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId1tBtv8A98Wpnr0AAAA=[0m[Pipeline] // node
+[8mha:////4MEeQhp9MERog58io/l6p10roJjKDLWbXC1Sm+XyN0jFAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJ0NI6VbYbGE0SIMZDZhWQRKk/k1byDjMxY+av/XvNeb2xTxImjU62lzlOqverD6JanJo7dLfCkWr6qmilxsKqyU8WNPa9YsVisy3JsNHaW6sDJkxPsdWsepgiGXHGRuLijRu6bAU9keimLifKFOeJwH5vE9Ov8DWDue0FeloKs/ACxjw6uvQAAAA==[0m[Pipeline] }
+[8mha:////4APhf1UAWh53FvP3i1cdmndM6W5LAYZYb05c7PyTAmR0AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJUauFY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId3tBtv0Au/dnCr0AAAA=[0m[Pipeline] // podTemplate
+[8mha:////4DQABhdKl2Oe1QxlVzGv7iRg5QbC6J6HwMt+TG9gslydAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJpEEJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+APxQMP+9AAAA[0m[Pipeline] }
+[8mha:////4Lz+39pQUdV2IPg7TP7qHzBXgarSTc3HzIxFKDdUy591AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpkJAQoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/tBdn2A+/sNFy9AAAA[0m[Pipeline] // podTemplate
+[8mha:////4DtWCqkeKql0U8VlPfUJsb8ZbJdQ7gAWG2CgxKgyz13PAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBNBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPrW1/7b0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

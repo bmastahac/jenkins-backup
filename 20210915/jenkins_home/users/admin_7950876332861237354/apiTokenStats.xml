@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.security.apitoken.ApiTokenStats>
+  <tokenStats>
+    <jenkins.security.apitoken.ApiTokenStats_-SingleTokenStats>
+      <tokenUuid>b9e71d59-2ebd-46c4-baf1-c4a705612bf3</tokenUuid>
+      <lastUseDate>2021-09-07 12:30:01.950 UTC</lastUseDate>
+      <useCounter>265</useCounter>
+    </jenkins.security.apitoken.ApiTokenStats_-SingleTokenStats>
+    <jenkins.security.apitoken.ApiTokenStats_-SingleTokenStats>
+      <tokenUuid>cc2b3b0d-da15-4606-839d-f703f5662885</tokenUuid>
+      <lastUseDate>2021-07-13 07:19:11.335 UTC</lastUseDate>
+      <useCounter>605</useCounter>
+    </jenkins.security.apitoken.ApiTokenStats_-SingleTokenStats>
+    <jenkins.security.apitoken.ApiTokenStats_-SingleTokenStats>
+      <tokenUuid>b48b05f6-b0f4-47c4-b64d-7bab3a8322cb</tokenUuid>
+      <lastUseDate>2021-09-06 12:14:57.423 UTC</lastUseDate>
+      <useCounter>830</useCounter>
+    </jenkins.security.apitoken.ApiTokenStats_-SingleTokenStats>
+    <jenkins.security.apitoken.ApiTokenStats_-SingleTokenStats>
+      <tokenUuid>01a348e5-accc-4e5d-ba04-bac0711a422b</tokenUuid>
+      <lastUseDate>2021-09-14 10:54:19.293 UTC</lastUseDate>
+      <useCounter>26</useCounter>
+    </jenkins.security.apitoken.ApiTokenStats_-SingleTokenStats>
+    <jenkins.security.apitoken.ApiTokenStats_-SingleTokenStats>
+      <tokenUuid>f0a39663-d5ae-4170-8853-d8916b68551f</tokenUuid>
+      <lastUseDate>2021-09-15 14:11:32.659 UTC</lastUseDate>
+      <useCounter>2581</useCounter>
+    </jenkins.security.apitoken.ApiTokenStats_-SingleTokenStats>
+  </tokenStats>
+</jenkins.security.apitoken.ApiTokenStats>

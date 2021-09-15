@@ -1,0 +1,134 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>1</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.19">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.92">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>9635</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>9628</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>47833</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>716</queueId>
+  <timestamp>1631658758381</timestamp>
+  <startTime>1631658758383</startTime>
+  <result>SUCCESS</result>
+  <duration>58037</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>//Jenkins env variable
+//$POD_DOCKER_REPOSITORY
+//$KUBECTL_JENKINS_AGENT
+//$KUBECTL_JENKINS_AGENT_VERSION
+
+
+def kubectl_image_source = &quot;$POD_DOCKER_REPOSITORY&quot;+&apos;:&apos;+&quot;$KUBECTL_JENKINS_AGENT&quot;+&apos;_&apos;+&quot;$KUBECTL_JENKINS_AGENT_VERSION&quot;
+def label = &quot;worker-${UUID.randomUUID().toString()}&quot;
+
+podTemplate(label: label, serviceAccount: &apos;jdefaultmns&apos;,namespace: &apos;jenkins&apos;,containers: [
+  containerTemplate(name: &apos;kubectl&apos;, image: kubectl_image_source, command: &apos;cat&apos;, ttyEnabled: true)
+],
+volumes: [
+  hostPathVolume(mountPath: &apos;/var/run/docker.sock&apos;, hostPath: &apos;/var/run/docker.sock&apos;)
+]){
+  node(label) {
+    stage(&apos;Clean blockchain network&apos;) {
+        stage(&apos;Get quorum deployment&apos;){
+            sh &apos;git clone https://github.com/PharmaLedger-IMI/governance-workspace.git&apos;
+        }
+
+        container(&apos;kubectl&apos;) {
+        try{
+             stage(&apos;Remove blockchain nodes&apos;){
+                 sh &apos;cd governance-workspace/jenkins/quorum-fresh-mode &amp;&amp; kubectl delete -f ./k8s/deployments -n default&apos;
+            }
+         } catch (err){
+            unstable (message: &quot;${STAGE_NAME} is unstable.&quot;)
+         }
+         try{
+             stage(&apos;Remove blockchain configuration&apos;){
+                 sh &apos;cd governance-workspace/jenkins/quorum-fresh-mode &amp;&amp; kubectl delete -f ./k8s -n default&apos;
+             }
+         } catch (err){
+            unstable (message: &quot;${STAGE_NAME} is unstable.&quot;)
+         }
+         try{
+             stage(&apos;Remove blockchain node connection&apos;){
+                 sh &apos;cd governance-workspace/jenkins/quorum-fresh-mode &amp;&amp; kubectl delete -f ./jenkins -n jenkins&apos;
+             }
+         } catch (err){
+            unstable (message: &quot;${STAGE_NAME} is unstable.&quot;)
+         }
+         try{
+             stage(&apos;Remove kubernetes secrets&apos;){
+                sh &apos; kubectl delete secret eth-adapter-config -n default&apos;
+             }
+         } catch (err){
+            unstable (message: &quot;${STAGE_NAME} is unstable.&quot;)
+         }
+         stage(&apos;Get deployment status&apos;){
+             sh &quot;kubectl get pods -n default&quot;
+         }
+        }
+    }
+  }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>274498499</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>11979522</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>3896618821</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>22913715</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>181680145</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>49</iota>
+    <head>1:49</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

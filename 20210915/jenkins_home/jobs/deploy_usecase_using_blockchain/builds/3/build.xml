@@ -1,0 +1,193 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>domain</name>
+          <description></description>
+          <value>epiqa</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>subdomain</name>
+          <description></description>
+          <value>nvs.epiqa</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>vaultdomain</name>
+          <description></description>
+          <value>nvs</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>usecaseRepository</name>
+          <description></description>
+          <value>https://github.com/PharmaLedger-IMI/epi-workspace</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>workspace</name>
+          <description></description>
+          <value>epi-workspace</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>domain</string>
+        <string>subdomain</string>
+        <string>vaultdomain</string>
+        <string>usecaseRepository</string>
+        <string>workspace</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>4</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.19">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.92">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>15015</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>15014</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>573508</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>439</queueId>
+  <timestamp>1630929536632</timestamp>
+  <startTime>1630929536636</startTime>
+  <result>SUCCESS</result>
+  <duration>589160</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>podTemplate(
+    containers: [
+        containerTemplate(name: &apos;docker&apos;, image: &apos;public.ecr.aws/n4q1q0z2/pharmaledger-docker-aws-jenkins-agent:1.0&apos;,alwaysPullImage:true , ttyEnabled: true, command: &apos;cat&apos;)
+    ],
+    volumes: [hostPathVolume(hostPath: &apos;/var/run/docker.sock&apos;, mountPath: &apos;/var/run/docker.sock&apos;)],
+    envVars: [secretEnvVar(key: &apos;aws_key_id&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_key_id&apos;),
+              secretEnvVar(key: &apos;aws_access_key&apos;, secretName: &apos;aws-config&apos;, secretKey: &apos;aws_access_key&apos;)
+             ]
+  ){
+
+
+      podTemplate(
+          containers: [
+              containerTemplate(name: &apos;node&apos;, image: &apos;node:latest&apos;, ttyEnabled: true, command: &apos;cat&apos;)
+              ]
+          ){
+
+            podTemplate(serviceAccount: &apos;jdefaultmns&apos;,namespace: &apos;jenkins&apos;,containers: [
+                  containerTemplate(name: &apos;kubectl&apos;, image: &apos;public.ecr.aws/n4q1q0z2/pharmaledger-kubectl-jenkins-agent:1.0&apos;, command: &apos;cat&apos;, ttyEnabled: true)
+                ],
+                volumes: [
+                  hostPathVolume(mountPath: &apos;/var/run/docker.sock&apos;, hostPath: &apos;/var/run/docker.sock&apos;)
+                ]){
+
+                      node(POD_LABEL){
+
+                        stage (&apos;Repository cloning&apos;){
+                            container(&apos;node&apos;){
+                                sh &apos;git clone $usecaseRepository&apos;
+                            }
+                        }
+
+                        stage (&apos;Customize build&apos;){
+                            container(&apos;node&apos;){
+                                stage (&apos;Configure config-map&apos;){
+                                    sh &apos;cd $workspace/docker/k8s/templates &amp;&amp; sed &quot;s/%domain%/$domain/g&quot; configmap.yaml.template | sed &quot;s/%bdns-entries%//g&quot; | sed &quot;s/%subdomain%/$subdomain/g&quot; | sed &quot;s/%vaultdomain%/$vaultdomain/g&quot; &gt; configmap.yaml&apos;
+                                    sh &apos;cat $workspace/docker/k8s/templates/configmap.yaml&apos;
+
+                                    sh &apos;cd $workspace/docker/k8s/templates &amp;&amp; sed &quot;s/%domain%/$domain/g&quot; domains-configmap.yaml.template | sed &quot;s/%subdomain%/$subdomain/g&quot; | sed &quot;s/%vaultdomain%/$vaultdomain/g&quot; | sed &quot;s/%anchoring%/ETH/g&quot; | sed &quot;s/%anchoringEndPoint%/\\&quot;endpoint\\&quot;: \\&quot;http:\\/\\/ehtadapter-service:3000\\&quot;/g&quot; &gt; domains-configmap.yaml&apos;
+                                    sh &apos;cat $workspace/docker/k8s/templates/domains-configmap.yaml&apos;
+                                }
+                                stage (&apos;Configure deployment&apos;){
+                                    sh &apos;cd $workspace/docker/k8s/templates &amp;&amp; sed &quot;s/%domain%/$domain/g&quot; deployment.yaml.template | sed &quot;s/%subdomain%/$subdomain/g&quot; | sed &quot;s/%vaultdomain%/$vaultdomain/g&quot; &gt; deployment.yaml&apos;
+                                    sh &apos;cat $workspace/docker/k8s/templates/deployment.yaml&apos;
+
+                                    sh &apos;cd $workspace/docker/k8s/templates &amp;&amp; sed &quot;s/%subdomain%/$subdomain/g&quot; service.yaml.template | sed &quot;s/%domain%/$domain/g&quot; &gt; service.yaml&apos;
+                                    sh &apos;cat $workspace/docker/k8s/templates/service.yaml&apos;
+
+                                }
+                            }
+                        }
+
+                        stage (&apos;Build and publish docker Image&apos;){
+                            container (&apos;docker&apos;){
+                                sh &apos;aws --version&apos;
+                                sh &apos;aws configure set aws_access_key_id &quot;$aws_key_id&quot;&apos;
+                                sh &apos;aws configure set aws_secret_access_key &quot;$aws_access_key&quot;&apos;
+                                sh &apos;aws configure set default.region &quot;$DEFAULT_REGION&quot;&apos;
+                                sh &apos;aws configure set default.output \&apos;NONE\&apos;&apos;
+                                sh &apos;aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/n4q1q0z2&apos;
+                                sh &apos;cd $workspace/docker &amp;&amp; docker build --no-cache --network host -t public.ecr.aws/n4q1q0z2/pharmaledger-$domain:1.0 .&apos;
+                                sh &apos;docker push public.ecr.aws/n4q1q0z2/pharmaledger-$domain:1.0&apos;
+                            }
+                        }
+
+                       stage (&apos;Usecase deployment&apos;){
+                           container(&apos;kubectl&apos;){
+                                 sh &apos;cd $workspace/docker &amp;&amp; kubectl apply -f ./k8s/templates -n default&apos;
+                                 sh &apos;kubectl get pods -n default&apos;
+                                 sh &apos;kubectl get services -n default&apos;
+                            }
+                        }
+
+
+                      }
+
+                }
+        }
+    }
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>313002408</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>9490026</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>8881723204</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>34461745</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>496093998</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>79</iota>
+    <head>1:79</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>
