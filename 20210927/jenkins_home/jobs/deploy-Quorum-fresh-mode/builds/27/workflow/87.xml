@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.92">
+    <parentIds>
+      <string>86</string>
+    </parentIds>
+    <id>87</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.CoreStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.92">
+      <arguments>
+        <entry>
+          <string>delegate</string>
+          <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable plugin="structs@1.23">
+            <symbol>archiveArtifacts</symbol>
+            <arguments class="tree-map">
+              <entry>
+                <string>artifacts</string>
+                <string>governance-workspace/jenkins/quorum-fresh-mode/stages/deployAnchoringSC/anchoringSCInfo.json</string>
+              </entry>
+              <entry>
+                <string>fingerprint</string>
+                <boolean>true</boolean>
+              </entry>
+            </arguments>
+          </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.45">
+      <startTime>1632208741255</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

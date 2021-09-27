@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2021-09-20 15:22:39.782 UTC</timestamp>
+  <original>
+    <name>deploy-Quorum-fresh-mode</name>
+    <number>26</number>
+  </original>
+  <md5sum>714d9afa77abb8f1f76c0b89c25e0ded</md5sum>
+  <fileName>anchoringSCInfo.json</fileName>
+  <usages>
+    <entry>
+      <string>deploy-Quorum-fresh-mode</string>
+      <ranges>26</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

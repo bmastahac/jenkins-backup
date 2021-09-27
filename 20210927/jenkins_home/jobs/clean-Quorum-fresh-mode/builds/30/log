@@ -1,0 +1,201 @@
+Started by user [8mha:////4D7lhoyTb2CZyILRNnvEj3yX8u7ydzhlzzbMrGZOlmEuAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Obtained jenkins/pipelines/blockchain/clean-Quorum-fresh-mode.groovy from git https://github.com/PharmaLedger-IMI/governance-workspace.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4KQ4nQHzoizlWJhcMrmfP4ZtQr21g23OA67AlRm7f+BEAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4H58ktrztD9GWn8dAZ0UJOosdbMGsC5ZvC8Mk3WN3VRKAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4OjBRqdKRoTT4zVjMoXG4OSopdAe9GJYwWxo0ZDK8VDmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4PHgf4X/N+KdathW4kbJhs7rA+ErjKAJ8v/7PrS3M53UAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] node
+Created Pod: kubernetes jenkins/worker-f9e63921-8acd-42cb-8b98-3d25e493c596-n0q5z-7vqjm
+Still waiting to schedule task
+Waiting for next available executor on ‘[8mha:////4CPF0IUdPR+SiYJJhk5ElhL8AeKm5gs3ifhcRSvtKMLeAAAAzh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzzEgYn/eT83ILSktQi/fL8ouzUIt00y1QzY0sjQ12LxOQUXROj5CRdiyRLC13jFCPTVBNL42RTSzPdPINC0ypd87LCrFx9AIqY8u/3AAAA[0mworker-f9e63921-8acd-42cb-8b98-3d25e493c596-n0q5z-7vqjm’
+Agent [8mha:////4DIzTa90cA8k8jmx3FFYj3z8g5L5xSK+t4GoUX9/bAigAAAAzR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzzEgZH/eT83ILSktQi/fL8ouzUIt00y1QzY0sjQ12LxOQUXROj5CRdiyRLC13jFCPTVBNL42RTSzPdPINC0ypd87LCrFwAayfY8vYAAAA=[0mworker-f9e63921-8acd-42cb-8b98-3d25e493c596-n0q5z-7vqjm is provisioned from template worker-f9e63921-8acd-42cb-8b98-3d25e493c596-n0q5z
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  annotations:
+    buildUrl: "http://jenkins/job/clean-Quorum-fresh-mode/30/"
+    runUrl: "job/clean-Quorum-fresh-mode/30/"
+  labels:
+    jenkins: "slave"
+    jenkins/label-digest: "eaeaff6e0768c1f5789e804f288ed1d82dd53fda"
+    jenkins/label: "worker-f9e63921-8acd-42cb-8b98-3d25e493c596"
+  name: "worker-f9e63921-8acd-42cb-8b98-3d25e493c596-n0q5z-7vqjm"
+spec:
+  containers:
+  - command:
+    - "cat"
+    image: "public.ecr.aws/n4q1q0z2/epi:pharmaledger-kubectl-jenkins-agent_1.0"
+    imagePullPolicy: "IfNotPresent"
+    name: "kubectl"
+    resources:
+      limits: {}
+      requests: {}
+    tty: true
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - env:
+    - name: "JENKINS_SECRET"
+      value: "********"
+    - name: "JENKINS_TUNNEL"
+      value: "jenkins:50000"
+    - name: "JENKINS_AGENT_NAME"
+      value: "worker-f9e63921-8acd-42cb-8b98-3d25e493c596-n0q5z-7vqjm"
+    - name: "JENKINS_NAME"
+      value: "worker-f9e63921-8acd-42cb-8b98-3d25e493c596-n0q5z-7vqjm"
+    - name: "JENKINS_AGENT_WORKDIR"
+      value: "/home/jenkins/agent"
+    - name: "JENKINS_URL"
+      value: "http://jenkins/"
+    image: "jenkins/inbound-agent:4.3-4"
+    name: "jnlp"
+    resources:
+      limits: {}
+      requests:
+        memory: "256Mi"
+        cpu: "100m"
+    volumeMounts:
+    - mountPath: "/var/run/docker.sock"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  nodeSelector:
+    kubernetes.io/os: "linux"
+  restartPolicy: "Never"
+  serviceAccountName: "jdefaultmns"
+  volumes:
+  - hostPath:
+      path: "/var/run/docker.sock"
+    name: "volume-0"
+  - emptyDir:
+      medium: ""
+    name: "workspace-volume"
+
+Running on [8mha:////4CPF0IUdPR+SiYJJhk5ElhL8AeKm5gs3ifhcRSvtKMLeAAAAzh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzzEgYn/eT83ILSktQi/fL8ouzUIt00y1QzY0sjQ12LxOQUXROj5CRdiyRLC13jFCPTVBNL42RTSzPdPINC0ypd87LCrFx9AIqY8u/3AAAA[0mworker-f9e63921-8acd-42cb-8b98-3d25e493c596-n0q5z-7vqjm in /home/jenkins/agent/workspace/clean-Quorum-fresh-mode
+[8mha:////4HvdKFC/csV1fWuiW7xrZSsYw7LQGZgqFJoTkNKUM7WvAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4MKHNsyM9X0kb8xKioDXcyWmXNqA+kevFO5+LnLL/NKZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] stage
+[8mha:////4ERlOeCsiuiOh4MCRDietbCHxw6pU1XZRY7fecbmkLT6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] { (Clean blockchain network)
+[8mha:////4OAqaOryhf3sMrd6c7+prPuAP2YfUbI9n13DfkGVKi/VAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] stage
+[8mha:////4DXXrWFTpg5l0OLPFs3qlgs13V+/dKb4acxOg1W282ltAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] { (Get quorum deployment)
+[8mha:////4LqheBiRZeukbW8e/Um36JiU24cxYuCXpcz5pq5qOc8zAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCakRFa6XhBSYxxo5159gOTsWL+Bp/IBCJii1WO9vM8wXrGODIQaNV1BuKrUHvRj0vzBz6q+OMli/YMkV2ChuVG+7UacGGk4IlRQkrARtFreNoSCfYCivvsnKSdHVOYf4OAkrTDfCAQszmJEP6whRgdxu7yPTz/BXA5BOU9f5TtX8D0loxuL4AAAA=[0m[Pipeline] sh
++ git clone https://github.com/PharmaLedger-IMI/governance-workspace.git
+Cloning into 'governance-workspace'...
+[8mha:////4OSpt6xXDyFW2bME18rTocREJ4E33uOEEHFPnxdUqFNaAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMYQM5W7/qe0bsgYiW74AAAA=[0m[Pipeline] }
+[8mha:////4CXh9d7usR/sYi+sSu/RQiu3zEWo1+L2vmFUMfLwrcnTAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRokKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsP6C1U670AAAA=[0m[Pipeline] // stage
+[8mha:////4Iowwnqtxz2EwlUAHy9j5e6dZ6AvcLOq0AoSgcsx0JAiAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJAokREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgdQ7HZfo7lG2c0ocDBAAAA[0m[Pipeline] container
+[8mha:////4N/Nc0izHzpuNsiGDlxI+GLSZVewBg/lX5e4WA1/H+STAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4GwtSwI5inx19g8KN01urvyKi2cX5nH45TBeTBki5w/YAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] stage
+[8mha:////4IbbyYxPcthEs1cucJl7B0c3t5f2OhJiSASGtD9xeAwTAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] { (Remove explorer)
+[8mha:////4NdlEWU3HfLlVXYLkKN8OYfWI4OzpJ6HqC/xZMik3r38AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKpAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNxXfVKy+AAAA[0m[Pipeline] sh
++ cd governance-workspace/jenkins/modules/explorer
++ kubectl delete -f . -n default
+deployment.apps "api" deleted
+service "api" deleted
+configmap "explorer-configs" deleted
+deployment.apps "ingestion" deleted
+deployment.apps "mongodb" deleted
+service "mongodb" deleted
+deployment.apps "nginx" deleted
+service "nginx" deleted
+networkpolicy.networking.k8s.io "quorum-examples-net" deleted
+deployment.apps "web" deleted
+service "web" deleted
+[8mha:////4LJX2A2UJ16eqnfmQCeW2YGN10Ex4pSzhV3iQC7tKnnAAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKoQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N9Jjga++AAAA[0m[Pipeline] }
+[8mha:////4FfhiM2nr9Hgoo1HQyhOjdk9N+7j965iCEhOUgiR1OTpAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFDQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AERGGHOvgAAAA==[0m[Pipeline] // stage
+[8mha:////4I/KuqjUe9dpnrFk8hnYEWACAnGcRJK4HCKWjIF1cwUkAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohURWJCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFs9tl2zedZvQHeFw+cwgAAAA==[0m[Pipeline] stage
+[8mha:////4Hxyf6Wuu2wz7xv50CDdqF6iXH4f8RtvR/nfrF01TAe5AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] { (Remove blockchain nodes)
+[8mha:////4Jl/MOFit80k+GRY5Xluiije5M+G7wPDTqfWMS3Kk2aXAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyE0vHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs3w5BRkb4AAAA=[0m[Pipeline] sh
++ cd governance-workspace/jenkins/quorum-fresh-mode
++ kubectl delete -f ./k8s/deployments -n default
+deployment.apps "quorum-node1-deployment" deleted
+deployment.apps "quorum-node2-deployment" deleted
+deployment.apps "quorum-node3-deployment" deleted
+[8mha:////4LUyft9zD7j9hRgiqPmhJx68lUk9eD3L+y96UGU00Na5AAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaNG7GyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+Ad3NsHm+AAAA[0m[Pipeline] }
+[8mha:////4GT735x2ZR9gtFbgrjRbMSnlEek6TyFV1UmEwFhHS7dlAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN8JP5Su+AAAA[0m[Pipeline] // stage
+[8mha:////4ME2BclQI87MzsKzCeB0rgOtmb+9zj3c6kxMXQqjZYOaAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIMGCOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK52WXb7j/P6g1mJwqBwgAAAA==[0m[Pipeline] stage
+[8mha:////4N4m+hFWfHnUmlaq8gtEKKNDVd7Vta5EuxIJqguFOvxOAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (Remove blockchain configuration)
+[8mha:////4CbQ1iaOTpRT/Oiqn2owJgq9S2P61H3kFD+VxugjWmVbAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0YCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGvZp0gvgAAAA==[0m[Pipeline] sh
++ cd governance-workspace/jenkins/quorum-fresh-mode
++ kubectl delete -f ./k8s -n default
+warning: deleting cluster-scoped resources, not scoped to the provided namespace
+storageclass.storage.k8s.io "gp2-ae" deleted
+persistentvolumeclaim "quorum-node1-pvc" deleted
+persistentvolumeclaim "quorum-node1-logs-pvc" deleted
+persistentvolumeclaim "quorum-node2-pvc" deleted
+persistentvolumeclaim "quorum-node2-logs-pvc" deleted
+persistentvolumeclaim "quorum-node3-logs-pvc" deleted
+persistentvolumeclaim "quorum-node3-pvc" deleted
+configmap "quorum-permissioned-config" deleted
+configmap "node-management" deleted
+configmap "istanbul-validator-config.toml" deleted
+configmap "geth-helpers" deleted
+service "quorum-node1" deleted
+service "quorum-node1-rpc" deleted
+service "quorum-node2-rpc" deleted
+service "quorum-node3-rpc" deleted
+configmap "quorum-node1-nodekey-config" deleted
+configmap "quorum-node1-nodekey-address-config" deleted
+configmap "quorum-node1-enode-config" deleted
+configmap "quorum-node2-nodekey-config" deleted
+configmap "quorum-node2-nodekey-address-config" deleted
+configmap "quorum-node2-enode-config" deleted
+configmap "quorum-node3-nodekey-config" deleted
+configmap "quorum-node3-nodekey-address-config" deleted
+configmap "quorum-node3-enode-config" deleted
+Error from server (NotFound): error when deleting "k8s/03-quorum-services.yaml": services "quorum-node2" not found
+Error from server (NotFound): error when deleting "k8s/03-quorum-services.yaml": services "quorum-node3" not found
+[8mha:////4BtxLn+d+H+2NZ7Zuk8iCtkntnsaQhbBfX+AK9NnjLwLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0SCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQGMKkS1vgAAAA==[0m[Pipeline] }
+[8mha:////4PeoSNqSJ18wPJe/D0ramehEJpgthhqKnsv7zVR+fFJqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9mQDtDvgAAAA==[0m[Pipeline] // stage
+[8mha:////4Bb/8nvf8NouLpAXzR/Nt0gZbHUQfRy3s1fPzgBvaOd/AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCFEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAcw+QVkfcu1r/wEboY3pvgAAAA==[0m[Pipeline] unstable
+WARNING: Clean blockchain network is unstable.
+[8mha:////4PkNy17YEx3wM8rseOlRUupTQt6f5BxE+D2QLhYcJI21AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUgJhQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2y77edZvQHEbuy8wgAAAA==[0m[Pipeline] stage
+[8mha:////4MnuNw8PGiAD4JP5CBahu9q2CUNNJ3RxI9Fa41BTq56VAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] { (Remove blockchain node connection)
+[8mha:////4BzvG7w99UHgNedN5Z6w1vy0b1jOjotdG4CjEuq2tzhKAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSxM6xsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NGWcPtb4AAAA=[0m[Pipeline] sh
++ cd governance-workspace/jenkins/quorum-fresh-mode
++ kubectl delete -f ./jenkins -n jenkins
+service "ref-quorum-node1" deleted
+service "ref-eth-adapter" deleted
+[8mha:////4JJ2CMGVtPtgX3xUiL/1s5ATzjLHPbPpX92tn1yqDRwtAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZKwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfGxSHer4AAAA=[0m[Pipeline] }
+[8mha:////4J0lnfM1f/6cEKK7iRQDjBOvJihddBODwJjUc9GzzE68AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgEjVhSLvgAAAA==[0m[Pipeline] // stage
+[8mha:////4FCr88QR+qWFjKVdYW1CdKq+d8XuBHcwd/bDDU+OZ7jiAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCCEG1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzS7bdv95Vm93/yHswgAAAA==[0m[Pipeline] stage
+[8mha:////4PwNfJD8kp3VfeDTAYcD8Ak8eLXwI0qg9dCil5m+o6bUAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAAJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD8aiCpwgAAAA==[0m[Pipeline] { (Remove kubernetes secrets)
+[8mha:////4NshGD+M26VaaCMIjgPWwneQJRwksV9AdSRHpySvtI9AAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJS0IAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN65NpgK+AAAA[0m[Pipeline] sh
++ kubectl delete secret eth-adapter-config -n default
+secret "eth-adapter-config" deleted
+[8mha:////4DEhkKEpOAWh7gJNf/OksXSL0WNbeJtjiIa04sp+yDbOAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wArmI/eL4AAAA=[0m[Pipeline] }
+[8mha:////4MmCL9d5xTkPbBoCAJR39/u+GBc5RSsIAyHU1rtd456QAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAmqzcI74AAAA=[0m[Pipeline] // stage
+[8mha:////4OSgzM7MKY/VCEITA/jInkQbQqfQdYjFHRTwIIeMZSt6AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIJhQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2y77edZvQFKUEt5wgAAAA==[0m[Pipeline] stage
+[8mha:////4FsEr0FE2X1wpV/5Z2IYZGtTvPTPzZj0o7BD9K3qgENPAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAXzhjwPCAAAA[0m[Pipeline] { (Get deployment status)
+[8mha:////4FCuUnmYySet0glz6VsijCT3cKIujfMUsTpZwkQMVThsAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSkA5R0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3fhXiFur4AAAA=[0m[Pipeline] sh
++ kubectl get pods -n default
+NAME                                       READY   STATUS        RESTARTS   AGE
+api-5678b497d5-7vsvg                       0/1     Terminating   0          151m
+governance-545dd9b78b-z8hhs                1/1     Running       0          29h
+ingestion-66ddb7458-t2fk5                  0/1     Terminating   0          151m
+mongodb-545d7f76b5-kn5tm                   0/1     Terminating   0          151m
+nginx-5b9576c94f-xc6f6                     0/1     Terminating   0          151m
+nvs.epi-6999c84bb-nmk8r                    1/1     Running       0          103m
+nvs.epiqa-8456457d84-wkd49                 1/1     Running       0          26h
+quorum-node1-deployment-5d9fb5dd8b-slzpl   1/1     Terminating   0          152m
+quorum-node2-deployment-7c5b69b489-nwm8z   1/1     Terminating   0          152m
+quorum-node3-deployment-6789c96fdf-zcrsr   1/1     Terminating   0          152m
+web-5d8b685c78-2km8z                       1/1     Terminating   0          151m
+[8mha:////4ALMuYx0d1FSmixYxhcddxO3gXXA4DV3bQZvAjmUHgDyAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BlK8YfC+AAAA[0m[Pipeline] }
+[8mha:////4Jm1fNcdflEWVpEF9vl7n5ijFXtpJJuLgno5qjWaGJkFAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgFq/vIBvgAAAA==[0m[Pipeline] // stage
+[8mha:////4IX5o7bzThBqDX3MR6pt3pH/0uXA40+qnfkgFAO+zMMEAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8AKUy9Kb4AAAA=[0m[Pipeline] }
+[8mha:////4ANSSVT2dKM5JURazUkqsgh/vT/pkd4NBxztZTI9z0FgAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRUgokRJXWSsMLTHwYJ9adsR2SihfxNf6ARSQqtljtbDOvN6xjgBMHI3qkwVLsrPBuNHmJicNwdTyJni+iY4rsULQ4tayxWbDlhLCkKGElYYPUOY6WTIKt7NVDVU6Rqc4p5O8oobT6Dk8oZDYnFdIX5gC726gj08/zVwCz9wnK+pBrX38Aas7sr74AAAA=[0m[Pipeline] // container
+[8mha:////4MLUzV+Qvd04DDWQHsztgAUfIhz76tGU+no1q86cGXC5AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJpKECIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPbJQuhr0AAAA=[0m[Pipeline] }
+[8mha:////4BSuBAOTw1YAMDjJU5qUocBKC9Wt/9O/GDXgkGl2CYf5AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKhQRSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPKTjd0L0AAAA=[0m[Pipeline] // stage
+[8mha:////4EAkq+M25HBgck7B3EIdK+15pwfjUaII6vR+GXJzzVzhAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBTSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPDyG6mr0AAAA=[0m[Pipeline] }
+[8mha:////4Myb0HoQmZbW5L4rY0X0eM5WhmP/GcpIPXb4mfDDEVM+AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkJkzGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHZQoTRL0AAAA=[0m[Pipeline] // node
+[8mha:////4NHA1JNN9LAFQU+2Mqe2im5fjrxhDWSG0acTH/WgCWCrAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUauVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfI91tBtvsAQxN0Dr0AAAA=[0m[Pipeline] }
+[8mha:////4Fk5AdiFqNNSxtfUP8PwAX/MKnz5/K+sTk/Q2URT2lFcAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUauVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfI9ztBtv0A8FowIr0AAAA=[0m[Pipeline] // podTemplate
+[8mha:////4JtAikIbJC9zcR9LiTZZTnbrcz5iQsX/ce6KoIT5fLUeAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkJkzGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FeVkKsv0H1kNXaL0AAAA=[0m[Pipeline] End of Pipeline
+Finished: UNSTABLE

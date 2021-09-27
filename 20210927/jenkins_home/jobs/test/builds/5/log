@@ -1,0 +1,23 @@
+Started by user [8mha:////4D7lhoyTb2CZyILRNnvEj3yX8u7ydzhlzzbMrGZOlmEuAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Checking out git ${repo} into /var/jenkins_home/workspace/test@script to read ${Jenkinsfile}
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/PharmaLedger-IMI/governance-workspace
+ > git init /var/jenkins_home/workspace/test@script # timeout=10
+Fetching upstream changes from https://github.com/PharmaLedger-IMI/governance-workspace
+ > git --version # timeout=10
+ > git --version # 'git version 2.26.2'
+ > git fetch --tags --force --progress -- https://github.com/PharmaLedger-IMI/governance-workspace +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/PharmaLedger-IMI/governance-workspace # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 8db8a7691d67c6d2cf2999688d234950dbff4112 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8db8a7691d67c6d2cf2999688d234950dbff4112 # timeout=10
+Commit message: "updated clean procedure for blockchain"
+First time build. Skipping changelog.
+ERROR: /var/jenkins_home/workspace/test@script/${Jenkinsfile} not found
+Finished: FAILURE
