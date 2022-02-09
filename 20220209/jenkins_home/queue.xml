@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.model.Queue_-State>
+  <counter>2</counter>
+  <items>
+    <hudson.model.Queue_-BuildableItem>
+      <actions/>
+      <id>2</id>
+      <task class="org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution$PlaceholderTask" plugin="workflow-durable-task-step@2.39">
+        <context class="org.jenkinsci.plugins.workflow.cps.CpsStepContext" plugin="workflow-cps@2.92">
+          <executionRef class="org.jenkinsci.plugins.workflow.job.WorkflowRun$Owner" plugin="workflow-job@2.41">
+            <job>backup_jenkins</job>
+            <id>33</id>
+          </executionRef>
+          <id>7</id>
+          <bodyHeads/>
+          <body class="org.jenkinsci.plugins.workflow.cps.StaticBodyReference" resolves-to="org.jenkinsci.plugins.workflow.cps.HandleBodyReference">
+            <id>5</id>
+          </body>
+          <threadId>4</threadId>
+          <stepDescriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</stepDescriptorId>
+        </context>
+        <label>backup_jenkins_33-s6xk5</label>
+        <runId>backup_jenkins#33</runId>
+      </task>
+      <inQueueSince>1644414980750</inQueueSince>
+      <buildableStartMilliseconds>1644414980760</buildableStartMilliseconds>
+      <isPending>false</isPending>
+    </hudson.model.Queue_-BuildableItem>
+  </items>
+</hudson.model.Queue_-State>
