@@ -1,0 +1,46 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.92">
+    <parentIds>
+      <string>19</string>
+    </parentIds>
+    <id>20</id>
+    <startId>6</startId>
+  </node>
+  <actions>
+    <wf.a.BodyInvocationAction plugin="workflow-api@2.45"/>
+    <wf.a.TimingAction plugin="workflow-api@2.45">
+      <startTime>1632921971399</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.45">
+      <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" plugin="workflow-step-api@2.23">
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerListener.onCompleted(BuildTriggerListener.java:53)</trace>
+          <trace>hudson.model.listeners.RunListener.fireCompleted(RunListener.java:209)</trace>
+          <trace>org.jenkinsci.plugins.workflow.job.WorkflowRun.finish(WorkflowRun.java:617)</trace>
+          <trace>org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:353)</trace>
+          <trace>hudson.model.ResourceController.execute(ResourceController.java:97)</trace>
+          <trace>hudson.model.Executor.run(Executor.java:429)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+        <result>
+          <name>FAILURE</name>
+          <ordinal>2</ordinal>
+          <color>RED</color>
+          <completeBuild>true</completeBuild>
+        </result>
+        <causes class="java.util.Arrays$ArrayList">
+          <a class="jenkins.model.CauseOfInterruption-array">
+            <org.jenkinsci.plugins.workflow.support.steps.build.DownstreamFailureCause plugin="pipeline-build-step@2.13">
+              <id>build-and-push-docker-image#44</id>
+            </org.jenkinsci.plugins.workflow.support.steps.build.DownstreamFailureCause>
+          </a>
+        </causes>
+        <actualInterruption>false</actualInterruption>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

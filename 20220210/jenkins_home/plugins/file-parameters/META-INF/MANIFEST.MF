@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: runner
+Build-Jdk: 1.8.0_282
+Extension-Name: file-parameters
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: file-parameters
+Implementation-Version: 99.102.vbc6a133bcbbb
+Group-Id: io.jenkins.plugins
+Short-Name: file-parameters
+Long-Name: File Parameter Plugin
+Url: https://github.com/jenkinsci/file-parameters-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 99.102.vbc6a133bcbbb
+Hudson-Version: 2.263
+Jenkins-Version: 2.263
+Plugin-Dependencies: workflow-api:2.41,structs:1.22
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/file-parameters-plugin
+

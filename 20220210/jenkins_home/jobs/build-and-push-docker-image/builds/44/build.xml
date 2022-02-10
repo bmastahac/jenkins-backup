@@ -1,0 +1,66 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>build_jenkins_predefined_data_image</upstreamProject>
+            <upstreamUrl>job/build_jenkins_predefined_data_image/</upstreamUrl>
+            <upstreamBuild>29</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UserIdCause>
+                <userId>admin</userId>
+              </hudson.model.Cause_-UserIdCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamNodeAction plugin="pipeline-build-step@2.13">
+      <upstreamNodeId>17</upstreamNodeId>
+      <upstreamRunId>build_jenkins_predefined_data_image#29</upstreamRunId>
+    </org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamNodeAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>DATA_IMAGE_NAME</name>
+          <description></description>
+          <value>pharmaledger-jenkins-predefined-data</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>DATA_IMAGE_VERSION</name>
+          <description></description>
+          <value>1.72</value>
+        </hudson.model.StringParameterValue>
+        <io.jenkins.plugins.file__parameters.Base64FileParameterValue plugin="file-parameters@99.102.vbc6a133bcbbb">
+          <name>dockerfile</name>
+          <description></description>
+          <base64>RlJPTSBhbHBpbmUvZ2l0ClJVTiBta2RpciAvdmFyL2plbmtpbnMtYmFja3VwCgpFTlYgQkFDS1VQX0JSQU5DSF9OQU1FPSIyMDIxMDkyOSIKRU5WIEpFTktJTlNfQkFDS1VQX1JFUE9TSVRPUlkgPSAiaHR0cHM6Ly9naXRodWIuY29tL2JtYXN0YWhhYy9qZW5raW5zLWJhY2t1cC5naXQiClJVTiBnaXQgY2xvbmUgLS1zaW5nbGUtYnJhbmNoIC0tYnJhbmNoIDIwMjEwOTI5IGh0dHBzOi8vZ2l0aHViLmNvbS9ibWFzdGFoYWMvamVua2lucy1iYWNrdXAuZ2l0IC92YXIvamVua2lucy1iYWNrdXAgJiYgbHMgL3Zhci9qZW5raW5zLWJhY2t1cApSVU4gY2QgL3Zhci9qZW5raW5zLWJhY2t1cC8yMDIxMDkyOS9qZW5raW5zX2hvbWUgJiYgY3AgLWEgLiAuLi8uLi8KUlVOIGNkIC92YXIvamVua2lucy1iYWNrdXAgJiYgcm0gLXJmIDIwMjEwOTI5ICYmIHJtIC1yZiAuLy5naXQKQ01EIFsgInNoIiBdCgoKCg==</base64>
+        </io.jenkins.plugins.file__parameters.Base64FileParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>DATA_IMAGE_NAME</string>
+        <string>DATA_IMAGE_VERSION</string>
+        <string>dockerfile</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>6017</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>6016</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+  </actions>
+  <queueId>37</queueId>
+  <timestamp>1632921971310</timestamp>
+  <startTime>1632921971314</startTime>
+  <result>FAILURE</result>
+  <duration>52</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

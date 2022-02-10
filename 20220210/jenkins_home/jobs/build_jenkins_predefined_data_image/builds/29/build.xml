@@ -1,0 +1,144 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>JENKINS_BACKUP_REPOSITORY</name>
+          <description></description>
+          <value>https://github.com/bmastahac/jenkins-backup.git</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>BRANCH</name>
+          <description></description>
+          <value>20210929</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>JENKINS_PREDEFINED_DATA_IMAGE_VERSION</name>
+          <description></description>
+          <value>1.72</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>JENKINS_BACKUP_REPOSITORY</string>
+        <string>BRANCH</string>
+        <string>JENKINS_PREDEFINED_DATA_IMAGE_VERSION</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>3</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>1</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.19">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.92">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>7610</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>7564</buildableDurationMillis>
+      <waitingDurationMillis>2</waitingDurationMillis>
+      <executingDurationMillis>11727</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <org.jenkinsci.plugins.workflow.support.steps.build.DownstreamFailureCause plugin="pipeline-build-step@2.13">
+          <id>build-and-push-docker-image#44</id>
+        </org.jenkinsci.plugins.workflow.support.steps.build.DownstreamFailureCause>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+  </actions>
+  <queueId>35</queueId>
+  <timestamp>1632921951140</timestamp>
+  <startTime>1632921951143</startTime>
+  <result>FAILURE</result>
+  <duration>20412</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>
+            podTemplate(
+          containers: [
+              containerTemplate(name: &apos;node&apos;, image: &apos;node:latest&apos;, ttyEnabled: true, command: &apos;cat&apos;)
+              ]
+          ){
+              node(POD_LABEL){
+
+                  stage (&apos;Git clone&apos;){
+                      sh &apos;git clone https://github.com/PharmaLedger-IMI/governance-workspace.git&apos;
+                      sh &apos;cd governance-workspace/jenkins/docker/predefined &amp;&amp; sed &quot;s,%BACKUP_BRANCH_NAME%,${BRANCH},g&quot; Dockerfile.template | sed &quot;s,%JENKINS_BACKUP_REPOSITORY%,${JENKINS_BACKUP_REPOSITORY},g&quot; &gt; Dockerfile&apos;
+                      sh &apos;cat governance-workspace/jenkins/docker/predefined/Dockerfile&apos;
+                  }
+
+
+                  stage (&apos;Build and publish docker Image&apos;){
+
+                        def dockerfile = readFile(&apos;governance-workspace/jenkins/docker/predefined/Dockerfile&apos;)
+                        build job: &apos;build-and-push-docker-image&apos;,
+                        parameters: [
+                                string(name: &apos;DATA_IMAGE_NAME&apos;, value:&quot;$JENKINS_PREDEFINED_DATA_IMAGE_NAME&quot;),
+                                string(name: &apos;DATA_IMAGE_VERSION&apos;, value:&quot;$JENKINS_PREDEFINED_DATA_IMAGE_VERSION&quot;),
+                                base64File(name: &apos;dockerfile&apos;, base64: Base64.encoder.encodeToString(dockerfile.bytes))
+                                ]
+
+                        }
+
+              }
+
+          }
+
+
+
+
+
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>236253003</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>179540706</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2965138226</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>113431032</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>95195222</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>24</iota>
+    <head>1:24</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>
